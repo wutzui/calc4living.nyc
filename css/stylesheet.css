@@ -177,6 +177,7 @@ header {
 	list-style: none;
 	line-height: 24px;
 	margin-top: 15px;
+	cursor: crosshair;
 }
 
 .relation-append-container {
@@ -252,6 +253,7 @@ header {
 	list-style: none;
 	line-height: 24px;
 	margin-top: 15px;
+	cursor: crosshair;
 }
 
 .housing-append-container {
@@ -328,6 +330,7 @@ header {
 	list-style: none;
 	line-height: 24px;
 	margin-top: 15px;
+	cursor: crosshair;
 }
 
 .transport-append-container {
@@ -404,6 +407,7 @@ header {
 	list-style: none;
 	line-height: 24px;
 	margin-top: 15px;
+	cursor: crosshair;
 }
 
 .diet-append-container {
@@ -567,6 +571,7 @@ header {
 	list-style: none;
 	line-height: 24px;
 	margin-top: 15px;
+	cursor: crosshair;
 }
 
 .entertain-append-container-m {
