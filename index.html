@@ -5,124 +5,113 @@
 <html>
 
 <head>
+	<meta charset="UTF-8" />
+	<title>CALC4LIVING.NYC</title>
 	<link type="text/css" rel="stylesheet" href="css/stylesheet.css" />
+	<link rel="stylesheet" href="css/jquery-ui.css"/>
 	<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,600' rel='stylesheet' type='text/css'>
-	<title>CAL4LIVING.NYC</title>
+	
+
+
+
 
 </head>
-	
+
 <body>
+	
+	<header>
+		<a id = "index" href="index.html">C A L C 4 L I V I N G . <span id = "NYC">N Y C</span></a>
 
-	<header> 
-		<a id = "index" href="index.html">C A L 4 L I V I N G . <div id = "NYC">N Y C</div></a>
-
-		<div class = "export">E X P O R T</div>
 	</header>
 
 	<p class = "first-line">This is a calculator that provides the simplest way to visualize <br> your lifestyle by estimating monthly costs in New York.</p>
-	<p class = "drag-info"> + Select where you live. <br> + drag labels to the right to estimate your living cost.</p>
 
 	<div class = "total">
 		<p id ="title-total">T O T A L</p>
 		<p id ="currency">U S D $</p>
-		<p id ="numbers">1583.00</p>
-		<p id ="month">M O N T H L Y</p>
+		<span id ="numbers">0</span>
+	</div>
+	<p id ="month">M O N T H L Y</p>
+
+	<!--housing-->
+	<h4 class="housing-title">+ HOUSING</h4>
+	<div class="housing-wrapper">
+	<div id="house" class="toggle-housing">HOUSE</div>
+	<div id="apt" class="toggle-housing">APARTMENT</div>
 	</div>
 
+	<div class="room-options">
+	<div id="housing-slider" class="sliderClass-housing"></div>
+	<p class="room">STUDIO ONLY</p>
+	</div>
 
+	<!--EATING-->
+	<h4 class="eating-title">+ EATING</h4>
+	<div class="rest-options">
+	<div id="rest-slider" class="sliderClass-rest"></div>
+	<p class="rest">RESTAURANT : <span id="rest-amt">0</span> DAY(S) / WEEK</p>
+	</div>
 
-	<div class = "fake-map"><img src="images/map1.png"></div>
-	<div class = "name-map"></div>
+	<div class="cook-options">
+	<div id="cook-slider" class="sliderClass-cook"></div>
+	<p class="cook">COOKING : <span id="cook-amt">0</span> DAY(S) / WEEK</p>
+	</div>
+
+	<div class="night-options">
+	<div id="night-slider" class="sliderClass-night"></div>
+	<p class="night">NIGHTLIFE : <span id="night-amt">0</span> DAY(S) / WEEK</p>
+	</div>
+
+	<div class="coffee-options">
+	<div id="coffee-slider" class="sliderClass-coffee"></div>
+	<p class="coffee">COFFEE : <span id="coffee-amt">0</span> CUP(S) / DAY</p>
+	</div>
+
+	<!--transport-->
+	<h4 class="transport-title">+ TRANSPORTATION</h4>
+
+	<div class="transport-wrapper">
+	<div id="public" class="toggle-transport">PUBLIC</div>
+	<div id="taxi" class="toggle-transport">TAXI</div>
+	<div id="car" class="toggle-transport">CAR</div>
+	</div>
+
+	<!--entertainment-->
+	<h4 class="entertain-title">+ ENTERTAINMENT</h4>
 	
-	<!-- relation -->
-	<div class = "relation">
-		<ul id = "relation-title">RELATION_
-			<li id = "single" class ="drag-r">Single</li> 
-			<li id = "couple" class ="drag-r">Couple</li>
-			<li id = "parents" class ="drag-r">Parents</li>
-		</ui> 
+	<div class="movie-options">
+	<div id="movie-slider" class="sliderClass-movie"></div>
+	<p class="movie">MOVIE : <span id="movie-amt">0</span> TIME(S) / MONTH</p>
 	</div>
 
-	<div class = "relation-append-container"></div>
-	<div class = "append-newlist-relation"></div>
-
-	<!-- housing -->
-	<div class = "housing">
-		<ul id = "housing-title">HOUSING_
-			<li id = "apt" class ="drag-h">Apartment</li> 
-			<li id = "house" class ="drag-h">House</li>
-			<li id = "studio" class ="drag-h">Studio</li>
-		</ui> 
+	<div class="museum-options">
+	<div id="museum-slider" class="sliderClass-museum"></div>
+	<p class="museum">MUSEUM : <span id="museum-amt">0</span> TIME(S) / MONTH</p>
 	</div>
 
-	<div class = "housing-append-container"></div>
-	<div class = "append-newlist-housing"></div>
+	<!--money-->
+	<div id="money-container">
+		<div class="housing-money"><span id="housing-money">1100</span></div>
 
-	<!-- transport -->
-	<div class = "transport">
-		<ul id = "transport-title">TRANSPORT_
-			<li id = "public" class ="drag-t">Public</li> 
-			<li id = "taxi" class ="drag-t">Taxi</li>
-			<li id = "drive" class ="drag-t">Drive</li>
-		</ui> 
+		<div class="rest-money"><span id="rest-money">0</span></div>
+		<div class="cook-money"><span id="cook-money">35</span></div>
 	</div>
 
-	<div class = "transport-append-container"></div>
-	<div class = "append-newlist-transport"></div>
-
-	<!-- diet -->
-	<div class = "diet">
-		<ul id = "diet-title">DIET_
-			<li id = "eatout" class ="drag-d-b">Restaurant</li> 
-			<li id = "takeout" class ="drag-d-b">Takeout</li> 
-			<li id = "cook" class ="drag-d-b">Cook</li>
-		
-			<li id = "bar" class ="drag-d-m">Bar</li>
-			<li id = "snacks" class ="drag-d-m2">Snacks</li>
-		</ui> 
-	</div>
-
-	<div class = "diet-append-container"></div>
-	<div class = "append-newlist-diet"></div>
-	<div class = "diet-append-container-m"></div>
-	<div class = "append-newlist-diet-m"></div>
-	<div class = "diet-append-container-m2"></div>
-	<div class = "append-newlist-diet-m2"></div>
-
-	<!-- entertain -->
-	<div class = "entertain">
-		<ul id = "entertain-title">ENTERTAIN_
-			<li id = "movie" class ="drag-e-m">Movie</li> 
-			<li id = "netflix" class ="drag-e-n">Netflix</li> 
-			<li id = "museum" class ="drag-e-u">Museum</li>
-		
-		</ui> 
-	</div>
-
-	<div class = "entertain-append-container-m"></div>
-	<div class = "append-newlist-entertain-m"></div>
-	<div class = "entertain-append-container-n"></div>
-	<div class = "append-newlist-entertain-n"></div>
-	<div class = "entertain-append-container-u"></div>
-	<div class = "append-newlist-entertain-u"></div>
 
 
 
-
-
-
-
-
-
-
-
-
-
-
+	<!--js files-->
 	<script src="js/jquery-2.1.4.min.js"></script>
-	<script src="js/jquery-ui.min.js"></script>
+	<script src="js/jquery-ui.js"></script>
+	<script src="js/d3.min.js"></script>
 	<script src="js/script.js"></script>
 	
+
+
+
 </body>
 
+	<footer>
+		<div class= "right"> © Yizzy Wu 2015 — All rights reserved</div>
+	</footer>
 </html>

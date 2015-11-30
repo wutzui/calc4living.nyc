@@ -1,155 +1,359 @@
-$(document).ready(function(){
-  $(".fake-map").click(function(){
-        $(".name-map").show("slow");
-  });
+var whiteBorder =  '1px solid white';
+var greyBorder = '1px solid #676767';
+
+$("document").ready(function(){
+	$("#house").click(function(){
+		d3.select("#house")
+		  .style({
+		  	'color': 'white',
+		  	'border': whiteBorder,
+		  	'z-index': '5'
+		  })
+		d3.select("#apt")
+		  .style({
+		  	'color': '#676767',
+		  	'border': greyBorder,
+		  	'z-index': '4',
+		  })
+		d3.select('#housing-money').text(houseMoney[0]);
+	});
+
+	$("#apt").click(function(){
+		d3.select("#apt")
+		  .style({
+		  	'color': 'white',
+		  	'border': whiteBorder,
+		  	'z-index': '5'
+		  })
+		d3.select("#house")
+		  .style({
+		  	'color': '#676767',
+		  	'border': greyBorder,
+		  	'z-index': '4'
+		  })
+		d3.select('#housing-money').text(aptMoney[0]);  
+	});
 });
 
-//relation.
-$(document).ready(function(){
-  $( ".drag-r" ).draggable({
-      helper: "clone",
-      cursor: "crosshair",
-      cursorAt: { left: 10},
+var houseMoney = [1100, 2300, 950, 2100, 3200, 4100, 5000];
+var aptMoney = [1000, 2100, 940, 2000, 3100, 4000, 4900]  
+var houseSelect = d3.select('#house').style({'border': whiteBorder})
+var aptSelect = d3.select('#apt').style({'border': whiteBorder})
 
-  stop: function( event, ui ) {
-    $(".relation-append-container").toggleClass("relation-append");
-    $(".append-newlist-relation").append("<p>#Single</p>");
-    $(".drag-r").css("color", "#808080");
-    $(".drag-r").css("border", "1px solid #808080");
-  }
 
+$("document").ready(function(){
+
+  $("#housing-slider").slider({
+	value: 0,
+	min: 0,
+	max: 5,
+	step: 1,
+	slide: function(evt, elem){
+		if(elem.value==0 && houseSelect){
+			d3.select('.room').text('STUDIO ONLY');
+			d3.select('#housing-money').text(houseMoney[0]);
+		}else if(elem.value==1 && houseSelect){
+			d3.select('.room').text('STUDIO / 1 BR');
+			d3.select('#housing-money').text(houseMoney[1]);
+		}else if(elem.value==2 && houseSelect){
+			d3.select('.room').text('1 BR');
+			d3.select('#housing-money').text(houseMoney[2]);
+		}else if(elem.value==3 && houseSelect){
+			d3.select('.room').text('2 BR');
+			d3.select('#housing-money').text(houseMoney[3]);
+		}else if(elem.value==4 && houseSelect){
+			d3.select('.room').text('3 BR');
+			d3.select('#housing-money').text(houseMoney[4]);
+		}else if(elem.value==5 && houseSelect){
+			d3.select('.room').text('4 BR');
+			d3.select('#housing-money').text(houseMoney[5]);	
+		}else if(elem.value==0 && aptSelect){
+			d3.select('.room').text('STUDIO ONLY');
+			d3.select('#housing-money').text(aptMoney[0]);
+		}else if(elem.value==1 && aptSelect){
+			d3.select('.room').text('STUDIO / 1 BR');
+			d3.select('#housing-money').text(aptMoney[1]);
+		}else if(elem.value==2 && aptSelect){
+			d3.select('.room').text('1 BR');
+			d3.select('#housing-money').text(aptMoney[2]);
+		}else if(elem.value==3 && aptSelect){
+			d3.select('.room').text('2 BR');
+			d3.select('#housing-money').text(aptMoney[3]);
+		}else if(elem.value==4 && aptSelect){
+			d3.select('.room').text('3 BR');
+			d3.select('#housing-money').text(aptMoney[4]);
+		}else if(elem.value==5 && aptSelect){
+			d3.select('.room').text('4 BR');
+			d3.select('#housing-money').text(aptMoney[5]);	
+		}else{
+			d3.select('#housing-money').text(aptMoney[6]);
+		};
+	},
+	start: function(evt, elem){
+		$(".room").addClass("heavytext")
+	},
+	stop: function(evt, elem){
+		$(".room").removeClass("heavytext")
+	}
   });
+
 });
 
-//housing.
-$(document).ready(function(){
-  $( ".drag-h" ).draggable({
-      helper: "clone",
-      cursor: "crosshair",
-      cursorAt: { left: 10},
+var restMoney = [0, 30, 60, 90, 120, 150, 180, 210];
+var cookMoney = [0, 5, 10, 15, 20, 25, 30, 35];
 
-  stop: function( event, ui ) {
-    $(".housing-append-container").toggleClass("housing-append");
-    $(".append-newlist-housing").append("<p>#Apartment</p>");
-    $(".drag-h").css("color", "#808080");
-    $(".drag-h").css("border", "1px solid #808080");
-  }
+$("#rest-slider").slider({
+	value: 0,
+	min: 0,
+	max: 7,
+	step: 1,
+	slide: function(evt, elem){
+		$("#rest-amt").text(elem.value)
 
-  });
+		if(elem.value==0){
+			$("#cook-slider").slider("value",7);
+			d3.select('#cook-amt').text(7);
+			d3.select('#rest-money').text(restMoney[0]);
+			d3.select('#cook-money').text(cookMoney[7]);
+		}else if(elem.value==1){
+			$("#cook-slider").slider("value",6);
+			d3.select('#cook-amt').text(6);
+			d3.select('#rest-money').text(restMoney[1]);
+			d3.select('#cook-money').text(cookMoney[6]);
+		}else if(elem.value==2){
+			$("#cook-slider").slider("value",5);
+			d3.select('#cook-amt').text(5);
+			d3.select('#rest-money').text(restMoney[2]);
+			d3.select('#cook-money').text(cookMoney[5]);
+		}else if(elem.value==3){
+			$("#cook-slider").slider("value",4);
+			d3.select('#cook-amt').text(4);
+			d3.select('#rest-money').text(restMoney[3]);
+			d3.select('#cook-money').text(cookMoney[4]);
+		}else if(elem.value==4){
+			$("#cook-slider").slider("value",3);
+			d3.select('#cook-amt').text(3);
+			d3.select('#rest-money').text(restMoney[4]);
+			d3.select('#cook-money').text(cookMoney[3]);
+		}else if(elem.value==5){
+			$("#cook-slider").slider("value",2);
+			d3.select('#cook-amt').text(2);
+			d3.select('#rest-money').text(restMoney[5]);
+			d3.select('#cook-money').text(cookMoney[2]);
+		}else if(elem.value==6){
+			$("#cook-slider").slider("value",1);
+			d3.select('#cook-amt').text(1);
+			d3.select('#rest-money').text(restMoney[6]);
+			d3.select('#cook-money').text(cookMoney[1]);
+		}else if(elem.value==7){
+			$("#cook-slider").slider("value",0);
+			d3.select('#cook-amt').text(0);	
+			d3.select('#rest-money').text(restMoney[7]);
+			d3.select('#cook-money').text(cookMoney[0]);
+		};
+	},
+	start: function(evt, elem){
+		$("#rest-amt").addClass("heavytext");
+		$("#cook-amt").addClass("heavytext");
+	},
+	stop: function(evt, elem){
+		$("#rest-amt").removeClass("heavytext");
+		$("#cook-amt").removeClass("heavytext");
+	}
 });
 
-//transport.
-$(document).ready(function(){
-  $( ".drag-t" ).draggable({
-      helper: "clone",
-      cursor: "crosshair",
+$("#cook-slider").slider({
+	value: 7,
+	min: 0,
+	max: 7,
+	step: 1,
+	slide: function(evt, elem){
+		$("#cook-amt").text(elem.value)
+		if(elem.value==0){
+			$("#rest-slider").slider("value",7);
+			d3.select('#rest-amt').text(7);
+			d3.select('#cook-money').text(cookMoney[0]);
+			d3.select('#rest-money').text(restMoney[7]);
+		}else if(elem.value==1){
+			$("#rest-slider").slider("value",6);
+			d3.select('#rest-amt').text(6);
+			d3.select('#cook-money').text(cookMoney[1]);
+			d3.select('#rest-money').text(restMoney[6]);
+		}else if(elem.value==2){
+			$("#rest-slider").slider("value",5);
+			d3.select('#rest-amt').text(5);
+			d3.select('#cook-money').text(cookMoney[2]);
+			d3.select('#rest-money').text(restMoney[5]);
+		}else if(elem.value==3){
+			$("#rest-slider").slider("value",4);
+			d3.select('#rest-amt').text(4);
+			d3.select('#cook-money').text(cookMoney[3]);
+			d3.select('#rest-money').text(restMoney[4]);
+		}else if(elem.value==4){
+			$("#rest-slider").slider("value",3);
+			d3.select('#rest-amt').text(3);
+			d3.select('#cook-money').text(cookMoney[4]);
+			d3.select('#rest-money').text(restMoney[3]);
+		}else if(elem.value==5){
+			$("#rest-slider").slider("value",2);
+			d3.select('#rest-amt').text(2);
+			d3.select('#cook-money').text(cookMoney[5]);
+			d3.select('#rest-money').text(restMoney[2]);
+		}else if(elem.value==6){
+			$("#rest-slider").slider("value",1);
+			d3.select('#rest-amt').text(1);
+			d3.select('#cook-money').text(cookMoney[6]);
+			d3.select('#rest-money').text(restMoney[1]);
+		}else if(elem.value==7){
+			$("#rest-slider").slider("value",0);
+			d3.select('#rest-amt').text(0);	
+			d3.select('#cook-money').text(cookMoney[7]);
+			d3.select('#rest-money').text(restMoney[0]);
+		};
 
-  stop: function( event, ui ) {
-    $(".transport-append-container").toggleClass("transport-append");
-    $(".append-newlist-transport").append("<p>#Public</p>");
-    $(".drag-t").css("color", "#808080");
-    $(".drag-t").css("border", "1px solid #808080");
-  }
-
-  });
+	},
+	start: function(evt, elem){
+		$("#cook-amt").addClass("heavytext");
+		$("#rest-amt").addClass("heavytext");
+	},
+	stop: function(evt, elem){
+		$("#cook-amt").removeClass("heavytext");
+		$("#rest-amt").removeClass("heavytext");
+	}
 });
 
-//diet.
-//diet-basic.
-$(document).ready(function(){
-  $( ".drag-d-b" ).draggable({
-      helper: "clone",
-      cursor: "crosshair",
-      cursorAt: { left: 10},
 
-  stop: function( event, ui ) {
-    $(".diet-append-container").toggleClass("diet-append");
-    $(".append-newlist-diet").append("<p>#Restaurant</p>");
-    $(".drag-d-b").css("color", "#808080");
-    $(".drag-d-b").css("border", "1px solid #808080");
-  }
-
-  });
+$("#night-slider").slider({
+	value: 0,
+	min: 0,
+	max: 7,
+	step: 1,
+	slide: function(evt, elem){
+		$("#night-amt").text(elem.value)
+	},
+	start: function(evt, elem){
+		$("#night-amt").addClass("heavytext")
+	},
+	stop: function(evt, elem){
+		$("#night-amt").removeClass("heavytext")
+	}
 });
 
-$(document).ready(function(){
-  $( ".drag-d-m" ).draggable({
-      helper: "clone",
-      cursor: "crosshair",
-      cursorAt: { left: 10},
-
-  stop: function( event, ui ) {
-    $(".diet-append-container-m").toggleClass("diet-append-m");
-    $(".append-newlist-diet-m").append("<p>#bar</p>");
-    $(".drag-d-m").css("color", "#808080");
-    $(".drag-d-m").css("border", "1px solid #808080");
-  }
-
-  });
+$("#coffee-slider").slider({
+	value: 0,
+	min: 0,
+	max: 5,
+	step: 1,
+	slide: function(evt, elem){
+		$("#coffee-amt").text(elem.value)
+	},
+	start: function(evt, elem){
+		$("#coffee-amt").addClass("heavytext")
+	},
+	stop: function(evt, elem){
+		$("#coffee-amt").removeClass("heavytext")
+	}
 });
 
-$(document).ready(function(){
-  $( ".drag-d-m2" ).draggable({
-      helper: "clone",
-      cursor: "crosshair",
-      cursorAt: { left: 10},
+$("document").ready(function(){
+	$("#public").click(function(){
+		d3.select("#public")
+		  .style({
+		  	'color': 'white',
+		  	'border': whiteBorder,
+		  	'z-index': '5'
+		})
+		d3.select("#taxi")
+		  .style({
+		  	'color': '#676767',
+		  	'border': greyBorder,
+		  	'z-index': '4',
+		})
+		d3.select("#car")
+		  .style({
+		  	'color': '#676767',
+		  	'border': greyBorder,
+		  	'z-index': '4',
+		})
 
-  stop: function( event, ui ) {
-    $(".diet-append-container-m2").toggleClass("diet-append-m2");
-    $(".append-newlist-diet-m2").append("<p>#Snacks</p>");
-    $(".drag-d-m2").css("color", "#808080");
-    $(".drag-d-m2").css("border", "1px solid #808080");
-  }
+	});
 
-  });
+	$("#taxi").click(function(){
+		d3.select("#taxi")
+		  .style({
+		  	'color': 'white',
+		  	'border': whiteBorder,
+		  	'z-index': '5'
+		})
+		d3.select("#public")
+		  .style({
+		  	'color': '#676767',
+		  	'border': greyBorder,
+		  	'z-index': '4'
+		})
+		d3.select("#car")
+		  .style({
+		  	'color': '#676767',
+		  	'border': greyBorder,
+		  	'z-index': '4',
+		})
+
+	});
+
+	$("#car").click(function(){
+		d3.select("#car")
+		  .style({
+		  	'color': 'white',
+		  	'border': whiteBorder,
+		  	'z-index': '5'
+		  })
+		d3.select("#taxi")
+		  .style({
+		  	'color': '#676767',
+		  	'border': greyBorder,
+		  	'z-index': '4'
+		})
+		d3.select("#public")
+		  .style({
+		  	'color': '#676767',
+		  	'border': greyBorder,
+		  	'z-index': '4'
+		})
+
+	});
 });
 
-//entertain.
-$(document).ready(function(){
-  $( ".drag-e-m" ).draggable({
-      helper: "clone",
-      cursor: "crosshair",
-
-  stop: function( event, ui ) {
-    $(".entertain-append-container-m").toggleClass("entertain-append-m");
-    $(".append-newlist-entertain-m").append("<p>#Movie</p>");
-    $(".drag-e-m").css("color", "#808080");
-    $(".drag-e-m").css("border", "1px solid #808080");
-  }
-
-  });
+$("#movie-slider").slider({
+	value: 0,
+	min: 0,
+	max: 5,
+	step: 1,
+	slide: function(evt, elem){
+		$("#movie-amt").text(elem.value)
+	},
+	start: function(evt, elem){
+		$("#movie-amt").addClass("heavytext")
+	},
+	stop: function(evt, elem){
+		$("#movie-amt").removeClass("heavytext")
+	}
 });
 
-$(document).ready(function(){
-  $( ".drag-e-n" ).draggable({
-      helper: "clone",
-      cursor: "crosshair",
-
-  stop: function( event, ui ) {
-    $(".entertain-append-container-n").toggleClass("entertain-append-n");
-    $(".append-newlist-entertain-n").append("<p>#Netflix</p>");
-    $(".drag-e-n").css("color", "#808080");
-    $(".drag-e-n").css("border", "1px solid #808080");
-  }
-
-  });
+$("#museum-slider").slider({
+	value: 0,
+	min: 0,
+	max: 5,
+	step: 1,
+	slide: function(evt, elem){
+		$("#museum-amt").text(elem.value)
+	},
+	start: function(evt, elem){
+		$("#museum-amt").addClass("heavytext")
+	},
+	stop: function(evt, elem){
+		$("#museum-amt").removeClass("heavytext")
+	}
 });
-
-$(document).ready(function(){
-  $( ".drag-e-u" ).draggable({
-      helper: "clone",
-      cursor: "crosshair",
-
-  stop: function( event, ui ) {
-    $(".entertain-append-container-u").toggleClass("entertain-append-u");
-    $(".append-newlist-entertain-u").append("<p>#Museum</p>");
-    $(".drag-e-u").css("color", "#808080");
-    $(".drag-e-u").css("border", "1px solid #808080");
-  }
-
-  });
-});
-
 
 
 
