@@ -1,0 +1,548 @@
+.heavytext{  /*slider change color*/
+	font-weight: 600;
+	color: #ffee8d;
+}
+
+button {
+	line-height: 30px;
+	background-color: none;
+	font-size: 13px;
+}
+
+.button-list{
+	border: 1px solid #676767;
+	color: #676767;
+	display: block;
+}
+
+.button-list-active{
+	border: 1px solid white;
+	color: white;
+	z-index: 11;
+}
+
+/*box outline class*/
+.outline-white{ /*box border color = white*/
+	border-radius: 5px;
+	border: 1px solid white;
+	color: white;
+	cursor: default;
+}
+
+.outline-white-dot{ /*box border color = white, dot line*/
+	border-radius: 5px;
+	border: 1px dotted #DCDCDC;
+	color: white;
+	cursor: default;
+}
+
+.outline-white-right{ /*box border color = white, right-radius*/
+	border-top-right-radius: 5px;
+	border-bottom-right-radius: 5px;
+	border: 1px solid white;
+	color: white;
+	cursor: default;
+}
+
+.outline-white-left{ /*box border color = white, left-radius*/
+	border-top-left-radius: 5px;
+	border-bottom-left-radius: 5px;
+	border: 1px solid white;
+	color: white;
+	cursor: default;
+}
+
+.outline-grey{ /*box border color = grey*/
+	border-radius: 5px;
+	border: 1px solid #676767;
+	color: #676767;
+	cursor: default;
+}
+
+.outline-grey-right{ /*box border color = grey, right-radius*/
+	border-top-right-radius: 5px;
+	border-bottom-right-radius: 5px;
+	border: 1px solid #676767;
+	color: #676767;
+	cursor: default;
+}
+
+.outline-grey-left{ /*box border color = grey, left-radius*/
+	border-top-left-radius: 5px;
+	border-bottom-left-radius: 5px;
+	border: 1px solid #676767;
+	color: #676767;
+	cursor: default;
+}
+
+.outline-grey-x-radious{ /*box border color = grey, no radious*/
+	border: 1px solid #676767;
+	color: #676767;
+	cursor: default;
+}
+
+.title{
+	color: white;
+	font-size: 20px;
+}
+
+.in-p{
+    margin: 0;
+    color: white;
+    font-size: 13px;
+}
+
+#in {
+    margin:0;
+    position: relative;
+    top: -17px; /* change this to adjust */
+    right: 75px;
+    text-align: right;
+    color: white;
+    font-size: 13px;
+}
+
+#in-L {
+    margin:0;
+    position: relative;
+    top: 6px;
+    right: 88px;
+    text-align: right;
+}
+
+#in-netflix {
+    margin:0;
+    position: relative;
+    top: -17px;
+    right: 77px;
+    text-align: right;
+}
+
+#in-lunch-togo {
+    margin:0;
+    position: relative;
+    top: -33px;
+    right: 75px;
+    text-align: right;
+}
+
+#in-lunch-rest {
+    margin:0;
+    position: relative;
+    top: -1px;
+    right: 75px;
+    text-align: right;
+}
+
+#in-dinner-togo {
+    margin:0;
+    position: relative;
+    top: -33px;
+    right: 75px;
+    text-align: right;
+}
+
+#in-dinner-rest {
+    margin:0;
+    position: relative;
+    top: -1px;
+    right: 75px;
+    text-align: right;
+}
+
+#in-taxi-uber {
+    margin:0;
+    position: relative;
+    top: -63px;
+    right: 75px;
+    text-align: right;
+}
+
+#in-taxi-regular {
+    margin:0;
+    position: relative;
+    top: -31px;
+    right: 75px;
+    text-align: right;
+}
+
+#in-money-wrapper{
+	margin: 0;
+	position: relative;
+	top: 0;
+	right: -1px;
+	width: 65px;
+	height: 30px;
+	background-color: white;
+	float: right;
+	color: black;
+	line-height: 30px;
+	margin-bottom: 10px;
+}
+
+#in-money-wrapper p{
+	margin: 0;
+	position: relative;
+	top: 0;
+	left: 5px;
+}
+
+#in-money-wrapper-internet{
+	margin: 0;
+	position: relative;
+    top: -113px;
+    right: 14px;
+	width: 65px;
+	height: 30px;
+	background-color: white;
+	float: right;
+	color: black;
+	line-height: 30px;
+	margin-bottom: 10px;
+}
+
+#in-money-wrapper-internet p{
+	margin: 0;
+	position: relative;
+	top: 0;
+	left: 5px;
+}
+
+#in-money-wrapper-electric{
+	margin: 0;
+	position: relative;
+    top: -113px;
+    right: 14px;
+	width: 65px;
+	height: 30px;
+	background-color: white;
+	float: right;
+	color: black;
+	line-height: 30px;
+	margin-bottom: 10px;
+}
+
+#in-money-wrapper-electric p{
+	margin: 0;
+	position: relative;
+	top: 0;
+	left: 5px;
+}
+
+#in-money-wrapper-tv-cable{
+	margin: 0;
+	position: relative;
+    top: 12px;
+    right: 1px;
+	width: 65px;
+	height: 30px;
+	background-color: white;
+	float: right;
+	color: black;
+	line-height: 30px;
+	margin-bottom: 10px;
+}
+
+#in-money-wrapper-tv-cable p{
+	margin: 0;
+	position: relative;
+	top: 0;
+	left: 5px;
+}
+
+#in-money-wrapper-tv-netflix{
+	margin: 0;
+	position: relative;
+    top: 13px;
+    right: 1px;
+	width: 65px;
+	height: 30px;
+	background-color: white;
+	float: right;
+	color: black;
+	line-height: 30px;
+	margin-bottom: 10px;
+}
+
+#in-money-wrapper-tv-netflix p{
+	margin: 0;
+	position: relative;
+	top: 0;
+	left: 5px;
+}
+
+#in-money-wrapper-mta-single{
+	margin: 0;
+	position: relative;
+	top: 4px;
+	right: -1px;
+	width: 65px;
+	height: 30px;
+	background-color: white;
+	float: right;
+	color: black;
+	line-height: 30px;
+	margin-bottom: 10px;
+}
+
+#in-money-wrapper-mta-single p{
+	margin: 0;
+	position: relative;
+	top: 0;
+	left: 5px;
+}
+
+#in-money-wrapper-mta-unlimited{
+	margin: 0;
+	position: relative;
+	top: 3px;
+	right: -1px;
+	width: 65px;
+	height: 30px;
+	background-color: white;
+	float: right;
+	color: black;
+	line-height: 30px;
+	margin-bottom: 10px;
+}
+
+#in-money-wrapper-mta-unlimited p{
+	margin: 0;
+	position: relative;
+	top: 0;
+	left: 5px;
+}
+
+#in-money-wrapper-path-single{
+	margin: 0;
+	position: relative;
+	top: 2px;
+	right: -1px;
+	width: 65px;
+	height: 30px;
+	background-color: white;
+	float: right;
+	color: black;
+	line-height: 30px;
+	margin-bottom: 10px;
+}
+
+#in-money-wrapper-path-single p{
+	margin: 0;
+	position: relative;
+	top: 0;
+	left: 5px;
+}
+
+#in-money-wrapper-path-unlimited{
+	margin: 0;
+	position: relative;
+	top: 1px;
+	right: -1px;
+	width: 65px;
+	height: 30px;
+	background-color: white;
+	float: right;
+	color: black;
+	line-height: 30px;
+	margin-bottom: 10px;
+}
+
+#in-money-wrapper-path-unlimited p{
+	margin: 0;
+	position: relative;
+	top: 0;
+	left: 5px;
+}
+
+#in-money-wrapper-taxi{
+	margin: 0;
+	position: relative;
+	top: 4px;
+	right: -1px;
+	width: 65px;
+	height: 30px;
+	background-color: white;
+	float: right;
+	color: black;
+	line-height: 30px;
+	margin-bottom: 10px;
+}
+
+#in-money-wrapper-taxi p{
+	margin: 0;
+	position: relative;
+	top: 0;
+	left: 5px;
+}
+
+input {
+	width: 40px;
+	border: 0;
+	font-size: 15px;
+	background: none;
+}
+
+/*Chart!!*/
+#charts{
+	position: fixed;
+	top: 200px;
+	left: 710px;
+	width: 400px;
+	height: 400px;
+}
+
+#myChart-all{
+	position: relative;
+	top: 0;
+	left: 0;
+}
+
+#myChart-utility{
+	position: relative;
+	top: -369px;
+    left: 36px;
+    z-index: 1;
+}
+
+#myChart-eating{
+	position: relative;
+    top: -689px;
+    left: 50px;
+	z-index: 2;
+}
+
+#myChart-transport{
+	position: relative;
+    top: -980px;
+    left: 64px;
+    z-index: 3;
+}
+
+/*This only for sliders!! slider#集合*/
+
+/*sliders: utility*/
+#netflix-slider{
+	position: relative;
+	top: 3.3px;
+	left: 2px;
+	width: 300px;
+	z-index: 5;
+}
+
+/*sliders: eating*/
+#breakfast-togo-slider{
+	position: relative;
+	top: 3.3px;
+	left: 2px;
+	width: 220px;
+	z-index: 5;
+}
+
+#breakfast-rest-slider{
+	position: relative;
+	top: 3.3px;
+	left: 2px;
+	width: 220px;
+	z-index: 5;
+
+}
+
+#breakfast-cook-slider{
+	position: relative;
+	top: 3.3px;
+	left: 2px;
+	width: 220px;
+	z-index: 5;
+}
+
+#lunch-togo-slider{
+	position: relative;
+	top: 3.3px;
+	left: 2px;
+	width: 220px;
+	z-index: 5;
+}
+
+#lunch-rest-slider{
+	position: relative;
+	top: 3.3px;
+	left: 2px;
+	width: 220px;
+	z-index: 5;
+}
+
+#lunch-cook-slider{
+	position: relative;
+	top: 3.3px;
+	left: 2px;
+	width: 220px;
+	z-index: 5;
+}
+
+#dinner-togo-slider{
+	position: relative;
+	top: 3.3px;
+	left: 2px;
+	width: 220px;
+	z-index: 5;
+}
+
+#dinner-rest-slider{
+	position: relative;
+	top: 3.3px;
+	left: 2px;
+	width: 220px;
+	z-index: 5;
+}
+
+#dinner-cook-slider{
+	position: relative;
+	top: 3.3px;
+	left: 2px;
+	width: 220px;
+	z-index: 5;
+}
+
+#coffee-slider{
+	position: relative;
+	top: 3.3px;
+	left: 2px;
+	width: 220px;
+	z-index: 5;
+}
+
+/*sliders: transport*/
+#mta-single-slider{
+	position: relative;
+	top: 3.3px;
+	left: 2px;
+	width: 210px;
+	z-index: 5;
+}
+
+#path-single-slider{
+	position: relative;
+	top: 3.3px;
+	left: 2px;
+	width: 210px;
+	z-index: 5;
+}
+
+#taxi-uber-slider{
+	position: relative;
+	top: 3.3px;
+	left: 2px;
+	width: 220px;
+	z-index: 5;
+}
+
+#taxi-regular-slider{
+	position: relative;
+	top: 3.3px;
+	left: 2px;
+	width: 220px;
+	z-index: 5;
+}
+
+

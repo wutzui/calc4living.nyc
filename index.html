@@ -8,12 +8,10 @@
 	<meta charset="UTF-8" />
 	<title>CALC4LIVING.NYC</title>
 	<link type="text/css" rel="stylesheet" href="css/stylesheet.css" />
+	<link type="text/css" rel="stylesheet" href="css/stylesheet-action.css" />
 	<link rel="stylesheet" href="css/jquery-ui.css"/>
 	<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,600' rel='stylesheet' type='text/css'>
 	
-
-
-
 
 </head>
 
@@ -21,83 +19,487 @@
 	
 	<header>
 		<a id = "index" href="index.html">C A L C 4 L I V I N G . <span id = "NYC">N Y C</span></a>
-
 	</header>
+
+	<footer>
+		<div class= "right"> © Yizzy Wu 2015 — All rights reserved
+		</div>
+	</footer>
+
 
 	<p class = "first-line">This is a calculator that provides the simplest way to visualize <br> your lifestyle by estimating monthly costs in New York.</p>
 
 	<div class = "total">
-		<p id ="title-total">T O T A L</p>
-		<p id ="currency">U S D $</p>
-		<span id ="numbers">0</span>
+		<p id="title-total">T O T A L</p>
+		<p id="currency">U S D $</p>
+		<input type="text" name="numbers" id="numbers" class="text" value="0" >
 	</div>
 	<p id ="month">M O N T H L Y</p>
 
-	<!--housing-->
-	<h4 class="housing-title">+ HOUSING</h4>
-	<div class="housing-wrapper">
-	<div id="house" class="toggle-housing">HOUSE</div>
-	<div id="apt" class="toggle-housing">APARTMENT</div>
+	<!--neighborhood-->	
+	<div id="living-title" class="title"><h4>+ LIVING</h4></div>
+
+	    <!--living-$amount 住家錢總和-->
+		<div id="living-amount-container">
+			<p class="title"> $ </p>
+			<input type="text" name="living-amt" id="living-amt" class="text" value="0" >
+		</div>
+
+	<div id="neighborhood-wrapper" class="outline-white-dot">
+		<div id="neighborhood-title"><p>+ NEIGHBORHOOD & HOUSING</p></div>
+
+		<!--housing options: studio/1br/2br-->	
+
+		<div id="housing-container"class="outline-grey"> 
+			<div id="housing-studio" class="button-list">STUDIO</div>
+			<div id="housing-1br" class="button-list">1BR</div>
+			<div id="housing-2br" class="button-list">2BR</div>
+		</div>
+
+		<input>
+
+		<div id="map-container"> <!--this is the map stuff-->	
+			<div id="map"><img src="images/map.png"></div> <!--map image goes here-->	
+			<div id="map-M-Harlem" class="map-button"></div>
+			<div id="map-M-UpperEestSide" class="map-button"></div>
+			<div id="map-M-UpperWestSide" class="map-button"></div>
+			<div id="map-M-Midetown" class="map-button"></div>
+			<div id="map-M-GreenwichVillage" class="map-button"></div>
+			<div id="map-M-LowerManhattan" class="map-button"></div>
+		</div>
 	</div>
 
-	<div class="room-options">
-	<div id="housing-slider" class="sliderClass-housing"></div>
-	<p class="room">STUDIO ONLY</p>
+	<div id="utility-wrapper">
+		<div id="utility-title" class="title"><h4>+ UTILITY</h4></div>
+
+		<!--utility-$amount 電網路費總和-->
+		<div id="utility-amount-container">
+			<p class="title"> $ </p>
+			<input type="text" name="utility-amt" id="utility-amt" class="text" value="0" disabled>
+		</div>
+
+		<!--internet-->	
+		<div id="internet-container" class="outline-white-dot">
+			<div id="internet-title"><p>+ INTERNET</p></div>
+
+				<!--internet: button-->
+				<button id="rent-include" class="internet-button"> RENT INCLUDE </button> 
+				<div id="in-internet" class="in-p"><p> 100 ~ 300 MBPS : $ 60 / MONTH </p> </div>
+				<button id="roommate-0" class="internet-button"> LIVE ALONE </button> 
+				<button id="roommate-1" class="internet-button"> 1 </button> 
+				<button id="roommate-2" class="internet-button"> 2 </button> 
+				<button id="roommate-3" class="internet-button"> 3 </button> 
+				<div id="in-roommates" class="in-p"><p> ROOMMATE(S) </p> </div>
+								
+
+				<!--internet: $amount-->	
+				<div id="internet-amt-container">
+					<div id="in-money-wrapper-internet" class="outline-white-right">
+						<p> $ </p>
+						<div id="internet-amt" data-amt-internet="0"> 0 </div>
+					</div>
+				</div>
+		</div>
+
+		<!--electricity & gas-->	
+		<div id="electric-container" class="outline-white-dot">
+			<div id="electric-title"><p>+ ELECTRICITY & GAS</p></div>
+
+			<!--electricity: button-->
+			<button id="rent-include-e" class="electric-button"> RENT INCLUDE </button> 
+			<div id="in-electric" class="in-p"><p> ELECTRICITY : $ 75 + GAS : $ 20 / MONTH </p> </div>
+			<button id="roommate-e0" class="electric-button"> LIVE ALONE </button> 
+			<button id="roommate-e1" class="electric-button"> 1 </button> 
+			<button id="roommate-e2" class="electric-button"> 2 </button> 
+			<button id="roommate-e3" class="electric-button"> 3 </button> 
+			<div id="in-roommates" class="in-p"><p> ROOMMATE(S) </p> </div>
+								
+
+			<!--electricity: $amount-->	
+			<div id="electric-amt-container">
+				<div id="in-money-wrapper-electric" class="outline-white-right">
+					<p> $ </p>
+					<div id="electric-amt" data-amt-electric="0"> 0 </div>
+				</div>
+			</div>
+		</div>
+
+		<!--TV-->
+		<div id="tv-container" class="outline-white-dot">
+			<div id="tv-title"><p>+ TV SUBSCRIBE</p></div>
+
+			<!--tv: cable-->	
+			<div id="tv-cable-container">
+				<button id="tv-cable-x" class="tv-cable"> X </button> 
+				<button id="tv-cable-r0" class="tv-cable"> LIVE ALONE </button> 
+				<button id="tv-cable-r1" class="tv-cable"> 1 </button> 
+				<button id="tv-cable-r2" class="tv-cable"> 2 </button> 
+				<button id="tv-cable-r3" class="tv-cable"> 3 </button> 
+				<div id="in-tv-cable" class="in-p"><p>LOCAL CABLE</p> </div>
+			</div>
+
+			<!--tv: netflix-->	
+			<div id="tv-netflix-container">
+				<button id="tv-netflix-x" class="tv-netflix"> X </button> 
+				<button id="tv-netflix-1" class="tv-netflix"> BASIC </button> 
+				<button id="tv-netflix-2" class="tv-netflix"> STANDARD </button>
+				<button id="tv-netflix-3" class="tv-netflix"> PREMIUM </button> 
+				<div id="in-tv-netflix" class="in-p"><p>NETFLIX</p> </div>
+			</div>	
+
+			<!--tv: $amount-->	
+			<div id="tv-amt-container">
+				<div id="in-money-wrapper-tv-cable" class="outline-white-right">
+					<p> $ </p>
+					<div id="tv-cable-amt" data-amt-cable="0"> 0 </div>
+				</div>
+
+				<div id="in-money-wrapper-tv-netflix" class="outline-white-right">
+					<p> $ </p>
+					<div id="tv-netflix-amt" data-amt-netflix="0"> 0 </div>
+				</div>
+			</div>
+		</div>
 	</div>
 
-	<!--EATING-->
-	<h4 class="eating-title">+ EATING</h4>
-	<div class="rest-options">
-	<div id="rest-slider" class="sliderClass-rest"></div>
-	<p class="rest">RESTAURANT : <span id="rest-amt">0</span> DAY(S) / WEEK</p>
-	</div>
 
-	<div class="cook-options">
-	<div id="cook-slider" class="sliderClass-cook"></div>
-	<p class="cook">COOKING : <span id="cook-amt">0</span> DAY(S) / WEEK</p>
-	</div>
 
-	<div class="night-options">
-	<div id="night-slider" class="sliderClass-night"></div>
-	<p class="night">NIGHTLIFE : <span id="night-amt">0</span> DAY(S) / WEEK</p>
-	</div>
+	<!--eating-->	
+	<div id="eating-wrapper">
+		<div id="eating-title" class="title"><h4>+ EATING</h4></div>
+		
+		<!--eating-$amount 吃飯錢總和-->
+		<div id="eating-amount-container">
+			<p class="title"> $ </p>
+			<input type="text" name="eating-amt" id="eating-amt" class="text" value="0" disabled>
+		</div>
 
-	<div class="coffee-options">
-	<div id="coffee-slider" class="sliderClass-coffee"></div>
-	<p class="coffee">COFFEE : <span id="coffee-amt">0</span> CUP(S) / DAY</p>
+		<!--breakfast-->	
+		<div id="breakfast-container" class="outline-white-dot">
+			<div id="breakfast-title"><p>+ BREAKFAST</p></div>
+
+			<!--breakfast: togo-->	
+			<div id="breakfast-togo-container" class="outline-white">
+				<!--breakfast: togo, slider-->	
+				<div id="breakfast-togo-slider" class="breakfast-sliders"></div>
+				<p id="in" class="in-p">TO GO : 
+					<span id="breakfast-count" class="breakfast-togo-count"> 2 </span> 
+					MEAL(S) / WEEK
+				</p>
+				
+			</div>
+
+			<!--breakfast: restaurant-->	
+			<div id="breakfast-rest-container" class="outline-white">
+				<div id="breakfast-rest-slider" class="breakfast-sliders"></div>
+				<p id="in" class="in-p">RESTAURANT : 
+					<span id="breakfast-count" class="breakfast-rest-count"> 3 </span> 
+					MEAL(S) / WEEK</p>
+
+			</div>
+
+			<!--breakfast: cooking-->	
+			<div id="breakfast-cook-container" class="outline-white">
+				<div id="breakfast-cook-slider" class="breakfast-sliders"></div>
+				<p id="in" class="in-p">COOKING : 
+					<span id="breakfast-count" class="breakfast-cook-count"> 1 </span> 
+					MEAL(S) / WEEK</p>
+			</div>
+			
+
+			<!--breakfast: $amount-->	
+			<div id="breakfast-amt-container">
+				<!--breakfast: togo, $amount-->	
+				<div id="in-money-wrapper" class="outline-white-right">
+					<p> $ </p>
+					<input type="text" name="breakfast-togo-amt" id="breakfast-togo-amt" class="text" value="0" disabled>
+				</div>
+				
+				<!--breakfast: rest, $amount-->	
+				<div id="in-money-wrapper" class="outline-white-right">
+					<p> $ </p>
+					<input type="text" name="breakfast-rest-amt" id="breakfast-rest-amt" class="text" value="0" disabled>
+				</div>
+
+				<!--breakfast: cooking, $amount-->	
+				<div id="in-money-wrapper" class="outline-white-right">
+					<p> $ </p>
+					<input type="text" name="breakfast-cook-amt" id="breakfast-cook-amt" class="text" value="0" disabled>
+				</div>
+			</div>
+		</div>
+
+		<!--lunch-->
+		<div id="lunch-container" class="outline-white-dot">
+			<div id="lunch-title"><p>+ LUNCH</p></div>
+
+			<!--lunch: togo-->	
+			<div id="lunch-togo-container" class="outline-white">
+				<!--lunch: togo, slider-->	
+				<div id="lunch-togo-slider"></div>
+				<p id="in-lunch-togo" class="in-p">TO GO : 
+					<span id="lunch-togo-count" class="lunch-togo-count"> 4 </span> 
+					MEAL(S) / WEEK</p>
+				
+			</div>
+
+			<!--lunch: restaurant-->	
+			<div id="lunch-rest-container" class="outline-white">
+				<div id="lunch-rest-slider"></div>
+				<p id="in" class="in-p">RESTAURANT : 
+					<span id="lunch-rest-count" class="lunch-rest-count"> 0 </span> 
+					MEAL(S) / WEEK</p>
+
+			</div>
+
+			<!--lunch: cooking-->	
+			<div id="lunch-cook-container" class="outline-white">
+				<div id="lunch-cook-slider"></div>
+				<p id="in" class="in-p">COOKING : 
+					<span id="lunch-cook-count" class="lunch-cook-count"> 3 </span> 
+					MEAL(S) / WEEK</p>
+			</div>
+			
+
+			<!--lunch: $amount-->	
+			<div id="lunch-amt-container">
+				<!--lunch: togo, $amount-->	
+				<div id="in-money-wrapper" class="outline-white-right">
+					<p> $ </p>
+					<input type="text" name="lunch-togo-amt" id="lunch-togo-amt" class="text" value="0" disabled>
+
+				</div>
+				
+				<!--lunch: rest, $amount-->	
+				<div id="in-money-wrapper" class="outline-white-right">
+					<p> $ </p>
+					<input type="text" name="lunch-rest-amt" id="lunch-rest-amt" class="text" value="0" disabled>
+				</div>
+
+				<!--lunch: cooking, $amount-->	
+				<div id="in-money-wrapper" class="outline-white-right">
+					<p> $ </p>
+					<input type="text" name="lunch-cook-amt" id="lunch-cook-amt" class="text" value="" disabled>
+				</div>
+			</div>
+		</div>
+
+		<!--dinner-->
+		<div id="dinner-container" class="outline-white-dot">
+			<div id="dinner-title"><p>+ DINNER</p></div>
+
+			<!--dinner: togo-->	
+			<div id="dinner-togo-container" class="outline-white">
+				<!--dinner: togo, slider-->	
+				<div id="dinner-togo-slider"></div>
+				<p id="in-dinner-togo" class="in-p">TO GO : 
+					<span id="dinner-togo-count" class="dinner-togo-count"> 3 </span> 
+					MEAL(S) / WEEK</p>
+				
+			</div>
+
+			<!--dinner: restaurant-->	
+			<div id="dinner-rest-container" class="outline-white">
+				<div id="dinner-rest-slider"></div>
+				<p id="in" class="in-p">RESTAURANT : 
+					<span id="dinner-rest-count" class="dinner-rest-count"> 1 </span> 
+					MEAL(S) / WEEK</p>
+
+			</div>
+
+			<!--dinner: cooking-->	
+			<div id="dinner-cook-container" class="outline-white">
+				<div id="dinner-cook-slider"></div>
+				<p id="in" class="in-p">COOKING : 
+					<span id="dinner-cook-count" class="dinner-cook-count"> 3 </span> 
+					MEAL(S) / WEEK</p>
+			</div>
+			
+
+			<!--dinner: $amount-->	
+			<div id="dinner-amt-container">
+				<!--dinner: togo, $amount-->	
+				<div id="in-money-wrapper" class="outline-white-right">
+					<p> $ </p>
+					<input type="text" name="dinner-togo-amt" id="dinner-togo-amt" class="text" value="0" disabled>
+				</div>
+				
+				
+				<!--dinner: rest, $amount-->	
+				<div id="in-money-wrapper" class="outline-white-right">
+					<p> $ </p>
+					<input type="text" name="dinner-rest-amt" id="dinner-rest-amt" class="text" value="0" disabled>
+				</div>
+
+				<!--dinner: cook, $amount-->	
+				<div id="in-money-wrapper" class="outline-white-right">
+					<p> $ </p>
+					<input type="text" name="dinner-cook-amt" id="dinner-cook-amt" class="text" value="0" disabled>
+				</div>
+			</div>
+
+		<!--coffee-->	
+		<div id="coffee-container" class="outline-white">
+				<div id="coffee-slider"></div>
+				<p id="in" class="in-p">COFFEE : 
+					<span id="coffee-count" class="coffee-count"> 3 </span> 
+					CUP(S) / DAY</p>
+		</div>
+				<!--coffee $amount-->	
+				<div id="coffee-amt-container">
+					<div id="in-money-wrapper" class="outline-white-right">
+						<p> $ </p>
+						<input type="text" name="coffee-amt" id="coffee-amt" class="text" value="0" disabled>
+					</div>
+				</div>
+
+		</div>
 	</div>
 
 	<!--transport-->
-	<h4 class="transport-title">+ TRANSPORTATION</h4>
+	<div id="transport-wrapper">
+		<div id="transport-title" class="title"><h4>+ TRANSPORTATION</h4></div>
 
-	<div class="transport-wrapper">
-	<div id="public" class="toggle-transport">PUBLIC</div>
-	<div id="taxi" class="toggle-transport">TAXI</div>
-	<div id="car" class="toggle-transport">CAR</div>
+		<!--transport-$amount 交通錢總和-->
+		<div id="transport-amount-container">
+			<p class="title"> $ </p>
+			<input type="text" name="transport-amt" id="transport-amt" class="text" value="0" disabled>
+		</div>
+
+		<!--public-->	
+		<div id="public-container" class="outline-white-dot">
+			<div id="public-title"><p>+ PUBLIC</p></div>
+
+			<!--public: mta: single ride-->	
+			<div id="mta-single-container" class="outline-white">
+				<!--public: mta: single ride, slider-->	
+				<div id="mta-single-slider"></div>
+				<p id="in" class="in-p">MTA / PER RIDE : 
+					<span id="mta-single-count" class="mta-single-count"> 2 </span> 
+					TIME(S) / DAY</p>
+			</div>
+
+			<!--public: mta: unlimited-->	
+			<div id="mta-unlimited-container">
+				<button id="mta-unlimited-x" class="mta-unlimited"> X </button> 
+				<button id="mta-unlimited-7" class="mta-unlimited"> 7 DAYS </button> 
+				<button id="mta-unlimited-30" class="mta-unlimited"> 30 DAYS</button> 
+				<div id="in-mta-unlimited" class="in-p"><p>MTA / UNLIMITED</p> </div>
+			</div>
+
+			<!--public: path: single ride-->	
+			<div id="path-single-container" class="outline-white">
+				<div id="path-single-slider"></div>
+				<p id="in" class="in-p">PATH / PER RIDE : 
+					<span id="path-single-count" class="path-single-count"> 0 </span> 
+					TIME(S) / DAY</p>
+			</div>
+
+			<!--public: path: unlimited-->	
+			<div id="path-unlimited-container">
+				<button id="path-unlimited-x" class="path-unlimited"> X </button> 
+				<button id="path-unlimited-1" class="path-unlimited"> 1 DAYS</button> 				
+				<button id="path-unlimited-7" class="path-unlimited"> 7 DAYS </button> 
+				<button id="path-unlimited-30" class="path-unlimited"> 30 DAYS</button> 
+				<div id="in-path-unlimited" class="in-p"><p> PATH / UNLIMITED</p> </div>
+			</div>
+
+			<!--public, $amount-->	
+			<div id="public-amt-container">
+
+			<!--public: mta / single, $amount-->	
+				<div id="in-money-wrapper-mta-single" class="outline-white-right">
+					<p> $ </p>
+					<input type="text" name="mta-single-amt" id="mta-single-amt" class="text" value="0" disabled>
+				</div>
+
+			<!--public: mta / unlimited, $amount-->	
+				<div id="in-money-wrapper-mta-unlimited" class="outline-white-right">
+					<p> $ </p>
+					<div id="mta-unlimited-amt" data-amt-mta="0"> 0 </div>
+				</div>
+
+			<!--public: path /single, $amount-->	
+				<div id="in-money-wrapper-path-single" class="outline-white-right">
+					<p> $ </p>
+					<input type="text" name="path-single-amt" id="path-single-amt" class="text" value="0" disabled>
+				</div>
+
+			<!--public: path /unlimited, $amount-->
+				<div id="in-money-wrapper-path-unlimited" class="outline-white-right">
+					<p> $ </p>
+					<div id="path-unlimited-amt" data-amt="0"> 0 </div>
+				</div>
+
+			</div>
+		</div>	
+
+		<!--taxi-->
+		<div div id="taxi-container" class="outline-white-dot">
+			<div id="taxi-title"><p>+ TAXI</p></div>
+
+			<!--taxi: uber-->	
+				<div id="taxi-uber-container" class="outline-white">
+				<!--taxi: uber-->	
+				<div id="taxi-uber-slider"></div>
+					<p id="in-taxi-uber" class="in-p">UBERX : $ 8 + 
+					<span id="taxi-uber-count" class="taxi-uber-count"> 0 </span> 
+					MIN(S) & MILE(S)</p>
+				</div>
+
+			<!--taxi: regular-->	
+				<div id="taxi-regular-container" class="outline-white">
+				<!--taxi: regular-->	
+				<div id="taxi-regular-slider"></div>
+					<p id="in-taxi-regular" class="in-p">YELLOW CAB : 
+					<span id="taxi-ragular-count" class="taxi-ragular-count"> 0 </span> 
+					 MILE(S)</p>
+				</div>				
+
+			<!--taxi, $amount-->	
+			<div id="taxi-amt-container">
+
+				<!--taxi: uber, $amount-->	
+				<div id="in-money-wrapper-taxi" class="outline-white-right">
+					<p> $ </p>
+					<input type="text" name="taxi-uber-amt" id="taxi-uber-amt" class="text" value="0" disabled>
+				</div>
+
+				<!--taxi: regular, $amount-->	
+				<div id="in-money-wrapper-taxi" class="outline-white-right">
+					<p> $ </p>
+					<input type="text" name="taxi-regular-amt" id="taxi-regular-amt" class="text" value="0" disabled>
+				</div>
+			</div>
+		</div>
 	</div>
 
-	<!--entertainment-->
-	<h4 class="entertain-title">+ ENTERTAINMENT</h4>
-	
-	<div class="movie-options">
-	<div id="movie-slider" class="sliderClass-movie"></div>
-	<p class="movie">MOVIE : <span id="movie-amt">0</span> TIME(S) / MONTH</p>
-	</div>
+	<!--entertain-->
+	<div id="entertain-wrapper">
+		<div id="entertain-title" class="title"><h4>+ ENTERTAINMENT</h4></div>
 
-	<div class="museum-options">
-	<div id="museum-slider" class="sliderClass-museum"></div>
-	<p class="museum">MUSEUM : <span id="museum-amt">0</span> TIME(S) / MONTH</p>
-	</div>
+		<!--transport-$amount 交通錢總和-->
+		<div id="entertain-amount-container">
+			<p class="title"> $ </p>
+			<input type="text" name="entertain-amt" id="entertain-amt" class="text" value="0" disabled>
+		</div>
 
-	<!--money-->
-	<div id="money-container">
-		<div class="housing-money"><span id="housing-money">1100</span></div>
 
-		<div class="rest-money"><span id="rest-money">0</span></div>
-		<div class="cook-money"><span id="cook-money">35</span></div>
+
+
 	</div>
 
 
+
+
+<script src="js/Chart.js"></script>
+
+<div id="charts">
+<canvas id="myChart-all" width="400" height="400"></canvas>
+<canvas id="myChart-utility" width="328" height="328"></canvas>
+<canvas id="myChart-eating" width="300" height="300"></canvas>
+<canvas id="myChart-transport" width="272" height="272"></canvas>
+</div>
 
 
 	<!--js files-->
@@ -111,7 +513,5 @@
 
 </body>
 
-	<footer>
-		<div class= "right"> © Yizzy Wu 2015 — All rights reserved</div>
-	</footer>
+	
 </html>
