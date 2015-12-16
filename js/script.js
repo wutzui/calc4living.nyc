@@ -8,6 +8,116 @@ $("document").ready(function(){
 });
 
 
+$("document").ready(function(){
+
+	///////////////Harlem
+
+	$("#map-M-Harlem").click(function(){ // Harlem 
+		d3.select("#map-M-Harlem")
+		  .style({
+		  	'background': 'red',  // select button : background red
+		  	'z-index': '5',
+		  })	
+	
+		d3.select('#harlem-text')
+		  .text("Harlem")
+		  .style({
+		  	'color': 'black',
+		  })
+		d3.select('#UpperEastSide-text')
+		  .text("")
+		  .style({
+		  	'color': 'black',
+		  })			  
+	/////////////////
+		d3.select("#map-M-UpperEastSide")
+		  .style({
+		  	'color': 'white',
+		  	'background': 'none',
+		  	'z-index': '4',
+		  })
+		d3.select("#map-M-UpperWestSide")
+		  .style({
+		  	'color': 'white',
+		  	'background': 'none',
+		  	'z-index': '4',
+		  })
+		d3.select("#map-M-Midetown")
+		  .style({
+		  	'color': 'white',
+		  	'background': 'none',
+		  	'z-index': '4',
+		  })
+		d3.select("#map-M-GreenwichVillage")
+		  .style({
+		  	'color': 'white',
+		  	'background': 'none',
+		  	'z-index': '4',
+		  })		  
+		d3.select("#map-M-LowerManhattan")
+		  .style({
+		  	'color': 'white',
+		  	'background': 'none',
+		  	'z-index': '4',
+		  })	
+	});
+
+	///////////////Upper East Side
+
+	$("#map-M-UpperEastSide").click(function(){ // Harlem 
+		d3.select("#map-M-UpperEastSide")
+		  .style({
+		  	'background': 'red',  // select button : background red
+		  	'z-index': '5',
+		  })		
+	
+		d3.select('#harlem-text')
+		  .text("")
+		  .style({
+		  	'color': 'black',
+		  })
+
+		d3.select('#UpperEastSide-text')
+		  .text("Upper Eest Side")
+		  .style({
+		  	'color': 'black',
+		  })
+
+	/////////////////
+		d3.select("#map-M-Harlem")
+		  .style({
+		  	'color': 'white',
+		  	'background': 'none',
+		  	'z-index': '4',
+		  })
+		d3.select("#map-M-UpperWestSide")
+		  .style({
+		  	'color': 'white',
+		  	'background': 'none',
+		  	'z-index': '4',
+		  })
+		d3.select("#map-M-Midetown")
+		  .style({
+		  	'color': 'white',
+		  	'background': 'none',
+		  	'z-index': '4',
+		  })
+		d3.select("#map-M-GreenwichVillage")
+		  .style({
+		  	'color': 'white',
+		  	'background': 'none',
+		  	'z-index': '4',
+		  })		  
+		d3.select("#map-M-LowerManhattan")
+		  .style({
+		  	'color': 'white',
+		  	'background': 'none',
+		  	'z-index': '4',
+		  })	
+	});	
+});
+
+
 //UTILITY : + INTERNET - buttons
 $("document").ready(function(){
 
@@ -18,13 +128,13 @@ $("document").ready(function(){
 		  .style({
 		  	'color': '#676767', // select button : background white
 		  	'background': 'white',
-		  	'z-index': '5'
+		  	'z-index': '5',
 		  })		
 		d3.select("#roommate-0")
 		  .style({
 		  	'color': 'white',
 		  	'background': 'none',
-		  	'z-index': '4'
+		  	'z-index': '4',
 		  })
 		d3.select("#roommate-1")
 		  .style({
@@ -58,7 +168,7 @@ $("document").ready(function(){
 		  .style({
 		  	'color': '#676767', // select button : background white
 		  	'background': 'white',
-		  	'z-index': '5'
+		  	'z-index': '5',
 		  })	
 		d3.select("#roommate-1")
 		  .style({
@@ -98,7 +208,7 @@ $("document").ready(function(){
 		  .style({
 		  	'color': '#676767', // select button : background white
 		  	'background': 'white',
-		  	'z-index': '5'
+		  	'z-index': '5',
 		  })	
 		d3.select("#roommate-2")
 		  .style({
@@ -138,7 +248,7 @@ $("document").ready(function(){
 		  .style({
 		  	'color': '#676767', // select button : background white
 		  	'background': 'white',
-		  	'z-index': '5'
+		  	'z-index': '5',
 		  })	
 		d3.select("#roommate-3")
 		  .style({
@@ -178,7 +288,7 @@ $("document").ready(function(){
 		  .style({
 		  	'color': '#676767', // select button : background white
 		  	'background': 'white',
-		  	'z-index': '5'
+		  	'z-index': '5',
 		  })	
 		d3.select('#internet-amt').text(internet[4]);
 	});
@@ -234,13 +344,13 @@ $("document").ready(function(){
 		  .style({
 		  	'color': '#676767', // select button : background white
 		  	'background': 'white',
-		  	'z-index': '5'
+		  	'z-index': '5',
 		  })		
 		d3.select("#roommate-e0")
 		  .style({
 		  	'color': 'white',
 		  	'background': 'none',
-		  	'z-index': '4'
+		  	'z-index': '4',
 		  })
 		d3.select("#roommate-e1")
 		  .style({
@@ -274,7 +384,7 @@ $("document").ready(function(){
 		  .style({
 		  	'color': '#676767', // select button : background white
 		  	'background': 'white',
-		  	'z-index': '5'
+		  	'z-index': '5',
 		  })	
 		d3.select("#roommate-e1")
 		  .style({
@@ -314,7 +424,7 @@ $("document").ready(function(){
 		  .style({
 		  	'color': '#676767', // select button : background white
 		  	'background': 'white',
-		  	'z-index': '5'
+		  	'z-index': '5',
 		  })	
 		d3.select("#roommate-e2")
 		  .style({
@@ -354,7 +464,7 @@ $("document").ready(function(){
 		  .style({
 		  	'color': '#676767', // select button : background white
 		  	'background': 'white',
-		  	'z-index': '5'
+		  	'z-index': '5',
 		  })	
 		d3.select("#roommate-e3")
 		  .style({
@@ -394,7 +504,7 @@ $("document").ready(function(){
 		  .style({
 		  	'color': '#676767', // select button : background white
 		  	'background': 'white',
-		  	'z-index': '5'
+		  	'z-index': '5',
 		  })	
 		d3.select('#electric-amt').text(electric[4]);
 	});
@@ -454,7 +564,7 @@ $("document").ready(function(){
 		  .style({
 		  	'color': 'white',
 		  	'background': 'none',
-		  	'z-index': '4'
+		  	'z-index': '4',
 		  })
 		d3.select("#tv-cable-r1")
 		  .style({
@@ -488,7 +598,7 @@ $("document").ready(function(){
 		  .style({
 		  	'color': '#676767', // select button : background white
 		  	'background': 'white',
-		  	'z-index': '5'
+		  	'z-index': '5',
 		  })
 		d3.select("#tv-cable-r1")
 		  .style({
@@ -528,7 +638,7 @@ $("document").ready(function(){
 		  .style({
 		  	'color': '#676767', // select button : background white
 		  	'background': 'white',
-		  	'z-index': '5'
+		  	'z-index': '5',
 		  })
 		d3.select("#tv-cable-r2")
 		  .style({
@@ -568,7 +678,7 @@ $("document").ready(function(){
 		  .style({
 		  	'color': '#676767', // select button : background white
 		  	'background': 'white',
-		  	'z-index': '5'
+		  	'z-index': '5',
 		  })		
 		 d3.select("#tv-cable-r3")
 		  .style({
@@ -608,7 +718,7 @@ $("document").ready(function(){
 		  .style({
 		  	'color': '#676767', // select button : background white
 		  	'background': 'white',
-		  	'z-index': '5'
+		  	'z-index': '5',
 		  })	
 		d3.select('#tv-cable-amt').text(cable[4]);
 	});
@@ -664,7 +774,7 @@ $("document").ready(function(){
 		  .style({
 		  	'color': 'white',
 		  	'background': 'none',
-		  	'z-index': '4'
+		  	'z-index': '4',
 		  })
 		d3.select("#tv-netflix-2")
 		  .style({
@@ -692,7 +802,7 @@ $("document").ready(function(){
 		  .style({
 		  	'color': '#676767', // select button : background white
 		  	'background': 'white',
-		  	'z-index': '5'
+		  	'z-index': '5',
 		  })
 		d3.select("#tv-netflix-2")
 		  .style({
@@ -726,7 +836,7 @@ $("document").ready(function(){
 		  .style({
 		  	'color': '#676767', // select button : background white
 		  	'background': 'white',
-		  	'z-index': '5'
+		  	'z-index': '5',
 		  })
 		d3.select("#tv-netflix-3")
 		  .style({
@@ -760,7 +870,7 @@ $("document").ready(function(){
 		  .style({
 		  	'color': '#676767', // select button : background white
 		  	'background': 'white',
-		  	'z-index': '5'
+		  	'z-index': '5',
 		  })
 		d3.select('#tv-netflix-amt').text(netflix[3]);
 	});
@@ -804,6 +914,178 @@ $("document").ready(function(){
 	});
 
 });
+
+
+//UTILITY : + mobile - buttons
+$("document").ready(function(){
+
+	var mobile = [25, 40, 45, 60];
+
+	$("#mobile-1").click(function(){ // not include 網路. 
+		d3.select("#mobile-1")
+		  .style({
+		  	'color': '#676767', // select button : background white
+		  	'background': 'white',
+		  	'z-index': '5',
+		  })		
+		d3.select("#mobile-2")
+		  .style({
+		  	'color': 'white',
+		  	'background': 'none',
+		  	'z-index': '4',
+		  })
+		d3.select("#mobile-3")
+		  .style({
+		  	'color': 'white',
+		  	'background': 'none',
+		  	'z-index': '4',
+		  })
+		d3.select("#mobile-4")
+		  .style({
+		  	'color': 'white',
+		  	'background': 'none',
+		  	'z-index': '4',
+		  })
+		d3.select('#mobile-amt').text(mobile[0]);
+	});
+
+	$("#mobile-2").click(function(){ // 500mb. 
+		d3.select("#mobile-1")
+		  .style({
+		  	'color': 'white',
+		  	'background': 'none',
+		  	'z-index': '4',
+		  })		
+		d3.select("#mobile-2")
+		  .style({
+		  	'color': '#676767', // select button : background white
+		  	'background': 'white',
+		  	'z-index': '5',
+		  })
+		d3.select("#mobile-3")
+		  .style({
+		  	'color': 'white',
+		  	'background': 'none',
+		  	'z-index': '4',
+		  })
+		d3.select("#mobile-4")
+		  .style({
+		  	'color': 'white',
+		  	'background': 'none',
+		  	'z-index': '4',
+		  })
+		d3.select('#mobile-amt').text(mobile[1]);
+	});
+
+	$("#mobile-3").click(function(){ // 1gb. 
+		d3.select("#mobile-1")
+		  .style({
+		  	'color': 'white',
+		  	'background': 'none',
+		  	'z-index': '4',
+		  })		
+		d3.select("#mobile-2")
+		  .style({
+		  	'color': 'white',
+		  	'background': 'none',
+		  	'z-index': '4',
+		  })
+		d3.select("#mobile-3")
+		  .style({
+		  	'color': '#676767', // select button : background white
+		  	'background': 'white',
+		  	'z-index': '5',
+		  })
+		d3.select("#mobile-4")
+		  .style({
+		  	'color': 'white',
+		  	'background': 'none',
+		  	'z-index': '4',
+		  })
+		d3.select('#mobile-amt').text(mobile[2]);
+	});
+
+	$("#mobile-4").click(function(){ // 2.5gb. 
+		d3.select("#mobile-1")
+		  .style({
+		  	'color': 'white',
+		  	'background': 'none',
+		  	'z-index': '4',
+		  })		
+		d3.select("#mobile-2")
+		  .style({
+		  	'color': 'white',
+		  	'background': 'none',
+		  	'z-index': '4',
+		  })
+		d3.select("#mobile-3")
+		  .style({
+		  	'color': 'white',
+		  	'background': 'none',
+		  	'z-index': '4',
+		  })
+		d3.select("#mobile-4")
+		  .style({
+		  	'color': '#676767', // select button : background white
+		  	'background': 'white',
+		  	'z-index': '5',
+		  })
+		d3.select('#mobile-amt').text(mobile[3]);
+	});
+
+	//  utility: mobile-button (click set $amount)
+	$(".mobile-button").click(function(){
+
+  		switch ( $(".mobile-button").index( this ) ) {
+  		  case 0 :
+    		value = $("#mobile-amt").data("amt-mobile", 25);
+    		break;	
+  		  case 1 :
+    		value = $("#mobile-amt").data("amt-mobile", 40);
+    		break;
+  		  case 2 :
+    		value = $("#mobile-amt").data("amt-mobile", 45);
+    		break;
+  		  case 3 :
+    		value = $("#mobile-amt").data("amt-mobile", 60);
+    		break;       		
+  		}				
+	});
+
+	//click change bar color response to charts
+	$(".mobile-button").mousedown(function() {
+		d3.select("#mobile-title")
+  			.style({
+		  	'background': '#583799',
+		  	'opacity' : '0.8',
+		  	})	
+  	})
+  	.mouseup(function() {
+		d3.select("#mobile-title")
+  			.style({
+		  	'background': 'none',
+		  	'opacity' : '1',
+		  	})	
+	});
+
+
+});
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 // + EATING : + BREAKFAST - sliders.box x 3(togo/rest/cook)
@@ -1286,13 +1568,443 @@ $("document").ready(function(){
 });
 
 
+// entertain-Theater
+$("document").ready(function(){
+
+    //  theater: buttons
+	var broadway = [0, 50, 170, 250, 300];
+
+	$("#broadway-x").click(function(){
+		
+		d3.select("#broadway-x")
+		  .style({
+		  	'color': '#676767', //  button click: background white
+		  	'background': 'white',
+		  	'z-index': '5',
+		  })	
+		d3.select("#broadway-rush")
+		  .style({
+		  	'color': 'white',
+		  	'background': 'none',
+		  	'z-index': '4',
+		  })	
+		d3.select("#broadway-1")
+		  .style({
+		  	'color': 'white',
+		  	'background': 'none',
+		  	'z-index': '4',
+		  })		
+		d3.select("#broadway-2")
+		  .style({
+		  	'color': 'white',
+		  	'background': 'none',
+		  	'z-index': '4',
+		  })
+		d3.select("#broadway-3")
+		  .style({
+		  	'color': 'white',
+		  	'background': 'none',
+		  	'z-index': '4',
+		  })
+		d3.select('#broadway-amt').text(broadway[0]);
+	});
+
+	$("#broadway-rush").click(function(){
+		
+		d3.select("#broadway-x")
+		  .style({
+		  	'color': 'white',
+		  	'background': 'none',
+		  	'z-index': '4',
+		  })	
+		d3.select("#broadway-rush")
+		  .style({
+		  	'color': '#676767', //  button click: background white
+		  	'background': 'white',
+		  	'z-index': '5',
+		  })	
+		d3.select("#broadway-1")
+		  .style({
+		  	'color': 'white',
+		  	'background': 'none',
+		  	'z-index': '4',
+		  })		
+		d3.select("#broadway-2")
+		  .style({
+		  	'color': 'white',
+		  	'background': 'none',
+		  	'z-index': '4',
+		  })
+		d3.select("#broadway-3")
+		  .style({
+		  	'color': 'white',
+		  	'background': 'none',
+		  	'z-index': '4',
+		  })
+		d3.select('#broadway-amt').text(broadway[1]);
+	});
+
+	$("#broadway-1").click(function(){
+		
+		d3.select("#broadway-x")
+		  .style({
+		  	'color': 'white',
+		  	'background': 'none',
+		  	'z-index': '4',
+		  })	
+		d3.select("#broadway-rush")
+		  .style({
+		  	'color': 'white',
+		  	'background': 'none',
+		  	'z-index': '4',
+		  })	
+		d3.select("#broadway-1")
+		  .style({
+		  	'color': '#676767', //  button click: background white
+		  	'background': 'white',
+		  	'z-index': '5',
+		  })		
+		d3.select("#broadway-2")
+			.style({
+		  	'color': 'white',
+		  	'background': 'none',
+		  	'z-index': '4',
+		  })
+		d3.select("#broadway-3")
+		  .style({
+		  	'color': 'white',
+		  	'background': 'none',
+		  	'z-index': '4',
+		  })
+		d3.select('#broadway-amt').text(broadway[2]);
+	});
+
+	$("#broadway-2").click(function(){
+		
+		d3.select("#broadway-x")
+		  .style({
+		  	'color': 'white',
+		  	'background': 'none',
+		  	'z-index': '4',
+		  })	
+		d3.select("#broadway-rush")
+		  .style({
+		  	'color': 'white',
+		  	'background': 'none',
+		  	'z-index': '4',
+		  })
+		d3.select("#broadway-1")
+		  .style({
+		  	'color': 'white',
+		  	'background': 'none',
+		  	'z-index': '4',
+		  })		
+		d3.select("#broadway-2")
+		  .style({
+		  	'color': '#676767', //  button click: background white
+		  	'background': 'white',
+		  	'z-index': '5',
+		  })
+		d3.select("#broadway-3")
+		  .style({
+		  	'color': 'white',
+		  	'background': 'none',
+		  	'z-index': '4',
+		  })
+		d3.select('#broadway-amt').text(broadway[3]);
+	});
+
+	$("#broadway-3").click(function(){
+		
+		d3.select("#broadway-x")
+		  .style({
+		  	'color': 'white',
+		  	'background': 'none',
+		  	'z-index': '4',
+		  })	
+		d3.select("#broadway-rush")
+		  .style({
+		  	'color': 'white',
+		  	'background': 'none',
+		  	'z-index': '4',
+		  })
+		d3.select("#broadway-1")
+		  .style({
+		  	'color': 'white',
+		  	'background': 'none',
+		  	'z-index': '4',
+		  })		
+		d3.select("#broadway-2")
+		  .style({
+		  	'color': 'white',
+		  	'background': 'none',
+		  	'z-index': '4',
+		  })
+		d3.select("#broadway-3")
+		  .style({
+		  	'color': '#676767', //  button click: background white
+		  	'background': 'white',
+		  	'z-index': '5',
+		  })
+		d3.select('#broadway-amt').text(broadway[4]);
+	});
+
+	//  broadway-button (click set $amount)
+	$(".broadway-button").click(function(){
+
+  		switch ( $(".broadway-button").index( this ) ) {
+  		  case 0 :
+    		value = $("#broadway-amt").data("amt-broadway", 0);
+    		break;	
+  		  case 1 :
+    		value = $("#broadway-amt").data("amt-broadway", 50);
+    		break;
+  		  case 2 :
+    		value = $("#broadway-amt").data("amt-broadway", 170);
+    		break;
+  		  case 3 :
+    		value = $("#broadway-amt").data("amt-broadway", 250);
+    		break;    
+ 		  case 4 :
+    		value = $("#broadway-amt").data("amt-broadway", 300);
+    		break;    		
+  		}
+	
+	});
+
+});
+
+//  entertain: movie sliders
+$("document").ready(function(){
+
+	$("#movie-2d-before-slider").slider({ // 2d before slider
+		value: 2,
+		min: 0,
+		max: 5,
+		slide: function(evt, ui){
+			$(".movie-2d-before-count").text(ui.value);
+		},
+		start: function(evt, ui){
+			$(".movie-2d-before-count").addClass("heavytext")
+		},
+		stop: function(evt, ui){
+			$(".movie-2d-before-count").removeClass("heavytext")
+		},
+	});
+
+	$("#movie-2d-after-slider").slider({ // 2d after slider
+		value: 0,	
+		min: 0,
+		max: 5,
+		slide: function(evt, ui){
+			$(".movie-2d-after-count").text(ui.value);
+		},
+		start: function(evt, ui){
+			$(".movie-2d-after-count").addClass("heavytext")
+		},
+		stop: function(evt, ui){
+			$(".movie-2d-after-count").removeClass("heavytext")
+		},
+	});
+
+	$("#movie-3d-before-slider").slider({ // 3d before slider
+		value: 0,
+		min: 0,
+		max: 5,
+		slide: function(evt, ui){
+			$(".movie-3d-before-count").text(ui.value);
+		},
+		start: function(evt, ui){
+			$(".movie-3d-before-count").addClass("heavytext")
+		},
+		stop: function(evt, ui){
+			$(".movie-3d-before-count").removeClass("heavytext")
+		},
+	});
+
+	$("#movie-3d-after-slider").slider({ // 3d after slider
+		value: 0,	
+		min: 0,
+		max: 5,
+		slide: function(evt, ui){
+			$(".movie-3d-after-count").text(ui.value);
+		},
+		start: function(evt, ui){
+			$(".movie-3d-after-count").addClass("heavytext")
+		},
+		stop: function(evt, ui){
+			$(".movie-3d-after-count").removeClass("heavytext")
+		},
+	});
+});
+
+
+//game slider
+$("document").ready(function(){
+
+	$("#game-yankee-slider").slider({ // game: yankee slider
+		value: 0,	
+		min: 0,
+		max: 5,
+		slide: function(evt, ui){
+			//$(".game-yankee-count").text(ui.value);
+			if(ui.value == 0){
+				$(".game-yankee-count").text("SEAT LEVEL");
+			} else if(ui.value == 1){
+				$(".game-yankee-count").text("FIELD MVP");
+			} else if(ui.value == 2){
+				$(".game-yankee-count").text("FIELD LEVEL");
+			} else if(ui.value == 3){
+				$(".game-yankee-count").text("MAIN LEVEL");
+			} else if(ui.value == 4){
+				$(".game-yankee-count").text("TERRACE LEVEL");
+			} else {
+				$(".game-yankee-count").text("GRANDSTAND LEVEL");
+			}
+		},
+		start: function(evt, ui){
+			$(".game-yankee-count").addClass("heavytext")
+		},
+		stop: function(evt, ui){
+			$(".game-yankee-count").removeClass("heavytext")
+		},
+	});
+});
+
+//gym buttons
+$("document").ready(function(){
+	
+	var gym = [0, 8.4, 20];
+
+	$("#gym-x").click(function(){
+		
+		d3.select("#gym-x")
+		  .style({
+		  	'color': '#676767', //  button click: background white
+		  	'background': 'white',
+		  	'z-index': '5',
+		  })	
+		d3.select("#gym-nycparks")
+		  .style({
+		  	'color': 'white',
+		  	'background': 'none',
+		  	'z-index': '4',
+		  })	
+		d3.select("#gym-club")
+		  .style({
+		  	'color': 'white',
+		  	'background': 'none',
+		  	'z-index': '4',
+		  })		
+		d3.select('#gym-amt').text(gym[0]);
+	});
+
+	$("#gym-nycparks").click(function(){
+		
+		d3.select("#gym-x")
+		  .style({
+		  	'color': 'white',
+		  	'background': 'none',
+		  	'z-index': '4',
+		  })	
+		d3.select("#gym-nycparks")
+		  .style({
+		  	'color': '#676767', //  button click: background white
+		  	'background': 'white',
+		  	'z-index': '5',
+		  })	
+		d3.select("#gym-club")
+		  .style({
+		  	'color': 'white',
+		  	'background': 'none',
+		  	'z-index': '4',
+		  })		
+		d3.select('#gym-amt').text(gym[1]);
+	});
+
+	$("#gym-club").click(function(){
+		
+		d3.select("#gym-x")
+		  .style({
+		  	'color': 'white',
+		  	'background': 'none',
+		  	'z-index': '4',
+		  })	
+		d3.select("#gym-nycparks")
+		  .style({
+		  	'color': 'white',
+		  	'background': 'none',
+		  	'z-index': '4',
+		  })	
+		d3.select("#gym-club")
+		  .style({
+		  	'color': '#676767', //  button click: background white
+		  	'background': 'white',
+		  	'z-index': '5',
+		  })		
+		d3.select('#gym-amt').text(gym[2]);
+	});
+
+	//  gym-button (click set $amount)
+	$(".gym-button").click(function(){
+
+  		switch ( $(".gym-button").index( this ) ) {
+  		  case 0 :
+    		value = $("#gym-amt").data("amt-gym", 0);
+    		break;	
+  		  case 1 :
+    		value = $("#gym-amt").data("amt-gym", 8.4);
+    		break;
+  		  case 2 :
+    		value = $("#gym-amt").data("amt-gym", 20);
+    		break;
+  		}
+	
+	});
+});
+
+//nightlife slider
+$("document").ready(function(){
+
+	$("#nightlife-slider").slider({ // nightlife slider
+		value: 0,	
+		min: 0,
+		max: 7,
+		slide: function(evt, ui){
+			$(".nightlife-count").text(ui.value);
+		},
+		start: function(evt, ui){
+			$(".nightlife-count").addClass("heavytext")
+		},
+		stop: function(evt, ui){
+			$(".nightlife-count").removeClass("heavytext")
+		},
+	});
+});
+
+$("document").ready(function(){
+
+	$(".museum-button").click(function(){
+		
+		d3.select("#museum")
+		  .style({
+		  	'color': '#676767', //  button click: background white
+		  	'background': 'white',
+		  	'z-index': '5',
+		  })		
+	});
+});
+
+
+
 function utilityAmt(){
 	$internetAmt = $("#internet-amt").data("amt-internet");
 	$electricAmt = $("#electric-amt").data("amt-electric");
 	$cableAmt = $("#tv-cable-amt").data("amt-cable");
 	$netflixAmt = $("#tv-netflix-amt").data("amt-netflix");
+	$mobileAmt = $("#mobile-amt").data("amt-mobile");
 	$tvAmt = $cableAmt + $netflixAmt 
-	$utilityAmt = $internetAmt + $electricAmt + $tvAmt;
+	$utilityAmt = $internetAmt + $electricAmt + $tvAmt + $mobileAmt;
 
 	$("#utility-amt").val($utilityAmt);
 }
@@ -1355,11 +2067,38 @@ function transportAmt(){
     $("#transport-amt").val($transportAmt);
 }
 
+//entertain Amount
+function entertainAmt(){
+
+	$theaterAmt = $("#broadway-amt").data("amt-broadway");
+	$2dBeforeAmt = $("#movie-2d-before-slider").slider("value")*7;	
+	$2dAfterAmt = $("#movie-2d-after-slider").slider("value")*17;	
+	$3dBeforeAmt = $("#movie-3d-before-slider").slider("value")*13;	
+	$3dAfterAmt = $("#movie-3d-after-slider").slider("value")*21;
+	$gameAmt = $("#game-yankee-slider").slider("value")*28;
+	$nightlifeAmt = $("#nightlife-slider").slider("value")*82;
+	$gymAmt = $("#gym-amt").data("amt-gym");
+
+	$movieAmt = $2dBeforeAmt + $2dAfterAmt + $3dBeforeAmt + $3dAfterAmt;
+	$activityAmt = $nightlifeAmt + $gymAmt; 
+	$entertainAmt = $theaterAmt + $movieAmt + $gameAmt + $activityAmt;
+
+	$("#movie-2d-before-amt").val($2dBeforeAmt);
+	$("#movie-2d-after-amt").val($2dAfterAmt);
+	$("#movie-3d-before-amt").val($3dBeforeAmt);
+	$("#movie-3d-after-amt").val($3dAfterAmt);
+	$("#game-yankee-amt").val($gameAmt);
+	$("#nightlife-amt").val($nightlifeAmt);	
+	$("#entertain-amt").val($entertainAmt);
+};
+
+
 function chartAll(){
 
 	eatingAmt();
 	transportAmt();
 	utilityAmt();
+	entertainAmt();
 
 	var data1 = [
     	{
@@ -1387,7 +2126,7 @@ function chartAll(){
         	label: "TRANSPORT"
     	},
     	{
-        	value: 200,
+        	value: $entertainAmt,
         	color: "#FFD700",
         	highlight: "#FDE231",
         	label: "ENTERTAIN"
@@ -1413,6 +2152,9 @@ function chartAll(){
 function chartUtility(){
 
 	utilityAmt();
+	eatingAmt();
+	transportAmt();
+
 
 	var data2 = [
     	{
@@ -1438,7 +2180,50 @@ function chartUtility(){
         	color: "#6640b2",
         	highlight: "#FFC870",
         	label: "TV"
+    	},
+    	{
+        	value: $mobileAmt,
+        	color: "#583799",
+        	highlight: "#FFC870",
+        	label: "MOBILE"
+    	},
+    	    	{
+        	value: $breakfastAmt,
+        	color:"#3fabaa",
+        	highlight: "#FF5A5E",
+        	label: "BREAKFAST"
+    	},
+    	{
+        	value: $lunchAmt,
+        	color: "#389897",
+        	highlight: "#5AD3D1",
+        	label: "LUNCH"
+    	},
+    	{
+        	value: $dinnerAmt,
+        	color: "#318584",
+        	highlight: "#FFC870",
+        	label: "DINNER"
+    	},
+    	{
+        	value: $coffeeAmt,
+        	color: "#2a7271",
+        	highlight: "#FDE231",
+        	label: "COFFEE"
+    	},
+    	{
+        	value: $publicAmt,
+        	color: "#fda843",
+        	highlight: "#FF5A5E",
+        	label: "public"
+    	},
+    	{
+        	value: $taxiAmt,
+        	color:"#fc9110",
+        	highlight: "#FF5A5E",
+        	label: "taxi"
     	}
+		
 	]
 
 	var ctx = document.getElementById("myChart-utility").getContext("2d");
@@ -1527,8 +2312,9 @@ function updateTimer(){
 	eatingAmt();
 	transportAmt();
 	utilityAmt();
+	entertainAmt();
 
-    $total = $utilityAmt + $eatingAmt + $transportAmt;
+    $total = $utilityAmt + $eatingAmt + $transportAmt + $entertainAmt+1000;
     $("#numbers").val($total);
 
     chartAll();
@@ -1540,8 +2326,6 @@ function updateTimer(){
 }
 
 setInterval(updateTimer, 200);
-
-
 
 
 

@@ -31,7 +31,7 @@ footer {
     position: absolute;
 	background-color: #202020;
 	left: 0;
-	bottom: -2500px;
+	bottom: -2700px;
 	margin: 0;
 	width: 100%;
 	height: 70px;
@@ -172,6 +172,71 @@ footer {
 	z-index: -10;
 }
 
+#dots{
+	position: absolute;
+    top: 50px;
+    left: 100px;
+    width: 400px;
+    height: 400px;
+}
+
+.mapbutton{
+    width: 15px;
+    height: 15px;
+	border-radius: 100px;
+	border: 3px solid white;
+	cursor: default;
+	z-index: 10px;
+}
+
+#map-M-Harlem{
+    position: relative;
+    top: -7px;
+    left: 121px;
+}
+
+#harlem-text {
+    position: relative;
+    top: -81px;
+    left: 246px;
+}
+
+#map-M-UpperEastSide {
+    position: relative;
+    top: 38px;
+    left: 113px;
+}
+
+#UpperEastSide-text {
+    position: relative;
+    top: -12px;
+    left: 238px;
+}
+
+#map-M-UpperWestSide {
+    position: relative;
+    top: 3px;
+    left: 80px;
+}
+
+#map-M-Midetown {
+    position: relative;
+    top: 30px;
+    left: 76px;
+}
+
+#map-M-GreenwichVillage {
+    position: relative;
+    top: 42px;
+    left: 68px;
+}
+
+#map-M-LowerManhattan {
+    position: relative;
+    top: 45px;
+    left: 50px;
+}
+
 
 /*housing-box-*/
 #housing-container{
@@ -187,13 +252,13 @@ footer {
 #housing-studio{
 	position: relative;
 	margin: 0;
-	top: -1px;
-	left: -1px;
-	width: 86px;
+	top: 0px;
+	left: 0px;
+	width: 80px;
 	height: 30px;
 	line-height: 30px;
 	border-top-left-radius: 5px;
-	border-bottom-left-radius: 5px;
+	border-top-right-radius: 5px;
 	
 	text-align: center;
 	cursor: default;
@@ -203,9 +268,9 @@ footer {
 #housing-1br{
 	position: relative;
 	margin: 0;
-	top: -33px;
-    left: 86px;
-    width: 56px;
+    top: -1px;
+    left: 0;
+    width: 80px;
 	height: 30px;
 	line-height: 30px;
 	text-align: center;
@@ -214,15 +279,15 @@ footer {
 }
 
 #housing-2br{  
-	position: relative;
+    position: relative;
     margin: 0;
-    top: -65px;
-    left: 143px;
-    width: 56px;
+    top: -2px;
+    left: 0px;
+    width: 80px;
     height: 30px;
-	line-height: 30px;
-	border-top-right-radius: 5px;
-	border-bottom-right-radius: 5px;
+    line-height: 30px;
+    border-bottom-right-radius: 5px;
+    border-bottom-left-radius: 5px;
 	text-align: center;
 	cursor: default;
 	font-size: 13px;
@@ -777,7 +842,7 @@ footer {
     top: -91px;
     left: 472px;
     width: 65px;
-    height: 200px;
+    height: 100px;
 }
 
 	#tv-cable-amt{
@@ -800,11 +865,169 @@ footer {
     font-size: 15px;
 	}
 
+/*mobile-box-*/
+#mobile-container{
+	position: relative;
+	top: 8px;
+	left: 0;
+	width: 550px;
+	height: 137px;
+}
+
+#mobile-title{  /*tv-box-title*/
+	position: relative;
+	top: -1px;
+	left: 0px;
+	width: 550px;
+	height: 30px;
+	border-top-right-radius: 5px;
+	border-top-left-radius: 5px;
+	border-bottom: 1px dotted #DCDCDC;
+	line-height: 30px;
+	font-size: 16px;
+	z-index: -1;
+}
+
+#mobile-title p{ /*internet-box-title, p position*/
+	position: absolute;
+	top: -15px;
+	left: 10px;
+	color: #DCDCDC;
+}
+
+#in-mobile { /*title*/
+	margin: 0;
+	position: relative;
+    top: 15px;
+    left: 15px;
+    width: 452px;
+	height: 30px;
+    color: white;
+    border: 1px dotted white;
+    border-top-left-radius: 5px;
+	border-bottom-left-radius: 5px;
+}
+
+#in-mobile p{
+	margin: 0;
+	position: relative;
+	top:-32px;
+	width: 100%;
+	height: 30px;
+	text-align: center;
+}
+
+#in-data{ /*data-plan*/
+	margin: 0;
+	position: relative;
+    top: -13px;
+    left: 391px;
+    width: 143px;
+	height: 30px;
+	line-height: 30px;
+    color: white;
+    border: 1px dotted white;
+    border-top-right-radius: 5px;
+	border-bottom-right-radius: 5px;
+}
+
+#in-data p{
+	margin: 0;
+	position: relative;
+	top: 0;
+	text-align: center;
+}
+
+/*mobile- $amount container: for chaning$$$*/
+#mobile-amt-container{
+	position: relative;
+    top: -91px;
+    left: 472px;
+    width: 65px;
+    height: 50px;
+}
+
+	#mobile-amt{
+	margin: 0;
+	color: black;
+	position: relative;
+	text-align: right;
+    top: -30px;
+    right: 6px;
+    font-size: 15px;
+	}
+
+#mobile-1{ /*button == 0 */
+	margin: 0;
+	position: relative;
+    top: 19px;
+    left: 15px;
+	width: 140px;
+	height: 32px;
+	line-height: 27px;
+	text-align: center;
+    border-top-left-radius: 5px;
+	border-bottom-left-radius: 5px;
+	border: 1px solid white;
+	color: white;
+	cursor: default;
+	font-size: 13px;
+	z-index: 6;
+}
+
+#mobile-2{ /*button == 1 */
+	margin: 0;
+	position: relative;
+    top: 19px;
+    left: 10px;
+    width: 80px;
+	height: 32px;
+	line-height: 27px;
+	text-align: center;
+	border: 1px solid white;
+	color: white;
+	cursor: default;
+	font-size: 13px;
+	z-index: 6;
+}
+
+#mobile-3{ /*button == 2 */
+	margin: 0;
+	position: relative;
+    top: 19px;
+    left: 5px;
+	width: 80px;
+	height: 32px;
+	line-height: 27px;
+	text-align: center;
+	border: 1px solid white;
+	color: white;
+	cursor: default;
+	font-size: 13px;
+	z-index: 6;
+}
+
+#mobile-4{ /*button == 3 */
+	margin: 0;
+	position: relative;
+    top: 19px;
+    left: 0px;
+	width: 80px;
+	height: 32px;
+	line-height: 27px;
+	text-align: center;
+	border: 1px solid white;
+	color: white;
+	cursor: default;
+	font-size: 13px;
+	z-index: 6;
+}
+
 
 /*eating-box-*/
 #eating-wrapper{
 	position: absolute;
-	top: 1200px;
+	top: 1360px;
 	left: 30px;
 	width: 550px;
 	height: 420px;
@@ -1180,7 +1403,7 @@ footer {
 /*transport-box-*/
 #transport-wrapper{
 	position: absolute;
-	top: 1900px;
+	top: 2060px;
 	left: 30px;
 	width: 550px;
 	height: 420px;
@@ -1551,7 +1774,7 @@ footer {
 /*entertain-box-*/
 #entertain-wrapper{
 	position: absolute;
-	top: 2350px;
+	top: 2510px;
 	left: 30px;
 	width: 550px;
 	height: 420px;
@@ -1567,7 +1790,7 @@ footer {
     margin: 0;
 }
 
-#entertain-amt {
+#entertain-amt { 
     color: white;
     position: relative;
     top: -49px;
@@ -1578,3 +1801,550 @@ footer {
     text-align: right;
 }
 
+/*entertain == broadway-box-*/
+#broadway-container{
+	position: relative;
+	top: -39px;
+	left: 0;
+	width: 550px;
+	height: 137px;
+}
+
+#broadway-title{ /*broadway-box-title*/
+	position: relative;
+	top: -1px;
+	left: 0px;
+	width: 550px;
+	height: 30px;
+	border-top-right-radius: 5px;
+	border-top-left-radius: 5px;
+	border-bottom: 1px dotted #DCDCDC;
+	line-height: 30px;
+	font-size: 16px;
+}
+
+#broadway-title p{ /*broadway-box-title, p position*/
+	position: absolute;
+	top: -15px;
+	left: 10px;
+	color: #DCDCDC;
+}
+
+#broadway-x { /*button*/
+	position: relative;
+	top: 15px;
+    left: 15px;
+    width: 32px;
+    height: 32px;
+	line-height: 27px;
+	text-align: center;
+	border-radius: 5px;
+	border: 1px solid white;
+	color: white;
+	cursor: default;
+	font-size: 13px;
+	z-index: 6;
+}
+
+#broadway-rush { /*button*/
+	position: relative;
+	top: 15px;
+    left: 20px;
+    width: 180px;
+    height: 32px;
+	line-height: 27px;
+	text-align: center;
+	border-radius: 5px;
+	border: 1px solid white;
+	color: white;
+	cursor: default;
+	font-size: 13px;
+	z-index: 6;
+}
+
+#in-broadway { /*title*/
+	margin: 0;
+	position: relative;
+	top: -17px;
+    left: 245px;
+    width: 225px;
+	height: 30px;
+    color: white;
+    border: 1px dotted white;
+    border-top-left-radius: 5px;
+	border-bottom-left-radius: 5px;
+	line-height: 30px;
+}
+
+#in-broadway p{
+	margin: 0;
+	position: relative;
+	top:0;
+	width: 100%;
+	height: 30px;
+	text-align: center;
+}
+
+
+ /*broadway: seat */
+#broadway-1{ /*button == Premium */
+	margin: 0;
+	position: relative;
+    top: -7px;
+    left: 15px;
+    width: 140px;
+	height: 32px;
+	line-height: 27px;
+	text-align: center;
+    border-top-left-radius: 5px;
+	border-bottom-left-radius: 5px;
+	border: 1px solid white;
+	color: white;
+	cursor: default;
+	font-size: 13px;
+	z-index: 6;
+}
+
+
+#broadway-2{ /*button == Orchestra */
+	margin: 0;
+	position: relative;
+    top: -7px;
+    left: 10px;
+    width: 140px;
+	height: 32px;
+	line-height: 27px;
+	text-align: center;
+	border: 1px solid white;
+	color: white;
+	cursor: default;
+	font-size: 13px;
+	z-index: 6;
+}
+
+#broadway-3{ /*button == Mezzanine */
+	margin: 0;
+	position: relative;
+    top: -7px;
+    left: 5px;
+    width: 140px;
+	height: 32px;
+	line-height: 27px;
+	text-align: center;
+	border: 1px solid white;
+	color: white;
+	cursor: default;
+	font-size: 13px;
+	z-index: 6;
+}
+
+#in-broadway-seat{ /*broadway-seat-title*/
+	margin: 0;
+	position: relative;
+	top: -39px;
+    left: 432px;
+    width: 101px;
+	height: 30px;
+	line-height: 30px;
+    color: white;
+    border: 1px dotted white;
+    border-top-right-radius: 5px;
+	border-bottom-right-radius: 5px;
+}
+
+#in-broadway-seat p{
+	margin: 0;
+	position: relative;
+	top: 0;
+	text-align: center;
+}
+
+/*broadway- $amount container: for chaning$$$*/
+#broadway-amt-container{
+	position: relative;
+    top: -113px;
+    left: 473px;
+    width: 65px;
+    height: 50px;
+}
+
+	#broadway-amt{
+	margin: 0;
+	color: black;
+	position: relative;
+	text-align: right;
+    top: -30px;
+    right: 6px;
+    font-size: 15px;
+	}
+
+/*entertain == movie-box-*/
+#movie-container{
+	position: relative;
+	top: -22px;
+	left: 0;
+	width: 550px;
+	height: 222px;
+}
+
+#movie-title{ /*movie-box-title*/
+	position: relative;
+	top: -1px;
+	left: 0px;
+	width: 550px;
+	height: 30px;
+	border-top-right-radius: 5px;
+	border-top-left-radius: 5px;
+	border-bottom: 1px dotted #DCDCDC;
+	line-height: 30px;
+	font-size: 16px;
+}
+
+#movie-title p{ /*movie-box-title, p position*/
+	position: absolute;
+	top: -15px;
+	left: 10px;
+	color: #DCDCDC;
+}
+
+/*movie- 2 slider container*/
+#movie-2d-before-container{
+	position: relative;
+	top: 15px;
+	left: 15px;
+	width: 520px;
+	height: 30px;
+}
+
+#movie-2d-after-container{
+	position: relative;
+	top: 25px;
+	left: 15px;
+	width: 520px;
+	height: 30px;
+}
+
+#movie-3d-before-container{
+	position: relative;
+	top: 35px;
+	left: 15px;
+	width: 520px;
+	height: 30px;
+}
+
+#movie-3d-after-container{
+	position: relative;
+	top: 45px;
+	left: 15px;
+	width: 520px;
+	height: 30px;
+}
+
+/*movie- $amount container: for chaning$$$*/
+#movie-amt-container{
+	position: relative;
+	top: -117px;
+    left: 471px;
+	width: 65px;
+	height: 200px;
+}
+
+	#movie-2d-before-amt{
+	margin: 0;
+	color: black;
+	position: relative;
+	text-align: right;
+    top: -30px;
+    right: -17px;
+	}
+
+	#movie-2d-after-amt{
+	margin: 0;
+	color: black;
+	position: relative;
+	text-align: right;
+    top: -30px;
+    right: -17px;
+	}
+
+	#movie-3d-before-amt{
+	margin: 0;
+	color: black;
+	position: relative;
+	text-align: right;
+    top: -30px;
+    right: -17px;
+	}
+
+	#movie-3d-after-amt{
+	margin: 0;
+	color: black;
+	position: relative;
+	text-align: right;
+    top: -30px;
+    right: -17px;
+	}
+
+/*entertain == game-box-*/
+#game-container{
+	position: relative;
+	top: -4px;
+	left: 0;
+	width: 550px;
+	height: 96px;
+}
+
+#game-title{ /*game-box-title*/
+	position: relative;
+	top: -1px;
+	left: 0px;
+	width: 550px;
+	height: 30px;
+	border-top-right-radius: 5px;
+	border-top-left-radius: 5px;
+	border-bottom: 1px dotted #DCDCDC;
+	line-height: 30px;
+	font-size: 16px;
+}
+
+#game-title p{ /*game-box-title, p position*/
+	position: absolute;
+	top: -15px;
+	left: 10px;
+	color: #DCDCDC;
+}
+
+/*game- yankee slider container*/
+#game-yankee-container{
+	position: relative;
+	top: 15px;
+	left: 15px;
+	width: 520px;
+	height: 30px;
+}
+
+/*game- $amount container: for chaning$$$*/
+#game-amt-container{
+	position: relative;
+    top: -57px;
+    left: 471px;
+    width: 65px;
+    height: 40px;
+}
+
+	#game-yankee-amt{
+	margin: 0;
+	color: black;
+	position: relative;
+	text-align: right;
+    top: -30px;
+    right: -17px;
+	}
+
+
+
+/*entertain == activity-box-*/
+#activity-container{
+	position: relative;
+	top: 14px;
+	left: 0;
+	width: 550px;
+	height: 182px;
+}
+
+#activity-title{ /*activity-box-title*/
+	position: relative;
+	top: -1px;
+	left: 0px;
+	width: 550px;
+	height: 30px;
+	border-top-right-radius: 5px;
+	border-top-left-radius: 5px;
+	border-bottom: 1px dotted #DCDCDC;
+	line-height: 30px;
+	font-size: 16px;
+}
+
+#activity-title p{ /*activity-box-title, p position*/
+	position: absolute;
+	top: -15px;
+	left: 10px;
+	color: #DCDCDC;
+}
+
+/*activity- nightlife slider container*/
+#nightlife-container{
+	position: relative;
+	top: 15px;
+	left: 15px;
+	width: 520px;
+	height: 30px;
+}
+
+/*activity- $amount container: for chaning$$$*/
+#activity-amt-container{
+	position: relative;
+    top: -77px;
+    left: 471px;
+    width: 65px;
+    height: 40px;
+}
+
+	#nightlife-amt{
+	margin: 0;
+	color: black;
+	position: relative;
+	text-align: right;
+    top: -30px;
+    right: -17px;
+	}
+
+	#gym-amt{
+	margin: 0;
+	color: black;
+	position: relative;
+	text-align: right;
+    top: -30px;
+    right: 6px;
+    font-size: 15px;
+	}
+
+	#museum-amt{
+	margin: 0;
+	color: black;
+	position: relative;
+	text-align: right;
+    top: -30px;
+    right: 6px;
+    font-size: 15px;
+	}
+
+/*activity- gym container*/
+#gym-container{
+	position: relative;
+	top: 15px;
+	left: 15px;
+	width: 520px;
+	height: 30px;
+}
+
+#gym-x { /*button*/
+	position: relative;
+	top: 10px;
+    left: 0;
+    width: 32px;
+    height: 32px;
+	line-height: 27px;
+	text-align: center;
+	border-radius: 5px;
+	border: 1px solid white;
+	color: white;
+	cursor: default;
+	font-size: 13px;
+	z-index: 6;
+}
+
+#gym-nycparks { /*button*/
+	position: relative;
+    top: 10px;
+    left: 5px;
+    width: 130px;
+    height: 32px;
+	line-height: 27px;
+	text-align: center;
+	border-top-left-radius: 5px;
+	border-bottom-left-radius: 5px;
+	border: 1px solid white;
+	color: white;
+	cursor: default;
+	font-size: 13px;
+	z-index: 6;
+}
+
+#gym-club { /*button*/
+	position: relative;
+    top: 10px;
+    left: 0px;
+    width: 130px;
+    height: 32px;
+	line-height: 27px;
+	text-align: center;
+	border-top-right-radius: 5px;
+	border-bottom-right-radius: 5px;
+	border: 1px solid white;
+	color: white;
+	cursor: default;
+	font-size: 13px;
+	z-index: 6;
+}
+
+#in-gym { /*title*/
+	margin: 0;
+	position: relative;
+    top: -22px;
+    left: 309px;
+    width: 145px;
+	height: 30px;
+    color: white;
+    border: 1px dotted white;
+    border-top-left-radius: 5px;
+	border-bottom-left-radius: 5px;
+	line-height: 30px;
+	text-align: center;
+}
+
+#in-gym p{
+	margin: 0;
+	position: relative;
+	top:0;
+	width: 120px;
+	height: 30px;
+}
+
+/*activity- gym container*/
+#museum-container{
+	position: relative;
+	top: 15px;
+	left: 15px;
+	width: 520px;
+	height: 30px;
+}
+
+#museum { /*button*/
+	position: relative;
+	top: 23px;
+    left: 0;
+    width: 350px;
+    height: 32px;
+	line-height: 27px;
+	text-align: center;
+	border-radius: 5px;
+	border: 1px solid white;
+	color: white;
+	cursor: default;
+	font-size: 13px;
+	z-index: 6;
+}
+
+#in-museum { /*title*/
+	margin: 0;
+	position: relative;
+    top: -9px;
+    left: 359px;
+    width: 96px;
+	height: 30px;
+    color: white;
+    border: 1px dotted white;
+    border-top-left-radius: 5px;
+	border-bottom-left-radius: 5px;
+	line-height: 30px;
+	text-align: center;
+}
+
+#in-museum p{
+	margin: 0;
+	position: relative;
+	top:0;
+	width: 120px;
+	height: 30px;
+}

@@ -50,22 +50,34 @@
 
 		<!--housing options: studio/1br/2br-->	
 
-		<div id="housing-container"class="outline-grey"> 
+		<div id="housing-container"> 
 			<div id="housing-studio" class="button-list">STUDIO</div>
 			<div id="housing-1br" class="button-list">1BR</div>
 			<div id="housing-2br" class="button-list">2BR</div>
 		</div>
 
-		<input>
-
 		<div id="map-container"> <!--this is the map stuff-->	
 			<div id="map"><img src="images/map.png"></div> <!--map image goes here-->	
-			<div id="map-M-Harlem" class="map-button"></div>
-			<div id="map-M-UpperEestSide" class="map-button"></div>
-			<div id="map-M-UpperWestSide" class="map-button"></div>
-			<div id="map-M-Midetown" class="map-button"></div>
-			<div id="map-M-GreenwichVillage" class="map-button"></div>
-			<div id="map-M-LowerManhattan" class="map-button"></div>
+		
+		</div>
+
+		<div id= "dots">
+
+			<div id="map-M-Harlem" class="mapbutton" ></div>
+			<div id="map-M-UpperEastSide" class="mapbutton"></div>
+			<div id="map-M-UpperWestSide" class="mapbutton"></div>
+			<div id="map-M-Midetown" class="mapbutton"></div>
+			<div id="map-M-GreenwichVillage" class="mapbutton"></div>
+			<div id="map-M-LowerManhattan" class="mapbutton"></div>
+		</div>
+
+		<div id="neighbor-title">
+			<div id="harlem-text"></div>
+			<div id="UpperEastSide-text"></div>
+			<div id="UpperWastSide-text"></div>
+			<div id="Midetown-text"></div>			
+			<div id="GreenwichVillage-text"></div>	
+			<div id="LowerManhattan-text"></div>	
 		</div>
 	</div>
 
@@ -160,6 +172,30 @@
 				</div>
 			</div>
 		</div>
+
+		<!--mobile phone plan-->
+		<div id="mobile-container" class="outline-white-dot">
+			<div id="mobile-title"><p>+ MOBILE PHONE / PREPAID</p></div>
+
+			<!--mobile: button-->
+			<div id="in-mobile" class="in-p">
+				<p> 30 DAYS / <span> 250 </span> MINUTES / TEXT UNLIMITED </p> 
+			</div>
+			<button id="mobile-1" class="mobile-button"> NOT INCLUDE </button> 
+			<button id="mobile-2" class="mobile-button"> 500 MB </button> 
+			<button id="mobile-3" class="mobile-button"> 1 GB </button> 
+			<button id="mobile-4" class="mobile-button"> 1.5 GB </button> 
+			<div id="in-data" class="in-p"><p> CELLULAR DATA </p> </div>
+
+			<div id="mobile-amt-container">
+				<div id="in-money-wrapper-mobile" class="outline-white-right">
+					<p> $ </p>
+				<div id="mobile-amt" data-amt-mobile="0"> 0 </div>
+				</div>
+			</div>
+
+		</div>
+
 	</div>
 
 
@@ -358,7 +394,7 @@
 
 	<!--transport-->
 	<div id="transport-wrapper">
-		<div id="transport-title" class="title"><h4>+ TRANSPORTATION</h4></div>
+		<div id="transport-title" class="title"><h4>+ TRANSPORT</h4></div>
 
 		<!--transport-$amount 交通錢總和-->
 		<div id="transport-amount-container">
@@ -476,18 +512,177 @@
 
 	<!--entertain-->
 	<div id="entertain-wrapper">
-		<div id="entertain-title" class="title"><h4>+ ENTERTAINMENT</h4></div>
+		<div id="entertain-title" class="title"><h4>+ ENTERTAIN</h4></div>
 
-		<!--transport-$amount 交通錢總和-->
+		<!--transport-$amount 娛樂錢總和-->
 		<div id="entertain-amount-container">
 			<p class="title"> $ </p>
 			<input type="text" name="entertain-amt" id="entertain-amt" class="text" value="0" disabled>
 		</div>
 
+		<!--broadway-->	
+		<div id="broadway-container" class="outline-white-dot">
+			<div id="broadway-title"><p>+ THEATER</p></div>
 
+			<button id="broadway-x" class="broadway-button"> X </button> 
+			<button id="broadway-rush" class="broadway-button"> RUSH HOUR / STUDENT </button> 				
+			<div id="in-broadway" class="in-p"><p> 1 TICKET TO BROADWAY SHOW </p> </div>
+			<button id="broadway-1" class="broadway-button"> PREMIUM </button> 
+			<button id="broadway-2" class="broadway-button"> ORCHESTRA </button> 
+			<button id="broadway-3" class="broadway-button"> MEZZANINE </button> 
+			<div id="in-broadway-seat" class="in-p"><p> SEAT </p> </div>
 
+			<!--broadway money $amount-->
+			<div id="broadway-amt-container">
+				<div id="in-money-wrapper-broadway" class="outline-white-right">
+					<p> $ </p>
+					<div id="broadway-amt" data-amt-broadway="0"> 0 </div>
+				</div>
+			</div>			
 
+		</div>
+
+		<!--movie-->
+		<div id="movie-container" class="outline-white-dot">
+			<div id="movie-title"><p>+ MOVIE </p></div>
+
+			<!--movie: 2D before noon-->	
+			<div id="movie-2d-before-container" class="outline-white">
+				<!--2D before noon: slider-->	
+				<div id="movie-2d-before-slider"></div>
+					<p id="in-movie-2d-before" class="in-p"> 2D BEFORE 12PM :
+					<span id="movie-2d-before-count" class="movie-2d-before-count"> 2 </span> 
+					TICKET(S)</p>
+			</div>			
+
+			<!--movie: 2D after noon-->	
+			<div id="movie-2d-after-container" class="outline-white">
+				<!--2D before noon: slider-->	
+				<div id="movie-2d-after-slider"></div>
+					<p id="in-movie-2d-after" class="in-p"> 2D AFTER 12PM :
+					<span id="movie-2d-after-count" class="movie-2d-after-count"> 0 </span> 
+					TICKET(S)</p>
+			</div>	
+
+			<!--movie: 3D before noon-->	
+			<div id="movie-3d-before-container" class="outline-white">
+				<!--3D before noon: slider-->	
+				<div id="movie-3d-before-slider"></div>
+					<p id="in-movie-3d-before" class="in-p"> 3D BEFORE 12PM :
+					<span id="movie-3d-before-count" class="movie-3d-before-count"> 0 </span> 
+					TICKET(S)</p>
+			</div>			
+
+			<!--movie: 2D after noon-->	
+			<div id="movie-3d-after-container" class="outline-white">
+				<!--2D before noon: slider-->	
+				<div id="movie-3d-after-slider"></div>
+					<p id="in-movie-3d-after" class="in-p"> 3D AFTER 12PM :
+					<span id="movie-3d-after-count" class="movie-3d-after-count"> 0 </span> 
+					TICKET(S)</p>
+			</div>	
+
+			<!--movie money $amount-->
+			<div id="movie-amt-container">
+				<div id="in-money-wrapper-movie-2d-before" class="outline-white-right">
+					<p> $ </p>
+					<input type="text" name="movie-2d-before-amt" id="movie-2d-before-amt" class="text" value="0" disabled>
+				</div>	
+
+				<div id="in-money-wrapper-movie-2d-after" class="outline-white-right">
+					<p> $ </p>
+					<input type="text" name="movie-2d-after-amt" id="movie-2d-after-amt" class="text" value="0" disabled>
+				</div>	
+			
+				<div id="in-money-wrapper-movie-3d-before" class="outline-white-right">
+					<p> $ </p>
+					<input type="text" name="movie-3d-before-amt" id="movie-3d-before-amt" class="text" value="0" disabled>
+				</div>	
+							
+				<div id="in-money-wrapper-movie-3d-after" class="outline-white-right">
+					<p> $ </p>
+					<input type="text" name="movie-3d-after-amt" id="movie-3d-after-amt" class="text" value="0" disabled>
+				</div>			
+			</div>		
+		</div>
+
+		<!--game-->
+		<div id="game-container" class="outline-white-dot">
+			<div id="game-title"><p>+ GAME </p></div>
+
+			<!--game: yankee-->	
+			<div id="game-yankee-container" class="outline-white">
+				<!--yankee: slider-->	
+				<div id="game-yankee-slider"></div>
+					<p id="in-game-yankee" class="in-p"> YANKEE :
+					<span id="game-yankee-count" class="game-yankee-count"> SEAT LEVEL </span> 
+				/ PER TICKET</p>
+			</div>			
+
+			<!--game money $amount-->
+			<div id="game-amt-container">	
+				<div id="in-money-wrapper-game-yankee" class="outline-white-right">
+					<p> $ </p>
+					<input type="text" name="game-yankee-amt" id="game-yankee-amt" class="text" value="0" disabled>
+				</div>		
+			</div>	
+		</div>
+
+		<!--activity-->
+		<div id="activity-container" class="outline-white-dot">
+			<div id="activity-title"><p>+ OTHER ACTIVITIES </p></div>
+
+			<!--activity: nightlife-->	
+			<div id="nightlife-container" class="outline-white">
+				<!--nightlife: slider-->	
+				<div id="nightlife-slider"></div>
+					<p id="in-nightlife" class="in-p"> NIGHT LIFE :
+					<span id="nightlife-count" class="nightlife-count"> 0 </span> 
+				DAYS A WEEK</p>
+			</div>	
+
+			<!--activity: gym-->	
+			<div id="gym-container">
+				<!--gym: buttons-->	
+				<button id="gym-x" class="gym-button"> X </button> 
+				<button id="gym-nycparks" class="gym-button"> NYC PARKS </button> 
+				<button id="gym-club" class="gym-button"> SPORT CLUB </button> 
+				<p id="in-gym" class="in-p"> GYM MEMBERSHIP </p>
+			</div>	
+
+			<!--activity: museum-->	
+			<div id="museum-container">
+				<!--gym: buttons-->	
+				<button id="museum" class="museum-button"> SELECT FREE DAYS & PAY WHAT YOU WISH </button> 
+				<p id="in-museum" class="in-p"> MUSEUM </p>
+			</div>	
+
+			<!--activity money $amount-->
+			<div id="activity-amt-container">	
+
+				<!--nightlife money $amount-->
+				<div id="in-money-wrapper-nightlife" class="outline-white-right">
+					<p> $ </p>
+					<input type="text" name="nightlife-amt" id="nightlife-amt" class="text" value="0" disabled>
+				</div>		
+
+				<!--gym money $amount-->			
+				<div id="in-money-wrapper-gym" class="outline-white-right">
+					<p> $ </p>
+					<div id="gym-amt" data-amt-gym="0"> 0 </div>
+				</div>
+
+				<!--museum money $amount-->			
+				<div id="in-money-wrapper-museum" class="outline-white-right">
+					<p> $ </p>
+					<div id="museum-amt" data-amt-museum="0"> 0 </div>
+				</div>				
+
+			</div>				
+
+		</div>
 	</div>
+
 
 
 

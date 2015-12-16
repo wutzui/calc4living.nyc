@@ -3,16 +3,19 @@
 	color: #ffee8d;
 }
 
-button {
+/*button {
 	line-height: 30px;
 	background-color: none;
 	font-size: 13px;
-}
+}*/
+
+
 
 .button-list{
 	border: 1px solid #676767;
 	color: #676767;
 	display: block;
+	z-index: 10;
 }
 
 .button-list-active{
@@ -166,6 +169,59 @@ button {
     text-align: right;
 }
 
+#in-movie-2d-before {
+    margin:0;
+    position: relative;
+    top: -24px;
+    right: 75px;
+    text-align: right;
+}
+
+#in-movie-2d-after {
+    margin:0;
+    position: relative;
+    top: -17px;
+    right: 75px;
+    text-align: right;
+}
+
+#in-movie-3d-before {
+    margin:0;
+    position: relative;
+    top: -17px;
+    right: 75px;
+    text-align: right;
+}
+
+#in-movie-3d-after {
+    margin:0;
+    position: relative;
+    top: -17px;
+    right: 75px;
+    text-align: right;
+}
+
+#in-game-yankee {
+    margin:0;
+    position: relative;
+    top: -65px;
+    right: 75px;
+    width: 100%;
+    height: 30px;
+    text-align: right;
+}
+
+#in-nightlife {
+    margin:0;
+    position: relative;
+    top: -17px;
+    right: 75px;
+    width: 100%;
+    height: 30px;
+    text-align: right;
+}
+
+/*in-money-wrappers*/
 #in-money-wrapper{
 	margin: 0;
 	position: relative;
@@ -271,6 +327,27 @@ button {
 	left: 5px;
 }
 
+#in-money-wrapper-mobile{
+	margin: 0;
+	position: relative;
+    top: 3px;
+    right: 2px;
+	width: 65px;
+	height: 30px;
+	background-color: white;
+	float: right;
+	color: black;
+	line-height: 30px;
+	margin-bottom: 10px;
+}
+
+#in-money-wrapper-mobile p{
+	margin: 0;
+	position: relative;
+	top: 0;
+	left: 5px;
+}
+
 #in-money-wrapper-mta-single{
 	margin: 0;
 	position: relative;
@@ -370,6 +447,202 @@ button {
 }
 
 #in-money-wrapper-taxi p{
+	margin: 0;
+	position: relative;
+	top: 0;
+	left: 5px;
+}
+
+#in-money-wrapper-broadway{
+	margin: 0;
+	position: relative;
+    top: 0;
+    right: 2px;
+	width: 65px;
+	height: 30px;
+	background-color: white;
+	float: right;
+	color: black;
+	line-height: 30px;
+	margin-bottom: 10px;
+}
+
+#in-money-wrapper-broadway p{
+	margin: 0;
+	position: relative;
+	top: 0;
+	left: 5px;
+}
+
+#in-money-wrapper-movie-2d-before{
+	margin: 0;
+	position: relative;
+	top: 4px;
+	right: -1px;
+	width: 65px;
+	height: 30px;
+	background-color: white;
+	float: right;
+	color: black;
+	line-height: 30px;
+	margin-bottom: 10px;
+}
+
+#in-money-wrapper-movie-2d-before p{
+	margin: 0;
+	position: relative;
+	top: 0;
+	left: 5px;
+}
+
+#in-money-wrapper-movie-2d-after{
+	margin: 0;
+	position: relative;
+	top: 4px;
+	right: -1px;
+	width: 65px;
+	height: 30px;
+	background-color: white;
+	float: right;
+	color: black;
+	line-height: 30px;
+	margin-bottom: 10px;
+}
+
+#in-money-wrapper-movie-2d-after p{
+	margin: 0;
+	position: relative;
+	top: 0;
+	left: 5px;
+}
+
+#in-money-wrapper-movie-3d-before{
+	margin: 0;
+	position: relative;
+	top: 4px;
+	right: -1px;
+	width: 65px;
+	height: 30px;
+	background-color: white;
+	float: right;
+	color: black;
+	line-height: 30px;
+	margin-bottom: 10px;
+}
+
+#in-money-wrapper-movie-3d-before p{
+	margin: 0;
+	position: relative;
+	top: 0;
+	left: 5px;
+}
+
+input {
+	width: 40px;
+	border: 0;
+	font-size: 15px;
+	background: none;
+}
+
+#in-money-wrapper-movie-3d-after{
+	margin: 0;
+	position: relative;
+	top: 4px;
+	right: -1px;
+	width: 65px;
+	height: 30px;
+	background-color: white;
+	float: right;
+	color: black;
+	line-height: 30px;
+	margin-bottom: 10px;
+}
+
+#in-money-wrapper-movie-3d-after p{
+	margin: 0;
+	position: relative;
+	top: 0;
+	left: 5px;
+}
+
+#in-money-wrapper-game-yankee{
+	margin: 0;
+	position: relative;
+	top: 0;
+	right: -1px;
+	width: 65px;
+	height: 30px;
+	background-color: white;
+	float: right;
+	color: black;
+	line-height: 30px;
+	margin-bottom: 10px;
+}
+
+#in-money-wrapper-game-yankee p{
+	margin: 0;
+	position: relative;
+	top: 0;
+	left: 5px;
+}
+
+#in-money-wrapper-nightlife{
+	margin: 0;
+	position: relative;
+	top: 0;
+	right: -1px;
+	width: 65px;
+	height: 30px;
+	background-color: white;
+	float: right;
+	color: black;
+	line-height: 30px;
+	margin-bottom: 10px;
+}
+
+#in-money-wrapper-nightlife p{
+	margin: 0;
+	position: relative;
+	top: 0;
+	left: 5px;
+}
+
+#in-money-wrapper-gym{
+	margin: 0;
+	position: relative;
+	top: 0;
+	right: -1px;
+	width: 65px;
+	height: 30px;
+	background-color: white;
+	float: right;
+	color: black;
+	line-height: 30px;
+	margin-bottom: 10px;
+}
+
+#in-money-wrapper-gym p{
+	margin: 0;
+	position: relative;
+	top: 0;
+	left: 5px;
+}
+
+#in-money-wrapper-museum{
+	margin: 0;
+	position: relative;
+	top: 1px;
+	right: -1px;
+	width: 65px;
+	height: 30px;
+	background-color: white;
+	float: right;
+	color: black;
+	line-height: 30px;
+	margin-bottom: 10px;
+}
+
+#in-money-wrapper-museum p{
 	margin: 0;
 	position: relative;
 	top: 0;
@@ -545,4 +818,50 @@ input {
 	z-index: 5;
 }
 
+#movie-2d-before-slider{
+	position: relative;
+	top: 3.3px;
+	left: 2px;
+	width: 220px;
+	z-index: 5;
+}
 
+#movie-2d-after-slider{
+	position: relative;
+	top: 3.3px;
+	left: 2px;
+	width: 220px;
+	z-index: 5;
+}
+
+#movie-3d-before-slider{
+	position: relative;
+	top: 3.3px;
+	left: 2px;
+	width: 220px;
+	z-index: 5;
+}
+
+#movie-3d-after-slider{
+	position: relative;
+	top: 3.3px;
+	left: 2px;
+	width: 220px;
+	z-index: 5;
+}
+
+#game-yankee-slider{
+	position: relative;
+	top: 3.3px;
+	left: 2px;
+	width: 155px;
+	z-index: 5;
+}
+
+#nightlife-slider{
+	position: relative;
+	top: 3.3px;
+	left: 2px;
+	width: 250px;
+	z-index: 5;
+}
