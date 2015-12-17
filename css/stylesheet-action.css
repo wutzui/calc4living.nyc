@@ -12,15 +12,16 @@
 
 
 .button-list{
-	border: 1px solid #676767;
-	color: #676767;
+	border: 1px solid #202020;
+	color: #202020;
 	display: block;
 	z-index: 10;
 }
 
 .button-list-active{
-	border: 1px solid white;
-	color: white;
+	border: 1px solid #202020;
+	background: white;
+	color: #676767;
 	z-index: 11;
 }
 
@@ -658,11 +659,13 @@ input {
 
 /*Chart!!*/
 #charts{
+	float: right;
 	position: fixed;
-	top: 200px;
-	left: 710px;
+	top: 210px;
+	left: 720px;
 	width: 400px;
 	height: 400px;
+
 }
 
 #myChart-all{
@@ -676,20 +679,6 @@ input {
 	top: -369px;
     left: 36px;
     z-index: 1;
-}
-
-#myChart-eating{
-	position: relative;
-    top: -689px;
-    left: 50px;
-	z-index: 2;
-}
-
-#myChart-transport{
-	position: relative;
-    top: -980px;
-    left: 64px;
-    z-index: 3;
 }
 
 /*This only for sliders!! slider#集合*/

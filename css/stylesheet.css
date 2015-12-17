@@ -27,11 +27,32 @@ header {
 	
 }
 
+#openblock{
+	margin: 0px auto;
+	position: fixed;
+	left: 330px;
+	right:300px;
+	top:100px;
+	z-index: 1000;
+}
+
+.top-right{
+	position: relative;
+	display: inline-block;
+	float: right;
+	top: 20px;
+	right: 20px;
+	color: white;
+	font-size: 18px;
+	text-decoration: none;
+	margin-right: 30px;	
+	margin-left: 0;
+}
+
 footer {
     position: absolute;
-	background-color: #202020;
 	left: 0;
-	bottom: -2700px;
+	bottom: -2600px;
 	margin: 0;
 	width: 100%;
 	height: 70px;
@@ -41,7 +62,8 @@ footer {
 
 .right {
 	position: relative;
-	left: 30px;
+	top: 3185px; 
+	left: 50px;
 	color: white;
 	font-size: 12px;
 	line-height: 70px;
@@ -75,9 +97,10 @@ footer {
 /*total-on the right*/
 .total {
 	position: fixed;
+	display: none;
 	float: right;
-	top: 93px;
-	right: 30px;
+    top: 120px;
+    right: 50px;
 	width: 250px;
 	height: 100px;
 }
@@ -114,10 +137,11 @@ footer {
 
 #month{
 	position: fixed;
+	display: none;
 	float: right;
 	text-align: right;
-	top: 155px;
-    right: 33px;
+    top: 165px;
+    right: 54px;
 	border: 0;
 	font-size: 13px;
 	word-spacing: 0.2px;
@@ -131,15 +155,17 @@ footer {
 /*neighborhood-box*/
 #living-title{
 	position: absolute;
-	top: 190px;
-	left: 30px;
+	display: none;
+	top: 125px;
+	left: 50px;
 }
 
 
 #neighborhood-wrapper{
 	position: absolute;
-	top: 255px;
-	left: 30px;
+	display: none;
+	top: 195px;
+	left: 50px;
 	width: 550px;
 	height: 420px;
 }
@@ -181,62 +207,178 @@ footer {
 }
 
 .mapbutton{
-    width: 15px;
-    height: 15px;
+    width: 10px;
+    height: 10px;
 	border-radius: 100px;
 	border: 3px solid white;
 	cursor: default;
 	z-index: 10px;
 }
 
+#neighbor-title{
+	position: relative;
+	top: 250px;
+    left: 280px;
+    width: 250px;
+    height: 30px;
+    background-color: white;
+	border-radius: 5px;
+	border: 1px dotted #202020;
+	color: #202020;
+	line-height: 30px;
+	font-size: 14px;
+	text-align: center;
+	cursor: default;
+	z-index: 10px;
+}
+
+/** M - Harlem ********************************/
 #map-M-Harlem{
     position: relative;
     top: -7px;
     left: 121px;
 }
 
-#harlem-text {
-    position: relative;
-    top: -81px;
-    left: 246px;
-}
-
+/** M - Upper East Side ********************************/
 #map-M-UpperEastSide {
     position: relative;
     top: 38px;
     left: 113px;
 }
 
-#UpperEastSide-text {
-    position: relative;
-    top: -12px;
-    left: 238px;
-}
-
+/** M - Upper West Side ********************************/
 #map-M-UpperWestSide {
     position: relative;
-    top: 3px;
-    left: 80px;
+    top: 4px;
+    left: 83px;
 }
 
+/** M - Midtown ********************************/
 #map-M-Midetown {
     position: relative;
-    top: 30px;
+    top: 35px;
     left: 76px;
 }
 
+
+/** M - GreenWichBillage ********************************/
 #map-M-GreenwichVillage {
     position: relative;
-    top: 42px;
+    top: 54px;
     left: 68px;
 }
 
+/** M - Lower Manhattan ********************************/
 #map-M-LowerManhattan {
     position: relative;
-    top: 45px;
+    top: 66px;
     left: 50px;
 }
 
+/** M - Roostvelt Island ********************************/
+#map-M-RoostveltIsland {
+    position: relative;
+    top: -19px;
+    left: 116px;
+}
+
+/** Q - Astoria ********************************/
+#map-Q-Astoria {
+    position: relative;
+    top: -50px;
+    left: 150px;
+}
+
+/** Q - Long Island City ********************************/
+#map-Q-LongIslandCity {
+    position: relative;
+    top: -38px;
+    left: 133px;
+}
+
+/** Q - Elmhurst ********************************/
+#map-Q-Elmhurst {
+    position: relative;
+    top: -40px;
+    left: 213px;
+}
+
+/** Q - Forest Hill ********************************/
+#map-Q-ForestHill {
+    position: relative;
+    top: -20px;
+    left: 240px;
+}
+
+/** Q - Flushing ********************************/
+#map-Q-Flushing {
+    position: relative;
+    top: -120px;
+    left: 260px;
+}
+
+/** Q - Corona ********************************/
+#map-Q-Corona {
+    position: relative;
+    top: -85px;
+    left: 250px;
+}
+
+/** Q - Jackson Height ********************************/
+#map-Q-JacksonHeight {
+    position: relative;
+    top: -130px;
+    left: 212px;
+}
+
+/** Q - Woodside ********************************/
+#map-Q-Woodside {
+    position: relative;
+    top: -142px;
+    left: 188px;
+}
+
+/** Q - ParkS lope ********************************/
+#map-B-ParkSlope {
+    position: relative;
+    top: -22px;
+    left: 100px;
+}
+
+/** Q - Bay Ridge ********************************/
+#map-B-BayRidge {
+    position: relative;
+    top: 35px;
+    left: 22px;
+}
+
+/** Q - Green Point  ********************************/
+#map-B-GreenPoint {
+    position: relative;
+    top: -145px;
+    left: 120px;
+}
+
+/** Q - Clinton Hill  ********************************/
+#map-B-ClintonHill {
+    position: relative;
+    top: -105px;
+    left: 110px;
+}
+
+/** Q - Williamsburg  ********************************/
+#map-B-Williamsburg {
+    position: relative;
+    top: -150px;
+    left: 117px;
+}
+
+/** Q - Bushwick  ********************************/
+#map-B-Bushwick {
+    position: relative;
+    top: -155px;
+    left: 145px;
+}
 
 /*housing-box-*/
 #housing-container{
@@ -296,8 +438,9 @@ footer {
 /*utility-box-*/
 #utility-wrapper{
 	position: absolute;
-	top: 680px;
-	left: 30px;
+	display: none;
+	top: 630px;
+	left: 50px;
 	width: 550px;
 	height: 420px;
 }
@@ -1027,8 +1170,8 @@ footer {
 /*eating-box-*/
 #eating-wrapper{
 	position: absolute;
-	top: 1360px;
-	left: 30px;
+	top: 1310px;
+	left: 50px;
 	width: 550px;
 	height: 420px;
 }
@@ -1045,7 +1188,7 @@ footer {
 #breakfast-title{  /*breakfast-box-title*/
 	position: relative;
 	top: -1px;
-	left: -1px;
+	left: 0px;
 	width: 550px;
 	height: 30px;
 	border-top-right-radius: 5px;
@@ -1138,7 +1281,7 @@ footer {
 #lunch-title{  /*lunch-box-title*/
 	position: relative;
 	top: -1px;
-	left: -1px;
+	left: 0px;
 	width: 550px;
 	height: 30px;
 	border-top-right-radius: 5px;
@@ -1230,7 +1373,7 @@ footer {
 #dinner-title{  /*dinner-box-title*/
 	position: relative;
 	top: -1px;
-	left: -1px;
+	left: 0px;
 	width: 550px;
 	height: 30px;
 	border-top-right-radius: 5px;
@@ -1382,8 +1525,8 @@ footer {
 /*living - total money */
 #living-amount-container {
     position: relative;
-    top: 197px;
-    left: 485px;
+    top: 130px;
+    left: 517px;
     width: 100px;
     height: 25px;
     margin: 0;
@@ -1392,7 +1535,7 @@ footer {
 #living-amt {
     color: white;
     position: relative;
-    top: -49px;
+    top: -47px;
     left: 10px;
     width: 60px;
     height: 30px;
@@ -1403,8 +1546,8 @@ footer {
 /*transport-box-*/
 #transport-wrapper{
 	position: absolute;
-	top: 2060px;
-	left: 30px;
+	top: 2015px;
+	left: 50px;
 	width: 550px;
 	height: 420px;
 }
@@ -1421,7 +1564,7 @@ footer {
 #public-title{ /*public-box-title*/
 	position: relative;
 	top: -1px;
-	left: -1px;
+	left: 0px;
 	width: 550px;
 	height: 30px;
 	border-top-right-radius: 5px;
@@ -1710,7 +1853,7 @@ footer {
 #taxi-title{ /*taxi-box-title*/
 	position: relative;
 	top: -1px;
-	left: -1px;
+	left: 0px;
 	width: 550px;
 	height: 30px;
 	border-top-right-radius: 5px;
@@ -1774,8 +1917,8 @@ footer {
 /*entertain-box-*/
 #entertain-wrapper{
 	position: absolute;
-	top: 2510px;
-	left: 30px;
+	top: 2465px;
+	left: 50px;
 	width: 550px;
 	height: 420px;
 }

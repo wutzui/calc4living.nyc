@@ -1,35 +1,33 @@
-// + NEIGHBORHOOD & HOUSING - box
-$("document").ready(function(){
-
-	$('.button-list').on('click', function(e){
-	
-		$(this).toggleClass('button-list-active');
+$(document).ready(function(){
+	$('#openblock').click(function(){
+		$(this).fadeOut('slow');
+		$("#neighborhood-wrapper").fadeIn('slow');
+		$("#living-title").fadeIn('slow');
+		$(".total").fadeIn('slow');
+		$("#month").fadeIn('slow');
+		$("#utility-wrapper").fadeIn('slow');
 	});
 });
 
+///////////////M: Harlem
 
 $("document").ready(function(){
-
-	///////////////Harlem
 
 	$("#map-M-Harlem").click(function(){ // Harlem 
-		d3.select("#map-M-Harlem")
-		  .style({
-		  	'background': 'red',  // select button : background red
-		  	'z-index': '5',
-		  })	
-	
-		d3.select('#harlem-text')
-		  .text("Harlem")
+		d3.select('#neighbor-title') // add text.
+		  .text("HARLEM, MANHATTAN")
 		  .style({
 		  	'color': 'black',
 		  })
-		d3.select('#UpperEastSide-text')
-		  .text("")
-		  .style({
-		  	'color': 'black',
-		  })			  
+
 	/////////////////
+
+		d3.select("#map-M-Harlem")
+		  .style({
+		  	'background': '#F7464A',  // select button : background red
+		  	'z-index': '5',
+		  })	
+	
 		d3.select("#map-M-UpperEastSide")
 		  .style({
 		  	'color': 'white',
@@ -55,41 +53,128 @@ $("document").ready(function(){
 		  	'z-index': '4',
 		  })		  
 		d3.select("#map-M-LowerManhattan")
+		  .style({
+		  	'color': 'white',
+		  	'background': 'none',
+		  	'z-index': '4',
+		  })	
+		d3.select("#map-M-RoostveltIsland ")
+		  .style({
+		  	'color': 'white',
+		  	'background': 'none',
+		  	'z-index': '4',
+		  })	
+		d3.select("#map-Q-Astoria")
+		  .style({
+		  	'color': 'white',
+		  	'background': 'none',
+		  	'z-index': '4',
+		  })	
+		d3.select("#map-Q-LongIslandCity")
+		  .style({
+		  	'color': 'white',
+		  	'background': 'none',
+		  	'z-index': '4',
+		  })	
+		d3.select("#map-Q-Elmhurst")
+		  .style({
+		  	'color': 'white',
+		  	'background': 'none',
+		  	'z-index': '4',
+		  })	
+		d3.select("#map-Q-ForestHill")
+		  .style({
+		  	'color': 'white',
+		  	'background': 'none',
+		  	'z-index': '4',
+		  })	
+		d3.select("#map-Q-Flushing")
+		  .style({
+		  	'color': 'white',
+		  	'background': 'none',
+		  	'z-index': '4',
+		  })	
+		d3.select("#map-Q-Corona")
+		  .style({
+		  	'color': 'white',
+		  	'background': 'none',
+		  	'z-index': '4',
+		  })	
+		d3.select("#map-Q-JacksonHeight")
+		  .style({
+		  	'color': 'white',
+		  	'background': 'none',
+		  	'z-index': '4',
+		  })	
+		d3.select("#map-Q-Woodside")
+		  .style({
+		  	'color': 'white',
+		  	'background': 'none',
+		  	'z-index': '4',
+		  })
+		d3.select("#map-B-ParkSlope")
+		  .style({
+		  	'color': 'white',
+		  	'background': 'none',
+		  	'z-index': '4',
+		  })
+		d3.select("#map-B-BayRidge")
+		  .style({
+		  	'color': 'white',
+		  	'background': 'none',
+		  	'z-index': '4',
+		  })		  
+		d3.select("#map-B-GreenPoint")
+		  .style({
+		  	'color': 'white',
+		  	'background': 'none',
+		  	'z-index': '4',
+		  })	
+		d3.select("#map-B-ClintonHill")
+		  .style({
+		  	'color': 'white',
+		  	'background': 'none',
+		  	'z-index': '4',
+		  })	
+		d3.select("#map-B-Williamsburg")
+		  .style({
+		  	'color': 'white',
+		  	'background': 'none',
+		  	'z-index': '4',
+		  })	
+		d3.select("#map-B-Bushwick")
 		  .style({
 		  	'color': 'white',
 		  	'background': 'none',
 		  	'z-index': '4',
 		  })	
 	});
+});
 
-	///////////////Upper East Side
+
+///////////////M: Upper East Side
+$("document").ready(function(){
 
 	$("#map-M-UpperEastSide").click(function(){ // Harlem 
-		d3.select("#map-M-UpperEastSide")
-		  .style({
-		  	'background': 'red',  // select button : background red
-		  	'z-index': '5',
-		  })		
-	
-		d3.select('#harlem-text')
-		  .text("")
-		  .style({
-		  	'color': 'black',
-		  })
-
-		d3.select('#UpperEastSide-text')
-		  .text("Upper Eest Side")
+		d3.select('#neighbor-title') // add text.
+		  .text("UPPER EAST SIDE, MANHATTAN")
 		  .style({
 		  	'color': 'black',
 		  })
 
 	/////////////////
+
 		d3.select("#map-M-Harlem")
 		  .style({
-		  	'color': 'white',
-		  	'background': 'none',
+		  	'background': 'none', 
 		  	'z-index': '4',
-		  })
+		  })	
+	
+		d3.select("#map-M-UpperEastSide")
+		  .style({
+		  	'background': '#F7464A',  // select button : background red
+		  	'z-index': '5',
+		  })	
 		d3.select("#map-M-UpperWestSide")
 		  .style({
 		  	'color': 'white',
@@ -114,8 +199,2705 @@ $("document").ready(function(){
 		  	'background': 'none',
 		  	'z-index': '4',
 		  })	
-	});	
+		d3.select("#map-M-RoostveltIsland ")
+		  .style({
+		  	'color': 'white',
+		  	'background': 'none',
+		  	'z-index': '4',
+		  })	
+		d3.select("#map-Q-Astoria")
+		  .style({
+		  	'color': 'white',
+		  	'background': 'none',
+		  	'z-index': '4',
+		  })	
+		d3.select("#map-Q-LongIslandCity")
+		  .style({
+		  	'color': 'white',
+		  	'background': 'none',
+		  	'z-index': '4',
+		  })	
+		d3.select("#map-Q-Elmhurst")
+		  .style({
+		  	'color': 'white',
+		  	'background': 'none',
+		  	'z-index': '4',
+		  })	
+		d3.select("#map-Q-ForestHill")
+		  .style({
+		  	'color': 'white',
+		  	'background': 'none',
+		  	'z-index': '4',
+		  })	
+		d3.select("#map-Q-Flushing")
+		  .style({
+		  	'color': 'white',
+		  	'background': 'none',
+		  	'z-index': '4',
+		  })	
+		d3.select("#map-Q-Corona")
+		  .style({
+		  	'color': 'white',
+		  	'background': 'none',
+		  	'z-index': '4',
+		  })	
+		d3.select("#map-Q-JacksonHeight")
+		  .style({
+		  	'color': 'white',
+		  	'background': 'none',
+		  	'z-index': '4',
+		  })	
+		d3.select("#map-Q-Woodside")
+		  .style({
+		  	'color': 'white',
+		  	'background': 'none',
+		  	'z-index': '4',
+		  })
+		d3.select("#map-B-ParkSlope")
+		  .style({
+		  	'color': 'white',
+		  	'background': 'none',
+		  	'z-index': '4',
+		  })
+		d3.select("#map-B-BayRidge")
+		  .style({
+		  	'color': 'white',
+		  	'background': 'none',
+		  	'z-index': '4',
+		  })		  
+		d3.select("#map-B-GreenPoint")
+		  .style({
+		  	'color': 'white',
+		  	'background': 'none',
+		  	'z-index': '4',
+		  })	
+		d3.select("#map-B-ClintonHill")
+		  .style({
+		  	'color': 'white',
+		  	'background': 'none',
+		  	'z-index': '4',
+		  })	
+		d3.select("#map-B-Williamsburg")
+		  .style({
+		  	'color': 'white',
+		  	'background': 'none',
+		  	'z-index': '4',
+		  })	
+		d3.select("#map-B-Bushwick")
+		  .style({
+		  	'color': 'white',
+		  	'background': 'none',
+		  	'z-index': '4',
+		  })	
+	});
 });
+
+///////////////M: Upper West Side
+$("document").ready(function(){
+
+	$("#map-M-UpperWestSide").click(function(){ // Harlem 
+		d3.select('#neighbor-title') // add text.
+		  .text("UPPER WEST SIDE, MANHATTAN")
+		  .style({
+		  	'color': 'black',
+		  })
+
+	/////////////////
+
+		d3.select("#map-M-Harlem")
+		  .style({
+		  	'background': 'none', 
+		  	'z-index': '4',
+		  })	
+	
+		d3.select("#map-M-UpperEastSide")
+		  .style({
+		  	'background': 'none', 
+		  	'z-index': '4',
+		  })	
+		d3.select("#map-M-UpperWestSide")
+		  .style({
+		  	'background': '#F7464A',  // select button : background red
+		  	'z-index': '5',
+		  })	
+		d3.select("#map-M-Midetown")
+		  .style({
+		  	'color': 'white',
+		  	'background': 'none',
+		  	'z-index': '4',
+		  })
+		d3.select("#map-M-GreenwichVillage")
+		  .style({
+		  	'color': 'white',
+		  	'background': 'none',
+		  	'z-index': '4',
+		  })		  
+		d3.select("#map-M-LowerManhattan")
+		  .style({
+		  	'color': 'white',
+		  	'background': 'none',
+		  	'z-index': '4',
+		  })	
+		d3.select("#map-M-RoostveltIsland ")
+		  .style({
+		  	'color': 'white',
+		  	'background': 'none',
+		  	'z-index': '4',
+		  })	
+		d3.select("#map-Q-Astoria")
+		  .style({
+		  	'color': 'white',
+		  	'background': 'none',
+		  	'z-index': '4',
+		  })	
+		d3.select("#map-Q-LongIslandCity")
+		  .style({
+		  	'color': 'white',
+		  	'background': 'none',
+		  	'z-index': '4',
+		  })	
+		d3.select("#map-Q-Elmhurst")
+		  .style({
+		  	'color': 'white',
+		  	'background': 'none',
+		  	'z-index': '4',
+		  })	
+		d3.select("#map-Q-ForestHill")
+		  .style({
+		  	'color': 'white',
+		  	'background': 'none',
+		  	'z-index': '4',
+		  })	
+		d3.select("#map-Q-Flushing")
+		  .style({
+		  	'color': 'white',
+		  	'background': 'none',
+		  	'z-index': '4',
+		  })	
+		d3.select("#map-Q-Corona")
+		  .style({
+		  	'color': 'white',
+		  	'background': 'none',
+		  	'z-index': '4',
+		  })	
+		d3.select("#map-Q-JacksonHeight")
+		  .style({
+		  	'color': 'white',
+		  	'background': 'none',
+		  	'z-index': '4',
+		  })	
+		d3.select("#map-Q-Woodside")
+		  .style({
+		  	'color': 'white',
+		  	'background': 'none',
+		  	'z-index': '4',
+		  })
+		d3.select("#map-B-ParkSlope")
+		  .style({
+		  	'color': 'white',
+		  	'background': 'none',
+		  	'z-index': '4',
+		  })
+		d3.select("#map-B-BayRidge")
+		  .style({
+		  	'color': 'white',
+		  	'background': 'none',
+		  	'z-index': '4',
+		  })		  
+		d3.select("#map-B-GreenPoint")
+		  .style({
+		  	'color': 'white',
+		  	'background': 'none',
+		  	'z-index': '4',
+		  })	
+		d3.select("#map-B-ClintonHill")
+		  .style({
+		  	'color': 'white',
+		  	'background': 'none',
+		  	'z-index': '4',
+		  })	
+		d3.select("#map-B-Williamsburg")
+		  .style({
+		  	'color': 'white',
+		  	'background': 'none',
+		  	'z-index': '4',
+		  })	
+		d3.select("#map-B-Bushwick")
+		  .style({
+		  	'color': 'white',
+		  	'background': 'none',
+		  	'z-index': '4',
+		  })	
+	});
+});
+
+///////////////M: Midtown
+$("document").ready(function(){
+
+	$("#map-M-Midetown").click(function(){ // Harlem 
+		d3.select('#neighbor-title') // add text.
+		  .text("MIDTOWN, MANHATTAN")
+		  .style({
+		  	'color': 'black',
+		  })
+
+	/////////////////
+
+		d3.select("#map-M-Harlem")
+		  .style({
+		  	'background': 'none', 
+		  	'z-index': '4',
+		  })	
+	
+		d3.select("#map-M-UpperEastSide")
+		  .style({
+		  	'background': 'none', 
+		  	'z-index': '4',
+		  })	
+		d3.select("#map-M-UpperWestSide")
+		  .style({
+		  	'background': 'none', 
+		  	'z-index': '4',
+		  })	
+		d3.select("#map-M-Midetown")
+		  .style({
+		  	'background': '#F7464A',  // select button : background red
+		  	'z-index': '5',
+		  })
+		d3.select("#map-M-GreenwichVillage")
+		  .style({
+		  	'color': 'white',
+		  	'background': 'none',
+		  	'z-index': '4',
+		  })		  
+		d3.select("#map-M-LowerManhattan")
+		  .style({
+		  	'color': 'white',
+		  	'background': 'none',
+		  	'z-index': '4',
+		  })	
+		d3.select("#map-M-RoostveltIsland ")
+		  .style({
+		  	'color': 'white',
+		  	'background': 'none',
+		  	'z-index': '4',
+		  })	
+		d3.select("#map-Q-Astoria")
+		  .style({
+		  	'color': 'white',
+		  	'background': 'none',
+		  	'z-index': '4',
+		  })	
+		d3.select("#map-Q-LongIslandCity")
+		  .style({
+		  	'color': 'white',
+		  	'background': 'none',
+		  	'z-index': '4',
+		  })	
+		d3.select("#map-Q-Elmhurst")
+		  .style({
+		  	'color': 'white',
+		  	'background': 'none',
+		  	'z-index': '4',
+		  })	
+		d3.select("#map-Q-ForestHill")
+		  .style({
+		  	'color': 'white',
+		  	'background': 'none',
+		  	'z-index': '4',
+		  })	
+		d3.select("#map-Q-Flushing")
+		  .style({
+		  	'color': 'white',
+		  	'background': 'none',
+		  	'z-index': '4',
+		  })	
+		d3.select("#map-Q-Corona")
+		  .style({
+		  	'color': 'white',
+		  	'background': 'none',
+		  	'z-index': '4',
+		  })	
+		d3.select("#map-Q-JacksonHeight")
+		  .style({
+		  	'color': 'white',
+		  	'background': 'none',
+		  	'z-index': '4',
+		  })	
+		d3.select("#map-Q-Woodside")
+		  .style({
+		  	'color': 'white',
+		  	'background': 'none',
+		  	'z-index': '4',
+		  })
+		d3.select("#map-B-ParkSlope")
+		  .style({
+		  	'color': 'white',
+		  	'background': 'none',
+		  	'z-index': '4',
+		  })
+		d3.select("#map-B-BayRidge")
+		  .style({
+		  	'color': 'white',
+		  	'background': 'none',
+		  	'z-index': '4',
+		  })		  
+		d3.select("#map-B-GreenPoint")
+		  .style({
+		  	'color': 'white',
+		  	'background': 'none',
+		  	'z-index': '4',
+		  })	
+		d3.select("#map-B-ClintonHill")
+		  .style({
+		  	'color': 'white',
+		  	'background': 'none',
+		  	'z-index': '4',
+		  })	
+		d3.select("#map-B-Williamsburg")
+		  .style({
+		  	'color': 'white',
+		  	'background': 'none',
+		  	'z-index': '4',
+		  })	
+		d3.select("#map-B-Bushwick")
+		  .style({
+		  	'color': 'white',
+		  	'background': 'none',
+		  	'z-index': '4',
+		  })	
+	});
+});
+
+///////////////M: Greenwich Village
+$("document").ready(function(){
+
+	$("#map-M-GreenwichVillage").click(function(){ // Harlem 
+		d3.select('#neighbor-title') // add text.
+		  .text("GREENWICH VILLAGE, MANHATTAN")
+		  .style({
+		  	'color': 'black',
+		  })
+
+	/////////////////
+
+		d3.select("#map-M-Harlem")
+		  .style({
+		  	'background': 'none', 
+		  	'z-index': '4',
+		  })	
+	
+		d3.select("#map-M-UpperEastSide")
+		  .style({
+		  	'background': 'none', 
+		  	'z-index': '4',
+		  })	
+		d3.select("#map-M-UpperWestSide")
+		  .style({
+		  	'background': 'none', 
+		  	'z-index': '4',
+		  })	
+		d3.select("#map-M-Midetown")
+		  .style({
+		  	'background': 'none',  
+		  	'z-index': '4',
+		  })
+		d3.select("#map-M-GreenwichVillage")
+		  .style({
+		  	'background': '#F7464A',  // select button : background red
+		  	'z-index': '5',
+		  })		  
+		d3.select("#map-M-LowerManhattan")
+		  .style({
+		  	'color': 'white',
+		  	'background': 'none',
+		  	'z-index': '4',
+		  })	
+		d3.select("#map-M-RoostveltIsland ")
+		  .style({
+		  	'color': 'white',
+		  	'background': 'none',
+		  	'z-index': '4',
+		  })	
+		d3.select("#map-Q-Astoria")
+		  .style({
+		  	'color': 'white',
+		  	'background': 'none',
+		  	'z-index': '4',
+		  })	
+		d3.select("#map-Q-LongIslandCity")
+		  .style({
+		  	'color': 'white',
+		  	'background': 'none',
+		  	'z-index': '4',
+		  })	
+		d3.select("#map-Q-Elmhurst")
+		  .style({
+		  	'color': 'white',
+		  	'background': 'none',
+		  	'z-index': '4',
+		  })	
+		d3.select("#map-Q-ForestHill")
+		  .style({
+		  	'color': 'white',
+		  	'background': 'none',
+		  	'z-index': '4',
+		  })	
+		d3.select("#map-Q-Flushing")
+		  .style({
+		  	'color': 'white',
+		  	'background': 'none',
+		  	'z-index': '4',
+		  })	
+		d3.select("#map-Q-Corona")
+		  .style({
+		  	'color': 'white',
+		  	'background': 'none',
+		  	'z-index': '4',
+		  })	
+		d3.select("#map-Q-JacksonHeight")
+		  .style({
+		  	'color': 'white',
+		  	'background': 'none',
+		  	'z-index': '4',
+		  })	
+		d3.select("#map-Q-Woodside")
+		  .style({
+		  	'color': 'white',
+		  	'background': 'none',
+		  	'z-index': '4',
+		  })
+		d3.select("#map-B-ParkSlope")
+		  .style({
+		  	'color': 'white',
+		  	'background': 'none',
+		  	'z-index': '4',
+		  })
+		d3.select("#map-B-BayRidge")
+		  .style({
+		  	'color': 'white',
+		  	'background': 'none',
+		  	'z-index': '4',
+		  })		  
+		d3.select("#map-B-GreenPoint")
+		  .style({
+		  	'color': 'white',
+		  	'background': 'none',
+		  	'z-index': '4',
+		  })	
+		d3.select("#map-B-ClintonHill")
+		  .style({
+		  	'color': 'white',
+		  	'background': 'none',
+		  	'z-index': '4',
+		  })	
+		d3.select("#map-B-Williamsburg")
+		  .style({
+		  	'color': 'white',
+		  	'background': 'none',
+		  	'z-index': '4',
+		  })	
+		d3.select("#map-B-Bushwick")
+		  .style({
+		  	'color': 'white',
+		  	'background': 'none',
+		  	'z-index': '4',
+		  })	
+	});
+});
+
+///////////////M: Lower Manhattan
+$("document").ready(function(){
+
+	$("#map-M-LowerManhattan").click(function(){ // Harlem 
+		d3.select('#neighbor-title') // add text.
+		  .text("LOWER MANHATTAN, MANHATTAN")
+		  .style({
+		  	'color': 'black',
+		  })
+
+	/////////////////
+
+		d3.select("#map-M-Harlem")
+		  .style({
+		  	'background': 'none', 
+		  	'z-index': '4',
+		  })	
+	
+		d3.select("#map-M-UpperEastSide")
+		  .style({
+		  	'background': 'none', 
+		  	'z-index': '4',
+		  })	
+		d3.select("#map-M-UpperWestSide")
+		  .style({
+		  	'background': 'none', 
+		  	'z-index': '4',
+		  })	
+		d3.select("#map-M-Midetown")
+		  .style({
+		  	'background': 'none',  
+		  	'z-index': '4',
+		  })
+		d3.select("#map-M-GreenwichVillage")
+		  .style({
+		  	'background': 'none',
+		  	'z-index': '4',
+		  })		  
+		d3.select("#map-M-LowerManhattan")
+		  .style({
+		  	'background': '#F7464A',  // select button : background red
+		  	'z-index': '5',
+		  })	
+		d3.select("#map-M-RoostveltIsland ")
+		  .style({
+		  	'color': 'white',
+		  	'background': 'none',
+		  	'z-index': '4',
+		  })	
+		d3.select("#map-Q-Astoria")
+		  .style({
+		  	'color': 'white',
+		  	'background': 'none',
+		  	'z-index': '4',
+		  })	
+		d3.select("#map-Q-LongIslandCity")
+		  .style({
+		  	'color': 'white',
+		  	'background': 'none',
+		  	'z-index': '4',
+		  })	
+		d3.select("#map-Q-Elmhurst")
+		  .style({
+		  	'color': 'white',
+		  	'background': 'none',
+		  	'z-index': '4',
+		  })	
+		d3.select("#map-Q-ForestHill")
+		  .style({
+		  	'color': 'white',
+		  	'background': 'none',
+		  	'z-index': '4',
+		  })	
+		d3.select("#map-Q-Flushing")
+		  .style({
+		  	'color': 'white',
+		  	'background': 'none',
+		  	'z-index': '4',
+		  })	
+		d3.select("#map-Q-Corona")
+		  .style({
+		  	'color': 'white',
+		  	'background': 'none',
+		  	'z-index': '4',
+		  })	
+		d3.select("#map-Q-JacksonHeight")
+		  .style({
+		  	'color': 'white',
+		  	'background': 'none',
+		  	'z-index': '4',
+		  })	
+		d3.select("#map-Q-Woodside")
+		  .style({
+		  	'color': 'white',
+		  	'background': 'none',
+		  	'z-index': '4',
+		  })
+		d3.select("#map-B-ParkSlope")
+		  .style({
+		  	'color': 'white',
+		  	'background': 'none',
+		  	'z-index': '4',
+		  })
+		d3.select("#map-B-BayRidge")
+		  .style({
+		  	'color': 'white',
+		  	'background': 'none',
+		  	'z-index': '4',
+		  })		  
+		d3.select("#map-B-GreenPoint")
+		  .style({
+		  	'color': 'white',
+		  	'background': 'none',
+		  	'z-index': '4',
+		  })	
+		d3.select("#map-B-ClintonHill")
+		  .style({
+		  	'color': 'white',
+		  	'background': 'none',
+		  	'z-index': '4',
+		  })	
+		d3.select("#map-B-Williamsburg")
+		  .style({
+		  	'color': 'white',
+		  	'background': 'none',
+		  	'z-index': '4',
+		  })	
+		d3.select("#map-B-Bushwick")
+		  .style({
+		  	'color': 'white',
+		  	'background': 'none',
+		  	'z-index': '4',
+		  })	
+	});
+});
+
+///////////////M: Roostvelt Island
+$("document").ready(function(){
+
+	$("#map-M-RoostveltIsland").click(function(){ // Harlem 
+		d3.select('#neighbor-title') // add text.
+		  .text("ROOSTVELT ISLAND, MANHATTAN")
+		  .style({
+		  	'color': 'black',
+		  })
+
+	/////////////////
+
+		d3.select("#map-M-Harlem")
+		  .style({
+		  	'background': 'none', 
+		  	'z-index': '4',
+		  })	
+	
+		d3.select("#map-M-UpperEastSide")
+		  .style({
+		  	'background': 'none', 
+		  	'z-index': '4',
+		  })	
+		d3.select("#map-M-UpperWestSide")
+		  .style({
+		  	'background': 'none', 
+		  	'z-index': '4',
+		  })	
+		d3.select("#map-M-Midetown")
+		  .style({
+		  	'background': 'none',  
+		  	'z-index': '4',
+		  })
+		d3.select("#map-M-GreenwichVillage")
+		  .style({
+		  	'background': 'none',
+		  	'z-index': '4',
+		  })		  
+		d3.select("#map-M-LowerManhattan")
+		  .style({
+		  	'background': 'none',  
+		  	'z-index': '4',
+		  })	
+		d3.select("#map-M-RoostveltIsland ")
+		  .style({
+		  	'background': '#F7464A',  // select button : background red
+		  	'z-index': '5',
+		  })	
+		d3.select("#map-Q-Astoria")
+		  .style({
+		  	'color': 'white',
+		  	'background': 'none',
+		  	'z-index': '4',
+		  })	
+		d3.select("#map-Q-LongIslandCity")
+		  .style({
+		  	'color': 'white',
+		  	'background': 'none',
+		  	'z-index': '4',
+		  })	
+		d3.select("#map-Q-Elmhurst")
+		  .style({
+		  	'color': 'white',
+		  	'background': 'none',
+		  	'z-index': '4',
+		  })	
+		d3.select("#map-Q-ForestHill")
+		  .style({
+		  	'color': 'white',
+		  	'background': 'none',
+		  	'z-index': '4',
+		  })	
+		d3.select("#map-Q-Flushing")
+		  .style({
+		  	'color': 'white',
+		  	'background': 'none',
+		  	'z-index': '4',
+		  })	
+		d3.select("#map-Q-Corona")
+		  .style({
+		  	'color': 'white',
+		  	'background': 'none',
+		  	'z-index': '4',
+		  })	
+		d3.select("#map-Q-JacksonHeight")
+		  .style({
+		  	'color': 'white',
+		  	'background': 'none',
+		  	'z-index': '4',
+		  })	
+		d3.select("#map-Q-Woodside")
+		  .style({
+		  	'color': 'white',
+		  	'background': 'none',
+		  	'z-index': '4',
+		  })
+		d3.select("#map-B-ParkSlope")
+		  .style({
+		  	'color': 'white',
+		  	'background': 'none',
+		  	'z-index': '4',
+		  })
+		d3.select("#map-B-BayRidge")
+		  .style({
+		  	'color': 'white',
+		  	'background': 'none',
+		  	'z-index': '4',
+		  })		  
+		d3.select("#map-B-GreenPoint")
+		  .style({
+		  	'color': 'white',
+		  	'background': 'none',
+		  	'z-index': '4',
+		  })	
+		d3.select("#map-B-ClintonHill")
+		  .style({
+		  	'color': 'white',
+		  	'background': 'none',
+		  	'z-index': '4',
+		  })	
+		d3.select("#map-B-Williamsburg")
+		  .style({
+		  	'color': 'white',
+		  	'background': 'none',
+		  	'z-index': '4',
+		  })	
+		d3.select("#map-B-Bushwick")
+		  .style({
+		  	'color': 'white',
+		  	'background': 'none',
+		  	'z-index': '4',
+		  })	
+	});
+});
+
+///////////////Q: Astoria 
+$("document").ready(function(){
+
+	$("#map-Q-Astoria").click(function(){  
+		d3.select('#neighbor-title') // add text.
+		  .text("ASTORIA, QUEENS")
+		  .style({
+		  	'color': 'black',
+		  })
+
+	/////////////////
+
+		d3.select("#map-M-Harlem")
+		  .style({
+		  	'background': 'none', 
+		  	'z-index': '4',
+		  })	
+	
+		d3.select("#map-M-UpperEastSide")
+		  .style({
+		  	'background': 'none', 
+		  	'z-index': '4',
+		  })	
+		d3.select("#map-M-UpperWestSide")
+		  .style({
+		  	'background': 'none', 
+		  	'z-index': '4',
+		  })	
+		d3.select("#map-M-Midetown")
+		  .style({
+		  	'background': 'none',  
+		  	'z-index': '4',
+		  })
+		d3.select("#map-M-GreenwichVillage")
+		  .style({
+		  	'background': 'none',
+		  	'z-index': '4',
+		  })		  
+		d3.select("#map-M-LowerManhattan")
+		  .style({
+		  	'background': 'none',  
+		  	'z-index': '4',
+		  })	
+		d3.select("#map-M-RoostveltIsland ")
+		  .style({
+		  	'background': 'none', 
+		  	'z-index': '4',
+		  })	
+		d3.select("#map-Q-Astoria")
+		  .style({
+		  	'background': '#F7464A',  // select button : background red
+		  	'z-index': '5',
+		  })	
+		d3.select("#map-Q-LongIslandCity")
+		  .style({
+		  	'color': 'white',
+		  	'background': 'none',
+		  	'z-index': '4',
+		  })	
+		d3.select("#map-Q-Elmhurst")
+		  .style({
+		  	'color': 'white',
+		  	'background': 'none',
+		  	'z-index': '4',
+		  })	
+		d3.select("#map-Q-ForestHill")
+		  .style({
+		  	'color': 'white',
+		  	'background': 'none',
+		  	'z-index': '4',
+		  })	
+		d3.select("#map-Q-Flushing")
+		  .style({
+		  	'color': 'white',
+		  	'background': 'none',
+		  	'z-index': '4',
+		  })	
+		d3.select("#map-Q-Corona")
+		  .style({
+		  	'color': 'white',
+		  	'background': 'none',
+		  	'z-index': '4',
+		  })	
+		d3.select("#map-Q-JacksonHeight")
+		  .style({
+		  	'color': 'white',
+		  	'background': 'none',
+		  	'z-index': '4',
+		  })	
+		d3.select("#map-Q-Woodside")
+		  .style({
+		  	'color': 'white',
+		  	'background': 'none',
+		  	'z-index': '4',
+		  })
+		d3.select("#map-B-ParkSlope")
+		  .style({
+		  	'color': 'white',
+		  	'background': 'none',
+		  	'z-index': '4',
+		  })
+		d3.select("#map-B-BayRidge")
+		  .style({
+		  	'color': 'white',
+		  	'background': 'none',
+		  	'z-index': '4',
+		  })		  
+		d3.select("#map-B-GreenPoint")
+		  .style({
+		  	'color': 'white',
+		  	'background': 'none',
+		  	'z-index': '4',
+		  })	
+		d3.select("#map-B-ClintonHill")
+		  .style({
+		  	'color': 'white',
+		  	'background': 'none',
+		  	'z-index': '4',
+		  })	
+		d3.select("#map-B-Williamsburg")
+		  .style({
+		  	'color': 'white',
+		  	'background': 'none',
+		  	'z-index': '4',
+		  })	
+		d3.select("#map-B-Bushwick")
+		  .style({
+		  	'color': 'white',
+		  	'background': 'none',
+		  	'z-index': '4',
+		  })	
+	});
+});
+
+///////////////Q: Long Island City 
+$("document").ready(function(){
+
+	$("#map-Q-LongIslandCity").click(function(){  
+		d3.select('#neighbor-title') // add text.
+		  .text("LONG ISLAND CITY, QUEENS")
+		  .style({
+		  	'color': 'black',
+		  })
+
+	/////////////////
+
+		d3.select("#map-M-Harlem")
+		  .style({
+		  	'background': 'none', 
+		  	'z-index': '4',
+		  })	
+	
+		d3.select("#map-M-UpperEastSide")
+		  .style({
+		  	'background': 'none', 
+		  	'z-index': '4',
+		  })	
+		d3.select("#map-M-UpperWestSide")
+		  .style({
+		  	'background': 'none', 
+		  	'z-index': '4',
+		  })	
+		d3.select("#map-M-Midetown")
+		  .style({
+		  	'background': 'none',  
+		  	'z-index': '4',
+		  })
+		d3.select("#map-M-GreenwichVillage")
+		  .style({
+		  	'background': 'none',
+		  	'z-index': '4',
+		  })		  
+		d3.select("#map-M-LowerManhattan")
+		  .style({
+		  	'background': 'none',  
+		  	'z-index': '4',
+		  })	
+		d3.select("#map-M-RoostveltIsland ")
+		  .style({
+		  	'background': 'none', 
+		  	'z-index': '4',
+		  })	
+		d3.select("#map-Q-Astoria")
+		  .style({
+		  	'background': 'none',  
+		  	'z-index': '4',
+		  })	
+		d3.select("#map-Q-LongIslandCity")
+		  .style({
+		  	'background': '#F7464A',  // select button : background red
+		  	'z-index': '5',
+		  })	
+		d3.select("#map-Q-Elmhurst")
+		  .style({
+		  	'color': 'white',
+		  	'background': 'none',
+		  	'z-index': '4',
+		  })	
+		d3.select("#map-Q-ForestHill")
+		  .style({
+		  	'color': 'white',
+		  	'background': 'none',
+		  	'z-index': '4',
+		  })	
+		d3.select("#map-Q-Flushing")
+		  .style({
+		  	'color': 'white',
+		  	'background': 'none',
+		  	'z-index': '4',
+		  })	
+		d3.select("#map-Q-Corona")
+		  .style({
+		  	'color': 'white',
+		  	'background': 'none',
+		  	'z-index': '4',
+		  })	
+		d3.select("#map-Q-JacksonHeight")
+		  .style({
+		  	'color': 'white',
+		  	'background': 'none',
+		  	'z-index': '4',
+		  })	
+		d3.select("#map-Q-Woodside")
+		  .style({
+		  	'color': 'white',
+		  	'background': 'none',
+		  	'z-index': '4',
+		  })
+		d3.select("#map-B-ParkSlope")
+		  .style({
+		  	'color': 'white',
+		  	'background': 'none',
+		  	'z-index': '4',
+		  })
+		d3.select("#map-B-BayRidge")
+		  .style({
+		  	'color': 'white',
+		  	'background': 'none',
+		  	'z-index': '4',
+		  })		  
+		d3.select("#map-B-GreenPoint")
+		  .style({
+		  	'color': 'white',
+		  	'background': 'none',
+		  	'z-index': '4',
+		  })	
+		d3.select("#map-B-ClintonHill")
+		  .style({
+		  	'color': 'white',
+		  	'background': 'none',
+		  	'z-index': '4',
+		  })	
+		d3.select("#map-B-Williamsburg")
+		  .style({
+		  	'color': 'white',
+		  	'background': 'none',
+		  	'z-index': '4',
+		  })	
+		d3.select("#map-B-Bushwick")
+		  .style({
+		  	'color': 'white',
+		  	'background': 'none',
+		  	'z-index': '4',
+		  })	
+	});
+});
+
+///////////////Q: Elmhurst 
+$("document").ready(function(){
+
+	$("#map-Q-Elmhurst").click(function(){  
+		d3.select('#neighbor-title') // add text.
+		  .text("ELMHURST, QUEENS")
+		  .style({
+		  	'color': 'black',
+		  })
+
+	/////////////////
+
+		d3.select("#map-M-Harlem")
+		  .style({
+		  	'background': 'none', 
+		  	'z-index': '4',
+		  })	
+	
+		d3.select("#map-M-UpperEastSide")
+		  .style({
+		  	'background': 'none', 
+		  	'z-index': '4',
+		  })	
+		d3.select("#map-M-UpperWestSide")
+		  .style({
+		  	'background': 'none', 
+		  	'z-index': '4',
+		  })	
+		d3.select("#map-M-Midetown")
+		  .style({
+		  	'background': 'none',  
+		  	'z-index': '4',
+		  })
+		d3.select("#map-M-GreenwichVillage")
+		  .style({
+		  	'background': 'none',
+		  	'z-index': '4',
+		  })		  
+		d3.select("#map-M-LowerManhattan")
+		  .style({
+		  	'background': 'none',  
+		  	'z-index': '4',
+		  })	
+		d3.select("#map-M-RoostveltIsland ")
+		  .style({
+		  	'background': 'none', 
+		  	'z-index': '4',
+		  })	
+		d3.select("#map-Q-Astoria")
+		  .style({
+		  	'background': 'none',  
+		  	'z-index': '4',
+		  })	
+		d3.select("#map-Q-LongIslandCity")
+		  .style({
+		  	'background': 'none', 
+		  	'z-index': '4',
+		  })	
+		d3.select("#map-Q-Elmhurst")
+		  .style({
+		  	'background': '#F7464A',  // select button : background red
+		  	'z-index': '5',
+		  })	
+		d3.select("#map-Q-ForestHill")
+		  .style({
+		  	'color': 'white',
+		  	'background': 'none',
+		  	'z-index': '4',
+		  })	
+		d3.select("#map-Q-Flushing")
+		  .style({
+		  	'color': 'white',
+		  	'background': 'none',
+		  	'z-index': '4',
+		  })	
+		d3.select("#map-Q-Corona")
+		  .style({
+		  	'color': 'white',
+		  	'background': 'none',
+		  	'z-index': '4',
+		  })	
+		d3.select("#map-Q-JacksonHeight")
+		  .style({
+		  	'color': 'white',
+		  	'background': 'none',
+		  	'z-index': '4',
+		  })	
+		d3.select("#map-Q-Woodside")
+		  .style({
+		  	'color': 'white',
+		  	'background': 'none',
+		  	'z-index': '4',
+		  })
+		d3.select("#map-B-ParkSlope")
+		  .style({
+		  	'color': 'white',
+		  	'background': 'none',
+		  	'z-index': '4',
+		  })
+		d3.select("#map-B-BayRidge")
+		  .style({
+		  	'color': 'white',
+		  	'background': 'none',
+		  	'z-index': '4',
+		  })		  
+		d3.select("#map-B-GreenPoint")
+		  .style({
+		  	'color': 'white',
+		  	'background': 'none',
+		  	'z-index': '4',
+		  })	
+		d3.select("#map-B-ClintonHill")
+		  .style({
+		  	'color': 'white',
+		  	'background': 'none',
+		  	'z-index': '4',
+		  })	
+		d3.select("#map-B-Williamsburg")
+		  .style({
+		  	'color': 'white',
+		  	'background': 'none',
+		  	'z-index': '4',
+		  })	
+		d3.select("#map-B-Bushwick")
+		  .style({
+		  	'color': 'white',
+		  	'background': 'none',
+		  	'z-index': '4',
+		  })	
+	});
+});
+
+///////////////Q: Forest Hill 
+$("document").ready(function(){
+
+	$("#map-Q-ForestHill").click(function(){  
+		d3.select('#neighbor-title') // add text.
+		  .text("FOREST HILL, QUEENS")
+		  .style({
+		  	'color': 'black',
+		  })
+
+	/////////////////
+
+		d3.select("#map-M-Harlem")
+		  .style({
+		  	'background': 'none', 
+		  	'z-index': '4',
+		  })	
+	
+		d3.select("#map-M-UpperEastSide")
+		  .style({
+		  	'background': 'none', 
+		  	'z-index': '4',
+		  })	
+		d3.select("#map-M-UpperWestSide")
+		  .style({
+		  	'background': 'none', 
+		  	'z-index': '4',
+		  })	
+		d3.select("#map-M-Midetown")
+		  .style({
+		  	'background': 'none',  
+		  	'z-index': '4',
+		  })
+		d3.select("#map-M-GreenwichVillage")
+		  .style({
+		  	'background': 'none',
+		  	'z-index': '4',
+		  })		  
+		d3.select("#map-M-LowerManhattan")
+		  .style({
+		  	'background': 'none',  
+		  	'z-index': '4',
+		  })	
+		d3.select("#map-M-RoostveltIsland ")
+		  .style({
+		  	'background': 'none', 
+		  	'z-index': '4',
+		  })	
+		d3.select("#map-Q-Astoria")
+		  .style({
+		  	'background': 'none',  
+		  	'z-index': '4',
+		  })	
+		d3.select("#map-Q-LongIslandCity")
+		  .style({
+		  	'background': 'none', 
+		  	'z-index': '4',
+		  })	
+		d3.select("#map-Q-Elmhurst")
+		  .style({
+		  	'background': 'none',  
+		  	'z-index': '4',
+		  })	
+		d3.select("#map-Q-ForestHill")
+		  .style({
+		  	'background': '#F7464A',  // select button : background red
+		  	'z-index': '5',
+		  })	
+		d3.select("#map-Q-Flushing")
+		  .style({
+		  	'color': 'white',
+		  	'background': 'none',
+		  	'z-index': '4',
+		  })	
+		d3.select("#map-Q-Corona")
+		  .style({
+		  	'color': 'white',
+		  	'background': 'none',
+		  	'z-index': '4',
+		  })	
+		d3.select("#map-Q-JacksonHeight")
+		  .style({
+		  	'color': 'white',
+		  	'background': 'none',
+		  	'z-index': '4',
+		  })	
+		d3.select("#map-Q-Woodside")
+		  .style({
+		  	'color': 'white',
+		  	'background': 'none',
+		  	'z-index': '4',
+		  })
+		d3.select("#map-B-ParkSlope")
+		  .style({
+		  	'color': 'white',
+		  	'background': 'none',
+		  	'z-index': '4',
+		  })
+		d3.select("#map-B-BayRidge")
+		  .style({
+		  	'color': 'white',
+		  	'background': 'none',
+		  	'z-index': '4',
+		  })		  
+		d3.select("#map-B-GreenPoint")
+		  .style({
+		  	'color': 'white',
+		  	'background': 'none',
+		  	'z-index': '4',
+		  })	
+		d3.select("#map-B-ClintonHill")
+		  .style({
+		  	'color': 'white',
+		  	'background': 'none',
+		  	'z-index': '4',
+		  })	
+		d3.select("#map-B-Williamsburg")
+		  .style({
+		  	'color': 'white',
+		  	'background': 'none',
+		  	'z-index': '4',
+		  })	
+		d3.select("#map-B-Bushwick")
+		  .style({
+		  	'color': 'white',
+		  	'background': 'none',
+		  	'z-index': '4',
+		  })	
+	});
+});
+
+///////////////Q: Flushing 
+$("document").ready(function(){
+
+	$("#map-Q-Flushing").click(function(){  
+		d3.select('#neighbor-title') // add text.
+		  .text("FLUSHING, QUEENS")
+		  .style({
+		  	'color': 'black',
+		  })
+
+	/////////////////
+
+		d3.select("#map-M-Harlem")
+		  .style({
+		  	'background': 'none', 
+		  	'z-index': '4',
+		  })	
+	
+		d3.select("#map-M-UpperEastSide")
+		  .style({
+		  	'background': 'none', 
+		  	'z-index': '4',
+		  })	
+		d3.select("#map-M-UpperWestSide")
+		  .style({
+		  	'background': 'none', 
+		  	'z-index': '4',
+		  })	
+		d3.select("#map-M-Midetown")
+		  .style({
+		  	'background': 'none',  
+		  	'z-index': '4',
+		  })
+		d3.select("#map-M-GreenwichVillage")
+		  .style({
+		  	'background': 'none',
+		  	'z-index': '4',
+		  })		  
+		d3.select("#map-M-LowerManhattan")
+		  .style({
+		  	'background': 'none',  
+		  	'z-index': '4',
+		  })	
+		d3.select("#map-M-RoostveltIsland ")
+		  .style({
+		  	'background': 'none', 
+		  	'z-index': '4',
+		  })	
+		d3.select("#map-Q-Astoria")
+		  .style({
+		  	'background': 'none',  
+		  	'z-index': '4',
+		  })	
+		d3.select("#map-Q-LongIslandCity")
+		  .style({
+		  	'background': 'none', 
+		  	'z-index': '4',
+		  })	
+		d3.select("#map-Q-Elmhurst")
+		  .style({
+		  	'background': 'none',  
+		  	'z-index': '4',
+		  })	
+		d3.select("#map-Q-ForestHill")
+		  .style({
+		  	'background': 'none',  
+		  	'z-index': '4',
+		  })	
+		d3.select("#map-Q-Flushing")
+		  .style({
+		  	'background': '#F7464A',  // select button : background red
+		  	'z-index': '5',
+		  })	
+		d3.select("#map-Q-Corona")
+		  .style({
+		  	'color': 'white',
+		  	'background': 'none',
+		  	'z-index': '4',
+		  })	
+		d3.select("#map-Q-JacksonHeight")
+		  .style({
+		  	'color': 'white',
+		  	'background': 'none',
+		  	'z-index': '4',
+		  })	
+		d3.select("#map-Q-Woodside")
+		  .style({
+		  	'color': 'white',
+		  	'background': 'none',
+		  	'z-index': '4',
+		  })
+		d3.select("#map-B-ParkSlope")
+		  .style({
+		  	'color': 'white',
+		  	'background': 'none',
+		  	'z-index': '4',
+		  })
+		d3.select("#map-B-BayRidge")
+		  .style({
+		  	'color': 'white',
+		  	'background': 'none',
+		  	'z-index': '4',
+		  })		  
+		d3.select("#map-B-GreenPoint")
+		  .style({
+		  	'color': 'white',
+		  	'background': 'none',
+		  	'z-index': '4',
+		  })	
+		d3.select("#map-B-ClintonHill")
+		  .style({
+		  	'color': 'white',
+		  	'background': 'none',
+		  	'z-index': '4',
+		  })	
+		d3.select("#map-B-Williamsburg")
+		  .style({
+		  	'color': 'white',
+		  	'background': 'none',
+		  	'z-index': '4',
+		  })	
+		d3.select("#map-B-Bushwick")
+		  .style({
+		  	'color': 'white',
+		  	'background': 'none',
+		  	'z-index': '4',
+		  })	
+	});
+});
+
+///////////////Q: Corona 
+$("document").ready(function(){
+
+	$("#map-Q-Corona").click(function(){  
+		d3.select('#neighbor-title') // add text.
+		  .text("CORONA, QUEENS")
+		  .style({
+		  	'color': 'black',
+		  })
+
+	/////////////////
+
+		d3.select("#map-M-Harlem")
+		  .style({
+		  	'background': 'none', 
+		  	'z-index': '4',
+		  })	
+	
+		d3.select("#map-M-UpperEastSide")
+		  .style({
+		  	'background': 'none', 
+		  	'z-index': '4',
+		  })	
+		d3.select("#map-M-UpperWestSide")
+		  .style({
+		  	'background': 'none', 
+		  	'z-index': '4',
+		  })	
+		d3.select("#map-M-Midetown")
+		  .style({
+		  	'background': 'none',  
+		  	'z-index': '4',
+		  })
+		d3.select("#map-M-GreenwichVillage")
+		  .style({
+		  	'background': 'none',
+		  	'z-index': '4',
+		  })		  
+		d3.select("#map-M-LowerManhattan")
+		  .style({
+		  	'background': 'none',  
+		  	'z-index': '4',
+		  })	
+		d3.select("#map-M-RoostveltIsland ")
+		  .style({
+		  	'background': 'none', 
+		  	'z-index': '4',
+		  })	
+		d3.select("#map-Q-Astoria")
+		  .style({
+		  	'background': 'none',  
+		  	'z-index': '4',
+		  })	
+		d3.select("#map-Q-LongIslandCity")
+		  .style({
+		  	'background': 'none', 
+		  	'z-index': '4',
+		  })	
+		d3.select("#map-Q-Elmhurst")
+		  .style({
+		  	'background': 'none',  
+		  	'z-index': '4',
+		  })	
+		d3.select("#map-Q-ForestHill")
+		  .style({
+		  	'background': 'none',  
+		  	'z-index': '4',
+		  })	
+		d3.select("#map-Q-Flushing")
+		  .style({
+		  	'background': 'none',  
+		  	'z-index': '4',
+		  })	
+		d3.select("#map-Q-Corona")
+		  .style({
+		  	'background': '#F7464A',  // select button : background red
+		  	'z-index': '5',
+		  })	
+		d3.select("#map-Q-JacksonHeight")
+		  .style({
+		  	'color': 'white',
+		  	'background': 'none',
+		  	'z-index': '4',
+		  })	
+		d3.select("#map-Q-Woodside")
+		  .style({
+		  	'color': 'white',
+		  	'background': 'none',
+		  	'z-index': '4',
+		  })
+		d3.select("#map-B-ParkSlope")
+		  .style({
+		  	'color': 'white',
+		  	'background': 'none',
+		  	'z-index': '4',
+		  })
+		d3.select("#map-B-BayRidge")
+		  .style({
+		  	'color': 'white',
+		  	'background': 'none',
+		  	'z-index': '4',
+		  })		  
+		d3.select("#map-B-GreenPoint")
+		  .style({
+		  	'color': 'white',
+		  	'background': 'none',
+		  	'z-index': '4',
+		  })	
+		d3.select("#map-B-ClintonHill")
+		  .style({
+		  	'color': 'white',
+		  	'background': 'none',
+		  	'z-index': '4',
+		  })	
+		d3.select("#map-B-Williamsburg")
+		  .style({
+		  	'color': 'white',
+		  	'background': 'none',
+		  	'z-index': '4',
+		  })	
+		d3.select("#map-B-Bushwick")
+		  .style({
+		  	'color': 'white',
+		  	'background': 'none',
+		  	'z-index': '4',
+		  })	
+	});
+});
+
+///////////////Q: Jackson Height 
+$("document").ready(function(){
+
+	$("#map-Q-JacksonHeight").click(function(){  
+		d3.select('#neighbor-title') // add text.
+		  .text("JACKSON HEIGHT, QUEENS")
+		  .style({
+		  	'color': 'black',
+		  })
+
+	/////////////////
+
+		d3.select("#map-M-Harlem")
+		  .style({
+		  	'background': 'none', 
+		  	'z-index': '4',
+		  })	
+	
+		d3.select("#map-M-UpperEastSide")
+		  .style({
+		  	'background': 'none', 
+		  	'z-index': '4',
+		  })	
+		d3.select("#map-M-UpperWestSide")
+		  .style({
+		  	'background': 'none', 
+		  	'z-index': '4',
+		  })	
+		d3.select("#map-M-Midetown")
+		  .style({
+		  	'background': 'none',  
+		  	'z-index': '4',
+		  })
+		d3.select("#map-M-GreenwichVillage")
+		  .style({
+		  	'background': 'none',
+		  	'z-index': '4',
+		  })		  
+		d3.select("#map-M-LowerManhattan")
+		  .style({
+		  	'background': 'none',  
+		  	'z-index': '4',
+		  })	
+		d3.select("#map-M-RoostveltIsland ")
+		  .style({
+		  	'background': 'none', 
+		  	'z-index': '4',
+		  })	
+		d3.select("#map-Q-Astoria")
+		  .style({
+		  	'background': 'none',  
+		  	'z-index': '4',
+		  })	
+		d3.select("#map-Q-LongIslandCity")
+		  .style({
+		  	'background': 'none', 
+		  	'z-index': '4',
+		  })	
+		d3.select("#map-Q-Elmhurst")
+		  .style({
+		  	'background': 'none',  
+		  	'z-index': '4',
+		  })	
+		d3.select("#map-Q-ForestHill")
+		  .style({
+		  	'background': 'none',  
+		  	'z-index': '4',
+		  })	
+		d3.select("#map-Q-Flushing")
+		  .style({
+		  	'background': 'none',  
+		  	'z-index': '4',
+		  })	
+		d3.select("#map-Q-Corona")
+		  .style({
+		  	'background': 'none',  
+		  	'z-index': '4',
+		  })	
+		d3.select("#map-Q-JacksonHeight")
+		  .style({
+		  	'background': '#F7464A',  // select button : background red
+		  	'z-index': '5',
+		  })	
+		d3.select("#map-Q-Woodside")
+		  .style({
+		  	'color': 'white',
+		  	'background': 'none',
+		  	'z-index': '4',
+		  })
+		d3.select("#map-B-ParkSlope")
+		  .style({
+		  	'color': 'white',
+		  	'background': 'none',
+		  	'z-index': '4',
+		  })
+		d3.select("#map-B-BayRidge")
+		  .style({
+		  	'color': 'white',
+		  	'background': 'none',
+		  	'z-index': '4',
+		  })		  
+		d3.select("#map-B-GreenPoint")
+		  .style({
+		  	'color': 'white',
+		  	'background': 'none',
+		  	'z-index': '4',
+		  })	
+		d3.select("#map-B-ClintonHill")
+		  .style({
+		  	'color': 'white',
+		  	'background': 'none',
+		  	'z-index': '4',
+		  })	
+		d3.select("#map-B-Williamsburg")
+		  .style({
+		  	'color': 'white',
+		  	'background': 'none',
+		  	'z-index': '4',
+		  })	
+		d3.select("#map-B-Bushwick")
+		  .style({
+		  	'color': 'white',
+		  	'background': 'none',
+		  	'z-index': '4',
+		  })	
+	});
+});
+
+///////////////Q: Woodside 
+$("document").ready(function(){
+
+	$("#map-Q-Woodside").click(function(){  
+		d3.select('#neighbor-title') // add text.
+		  .text("WOODSIDE, QUEENS")
+		  .style({
+		  	'color': 'black',
+		  })
+
+	/////////////////
+
+		d3.select("#map-M-Harlem")
+		  .style({
+		  	'background': 'none', 
+		  	'z-index': '4',
+		  })	
+	
+		d3.select("#map-M-UpperEastSide")
+		  .style({
+		  	'background': 'none', 
+		  	'z-index': '4',
+		  })	
+		d3.select("#map-M-UpperWestSide")
+		  .style({
+		  	'background': 'none', 
+		  	'z-index': '4',
+		  })	
+		d3.select("#map-M-Midetown")
+		  .style({
+		  	'background': 'none',  
+		  	'z-index': '4',
+		  })
+		d3.select("#map-M-GreenwichVillage")
+		  .style({
+		  	'background': 'none',
+		  	'z-index': '4',
+		  })		  
+		d3.select("#map-M-LowerManhattan")
+		  .style({
+		  	'background': 'none',  
+		  	'z-index': '4',
+		  })	
+		d3.select("#map-M-RoostveltIsland ")
+		  .style({
+		  	'background': 'none', 
+		  	'z-index': '4',
+		  })	
+		d3.select("#map-Q-Astoria")
+		  .style({
+		  	'background': 'none',  
+		  	'z-index': '4',
+		  })	
+		d3.select("#map-Q-LongIslandCity")
+		  .style({
+		  	'background': 'none', 
+		  	'z-index': '4',
+		  })	
+		d3.select("#map-Q-Elmhurst")
+		  .style({
+		  	'background': 'none',  
+		  	'z-index': '4',
+		  })	
+		d3.select("#map-Q-ForestHill")
+		  .style({
+		  	'background': 'none',  
+		  	'z-index': '4',
+		  })	
+		d3.select("#map-Q-Flushing")
+		  .style({
+		  	'background': 'none',  
+		  	'z-index': '4',
+		  })	
+		d3.select("#map-Q-Corona")
+		  .style({
+		  	'background': 'none',  
+		  	'z-index': '4',
+		  })	
+		d3.select("#map-Q-JacksonHeight")
+		  .style({
+		  	'background': 'none',  
+		  	'z-index': '4',
+		  })	
+		d3.select("#map-Q-Woodside")
+		  .style({
+		  	'background': '#F7464A',  // select button : background red
+		  	'z-index': '5',
+		  })
+		d3.select("#map-B-ParkSlope")
+		  .style({
+		  	'color': 'white',
+		  	'background': 'none',
+		  	'z-index': '4',
+		  })
+		d3.select("#map-B-BayRidge")
+		  .style({
+		  	'color': 'white',
+		  	'background': 'none',
+		  	'z-index': '4',
+		  })		  
+		d3.select("#map-B-GreenPoint")
+		  .style({
+		  	'color': 'white',
+		  	'background': 'none',
+		  	'z-index': '4',
+		  })	
+		d3.select("#map-B-ClintonHill")
+		  .style({
+		  	'color': 'white',
+		  	'background': 'none',
+		  	'z-index': '4',
+		  })	
+		d3.select("#map-B-Williamsburg")
+		  .style({
+		  	'color': 'white',
+		  	'background': 'none',
+		  	'z-index': '4',
+		  })	
+		d3.select("#map-B-Bushwick")
+		  .style({
+		  	'color': 'white',
+		  	'background': 'none',
+		  	'z-index': '4',
+		  })	
+	});
+});
+
+///////////////Q: Park Slope 
+$("document").ready(function(){
+
+	$("#map-B-ParkSlope").click(function(){  
+		d3.select('#neighbor-title') // add text.
+		  .text("PARK SLOPE, BROOKLYN")
+		  .style({
+		  	'color': 'black',
+		  })
+
+	/////////////////
+
+		d3.select("#map-M-Harlem")
+		  .style({
+		  	'background': 'none', 
+		  	'z-index': '4',
+		  })	
+	
+		d3.select("#map-M-UpperEastSide")
+		  .style({
+		  	'background': 'none', 
+		  	'z-index': '4',
+		  })	
+		d3.select("#map-M-UpperWestSide")
+		  .style({
+		  	'background': 'none', 
+		  	'z-index': '4',
+		  })	
+		d3.select("#map-M-Midetown")
+		  .style({
+		  	'background': 'none',  
+		  	'z-index': '4',
+		  })
+		d3.select("#map-M-GreenwichVillage")
+		  .style({
+		  	'background': 'none',
+		  	'z-index': '4',
+		  })		  
+		d3.select("#map-M-LowerManhattan")
+		  .style({
+		  	'background': 'none',  
+		  	'z-index': '4',
+		  })	
+		d3.select("#map-M-RoostveltIsland ")
+		  .style({
+		  	'background': 'none', 
+		  	'z-index': '4',
+		  })	
+		d3.select("#map-Q-Astoria")
+		  .style({
+		  	'background': 'none',  
+		  	'z-index': '4',
+		  })	
+		d3.select("#map-Q-LongIslandCity")
+		  .style({
+		  	'background': 'none', 
+		  	'z-index': '4',
+		  })	
+		d3.select("#map-Q-Elmhurst")
+		  .style({
+		  	'background': 'none',  
+		  	'z-index': '4',
+		  })	
+		d3.select("#map-Q-ForestHill")
+		  .style({
+		  	'background': 'none',  
+		  	'z-index': '4',
+		  })	
+		d3.select("#map-Q-Flushing")
+		  .style({
+		  	'background': 'none',  
+		  	'z-index': '4',
+		  })	
+		d3.select("#map-Q-Corona")
+		  .style({
+		  	'background': 'none',  
+		  	'z-index': '4',
+		  })	
+		d3.select("#map-Q-JacksonHeight")
+		  .style({
+		  	'background': 'none',  
+		  	'z-index': '4',
+		  })	
+		d3.select("#map-Q-Woodside")
+		  .style({
+		  	'background': 'none',  
+		  	'z-index': '4',
+		  })
+		d3.select("#map-B-ParkSlope")
+		  .style({
+		  	'background': '#F7464A',  // select button : background red
+		  	'z-index': '5',
+		  })
+		d3.select("#map-B-BayRidge")
+		  .style({
+		  	'color': 'white',
+		  	'background': 'none',
+		  	'z-index': '4',
+		  })		  
+		d3.select("#map-B-GreenPoint")
+		  .style({
+		  	'color': 'white',
+		  	'background': 'none',
+		  	'z-index': '4',
+		  })	
+		d3.select("#map-B-ClintonHill")
+		  .style({
+		  	'color': 'white',
+		  	'background': 'none',
+		  	'z-index': '4',
+		  })	
+		d3.select("#map-B-Williamsburg")
+		  .style({
+		  	'color': 'white',
+		  	'background': 'none',
+		  	'z-index': '4',
+		  })	
+		d3.select("#map-B-Bushwick")
+		  .style({
+		  	'color': 'white',
+		  	'background': 'none',
+		  	'z-index': '4',
+		  })	
+	});
+});
+
+///////////////Q: Bay Ridge 
+$("document").ready(function(){
+
+	$("#map-B-BayRidge").click(function(){  
+		d3.select('#neighbor-title') // add text.
+		  .text("BAY RIDGE, BROOKLYN")
+		  .style({
+		  	'color': 'black',
+		  })
+
+	/////////////////
+
+		d3.select("#map-M-Harlem")
+		  .style({
+		  	'background': 'none', 
+		  	'z-index': '4',
+		  })	
+	
+		d3.select("#map-M-UpperEastSide")
+		  .style({
+		  	'background': 'none', 
+		  	'z-index': '4',
+		  })	
+		d3.select("#map-M-UpperWestSide")
+		  .style({
+		  	'background': 'none', 
+		  	'z-index': '4',
+		  })	
+		d3.select("#map-M-Midetown")
+		  .style({
+		  	'background': 'none',  
+		  	'z-index': '4',
+		  })
+		d3.select("#map-M-GreenwichVillage")
+		  .style({
+		  	'background': 'none',
+		  	'z-index': '4',
+		  })		  
+		d3.select("#map-M-LowerManhattan")
+		  .style({
+		  	'background': 'none',  
+		  	'z-index': '4',
+		  })	
+		d3.select("#map-M-RoostveltIsland ")
+		  .style({
+		  	'background': 'none', 
+		  	'z-index': '4',
+		  })	
+		d3.select("#map-Q-Astoria")
+		  .style({
+		  	'background': 'none',  
+		  	'z-index': '4',
+		  })	
+		d3.select("#map-Q-LongIslandCity")
+		  .style({
+		  	'background': 'none', 
+		  	'z-index': '4',
+		  })	
+		d3.select("#map-Q-Elmhurst")
+		  .style({
+		  	'background': 'none',  
+		  	'z-index': '4',
+		  })	
+		d3.select("#map-Q-ForestHill")
+		  .style({
+		  	'background': 'none',  
+		  	'z-index': '4',
+		  })	
+		d3.select("#map-Q-Flushing")
+		  .style({
+		  	'background': 'none',  
+		  	'z-index': '4',
+		  })	
+		d3.select("#map-Q-Corona")
+		  .style({
+		  	'background': 'none',  
+		  	'z-index': '4',
+		  })	
+		d3.select("#map-Q-JacksonHeight")
+		  .style({
+		  	'background': 'none',  
+		  	'z-index': '4',
+		  })	
+		d3.select("#map-Q-Woodside")
+		  .style({
+		  	'background': 'none',  
+		  	'z-index': '4',
+		  })
+		d3.select("#map-B-ParkSlope")
+		  .style({
+		  	'background': 'none', 
+		  	'z-index': '4',
+		  })
+		d3.select("#map-B-BayRidge")
+		  .style({
+		  	'background': '#F7464A',  // select button : background red
+		  	'z-index': '5',
+		  })		  
+		d3.select("#map-B-GreenPoint")
+		  .style({
+		  	'color': 'white',
+		  	'background': 'none',
+		  	'z-index': '4',
+		  })	
+		d3.select("#map-B-ClintonHill")
+		  .style({
+		  	'color': 'white',
+		  	'background': 'none',
+		  	'z-index': '4',
+		  })	
+		d3.select("#map-B-Williamsburg")
+		  .style({
+		  	'color': 'white',
+		  	'background': 'none',
+		  	'z-index': '4',
+		  })	
+		d3.select("#map-B-Bushwick")
+		  .style({
+		  	'color': 'white',
+		  	'background': 'none',
+		  	'z-index': '4',
+		  })	
+	});
+});
+
+///////////////Q: Greenpoint
+$("document").ready(function(){
+
+	$("#map-B-GreenPoint").click(function(){  
+		d3.select('#neighbor-title') // add text.
+		  .text("GREENPOINT, BROOKLYN")
+		  .style({
+		  	'color': 'black',
+		  })
+
+	/////////////////
+
+		d3.select("#map-M-Harlem")
+		  .style({
+		  	'background': 'none', 
+		  	'z-index': '4',
+		  })	
+	
+		d3.select("#map-M-UpperEastSide")
+		  .style({
+		  	'background': 'none', 
+		  	'z-index': '4',
+		  })	
+		d3.select("#map-M-UpperWestSide")
+		  .style({
+		  	'background': 'none', 
+		  	'z-index': '4',
+		  })	
+		d3.select("#map-M-Midetown")
+		  .style({
+		  	'background': 'none',  
+		  	'z-index': '4',
+		  })
+		d3.select("#map-M-GreenwichVillage")
+		  .style({
+		  	'background': 'none',
+		  	'z-index': '4',
+		  })		  
+		d3.select("#map-M-LowerManhattan")
+		  .style({
+		  	'background': 'none',  
+		  	'z-index': '4',
+		  })	
+		d3.select("#map-M-RoostveltIsland ")
+		  .style({
+		  	'background': 'none', 
+		  	'z-index': '4',
+		  })	
+		d3.select("#map-Q-Astoria")
+		  .style({
+		  	'background': 'none',  
+		  	'z-index': '4',
+		  })	
+		d3.select("#map-Q-LongIslandCity")
+		  .style({
+		  	'background': 'none', 
+		  	'z-index': '4',
+		  })	
+		d3.select("#map-Q-Elmhurst")
+		  .style({
+		  	'background': 'none',  
+		  	'z-index': '4',
+		  })	
+		d3.select("#map-Q-ForestHill")
+		  .style({
+		  	'background': 'none',  
+		  	'z-index': '4',
+		  })	
+		d3.select("#map-Q-Flushing")
+		  .style({
+		  	'background': 'none',  
+		  	'z-index': '4',
+		  })	
+		d3.select("#map-Q-Corona")
+		  .style({
+		  	'background': 'none',  
+		  	'z-index': '4',
+		  })	
+		d3.select("#map-Q-JacksonHeight")
+		  .style({
+		  	'background': 'none',  
+		  	'z-index': '4',
+		  })	
+		d3.select("#map-Q-Woodside")
+		  .style({
+		  	'background': 'none',  
+		  	'z-index': '4',
+		  })
+		d3.select("#map-B-ParkSlope")
+		  .style({
+		  	'background': 'none', 
+		  	'z-index': '4',
+		  })
+		d3.select("#map-B-BayRidge")
+		  .style({
+		  	'background': 'none', 
+		  	'z-index': '4',
+		  })		  
+		d3.select("#map-B-GreenPoint")
+		  .style({
+		  	'background': '#F7464A',  // select button : background red
+		  	'z-index': '5',
+		  })	
+		d3.select("#map-B-ClintonHill")
+		  .style({
+		  	'color': 'white',
+		  	'background': 'none',
+		  	'z-index': '4',
+		  })	
+		d3.select("#map-B-Williamsburg")
+		  .style({
+		  	'color': 'white',
+		  	'background': 'none',
+		  	'z-index': '4',
+		  })	
+		d3.select("#map-B-Bushwick")
+		  .style({
+		  	'color': 'white',
+		  	'background': 'none',
+		  	'z-index': '4',
+		  })	
+	});
+});
+
+///////////////Q: Clinton Hill
+$("document").ready(function(){
+
+	$("#map-B-ClintonHill").click(function(){  
+		d3.select('#neighbor-title') // add text.
+		  .text("CLINTON HILL, BROOKLYN")
+		  .style({
+		  	'color': 'black',
+		  })
+
+	/////////////////
+
+		d3.select("#map-M-Harlem")
+		  .style({
+		  	'background': 'none', 
+		  	'z-index': '4',
+		  })	
+	
+		d3.select("#map-M-UpperEastSide")
+		  .style({
+		  	'background': 'none', 
+		  	'z-index': '4',
+		  })	
+		d3.select("#map-M-UpperWestSide")
+		  .style({
+		  	'background': 'none', 
+		  	'z-index': '4',
+		  })	
+		d3.select("#map-M-Midetown")
+		  .style({
+		  	'background': 'none',  
+		  	'z-index': '4',
+		  })
+		d3.select("#map-M-GreenwichVillage")
+		  .style({
+		  	'background': 'none',
+		  	'z-index': '4',
+		  })		  
+		d3.select("#map-M-LowerManhattan")
+		  .style({
+		  	'background': 'none',  
+		  	'z-index': '4',
+		  })	
+		d3.select("#map-M-RoostveltIsland ")
+		  .style({
+		  	'background': 'none', 
+		  	'z-index': '4',
+		  })	
+		d3.select("#map-Q-Astoria")
+		  .style({
+		  	'background': 'none',  
+		  	'z-index': '4',
+		  })	
+		d3.select("#map-Q-LongIslandCity")
+		  .style({
+		  	'background': 'none', 
+		  	'z-index': '4',
+		  })	
+		d3.select("#map-Q-Elmhurst")
+		  .style({
+		  	'background': 'none',  
+		  	'z-index': '4',
+		  })	
+		d3.select("#map-Q-ForestHill")
+		  .style({
+		  	'background': 'none',  
+		  	'z-index': '4',
+		  })	
+		d3.select("#map-Q-Flushing")
+		  .style({
+		  	'background': 'none',  
+		  	'z-index': '4',
+		  })	
+		d3.select("#map-Q-Corona")
+		  .style({
+		  	'background': 'none',  
+		  	'z-index': '4',
+		  })	
+		d3.select("#map-Q-JacksonHeight")
+		  .style({
+		  	'background': 'none',  
+		  	'z-index': '4',
+		  })	
+		d3.select("#map-Q-Woodside")
+		  .style({
+		  	'background': 'none',  
+		  	'z-index': '4',
+		  })
+		d3.select("#map-B-ParkSlope")
+		  .style({
+		  	'background': 'none', 
+		  	'z-index': '4',
+		  })
+		d3.select("#map-B-BayRidge")
+		  .style({
+		  	'background': 'none', 
+		  	'z-index': '4',
+		  })		  
+		d3.select("#map-B-GreenPoint")
+		  .style({
+		  	'background': 'none', 
+		  	'z-index': '4',
+		  })	
+		d3.select("#map-B-ClintonHill")
+		  .style({
+		  	'background': '#F7464A',  // select button : background red
+		  	'z-index': '5',
+		  })	
+		d3.select("#map-B-Williamsburg")
+		  .style({
+		  	'color': 'white',
+		  	'background': 'none',
+		  	'z-index': '4',
+		  })	
+		d3.select("#map-B-Bushwick")
+		  .style({
+		  	'color': 'white',
+		  	'background': 'none',
+		  	'z-index': '4',
+		  })	
+	});
+});
+
+///////////////Q: Williamsburg
+$("document").ready(function(){
+
+	$("#map-B-Williamsburg").click(function(){  
+		d3.select('#neighbor-title') // add text.
+		  .text("WILLIAMSBURG, BROOKLYN")
+		  .style({
+		  	'color': 'black',
+		  })
+
+	/////////////////
+
+		d3.select("#map-M-Harlem")
+		  .style({
+		  	'background': 'none', 
+		  	'z-index': '4',
+		  })	
+	
+		d3.select("#map-M-UpperEastSide")
+		  .style({
+		  	'background': 'none', 
+		  	'z-index': '4',
+		  })	
+		d3.select("#map-M-UpperWestSide")
+		  .style({
+		  	'background': 'none', 
+		  	'z-index': '4',
+		  })	
+		d3.select("#map-M-Midetown")
+		  .style({
+		  	'background': 'none',  
+		  	'z-index': '4',
+		  })
+		d3.select("#map-M-GreenwichVillage")
+		  .style({
+		  	'background': 'none',
+		  	'z-index': '4',
+		  })		  
+		d3.select("#map-M-LowerManhattan")
+		  .style({
+		  	'background': 'none',  
+		  	'z-index': '4',
+		  })	
+		d3.select("#map-M-RoostveltIsland ")
+		  .style({
+		  	'background': 'none', 
+		  	'z-index': '4',
+		  })	
+		d3.select("#map-Q-Astoria")
+		  .style({
+		  	'background': 'none',  
+		  	'z-index': '4',
+		  })	
+		d3.select("#map-Q-LongIslandCity")
+		  .style({
+		  	'background': 'none', 
+		  	'z-index': '4',
+		  })	
+		d3.select("#map-Q-Elmhurst")
+		  .style({
+		  	'background': 'none',  
+		  	'z-index': '4',
+		  })	
+		d3.select("#map-Q-ForestHill")
+		  .style({
+		  	'background': 'none',  
+		  	'z-index': '4',
+		  })	
+		d3.select("#map-Q-Flushing")
+		  .style({
+		  	'background': 'none',  
+		  	'z-index': '4',
+		  })	
+		d3.select("#map-Q-Corona")
+		  .style({
+		  	'background': 'none',  
+		  	'z-index': '4',
+		  })	
+		d3.select("#map-Q-JacksonHeight")
+		  .style({
+		  	'background': 'none',  
+		  	'z-index': '4',
+		  })	
+		d3.select("#map-Q-Woodside")
+		  .style({
+		  	'background': 'none',  
+		  	'z-index': '4',
+		  })
+		d3.select("#map-B-ParkSlope")
+		  .style({
+		  	'background': 'none', 
+		  	'z-index': '4',
+		  })
+		d3.select("#map-B-BayRidge")
+		  .style({
+		  	'background': 'none', 
+		  	'z-index': '4',
+		  })		  
+		d3.select("#map-B-GreenPoint")
+		  .style({
+		  	'background': 'none', 
+		  	'z-index': '4',
+		  })	
+		d3.select("#map-B-ClintonHill")
+		  .style({
+		  	'background': 'none',  
+		  	'z-index': '4',
+		  })	
+		d3.select("#map-B-Williamsburg")
+		  .style({
+		  	'background': '#F7464A',  // select button : background red
+		  	'z-index': '5',
+		  })	
+		d3.select("#map-B-Bushwick")
+		  .style({
+		  	'color': 'white',
+		  	'background': 'none',
+		  	'z-index': '4',
+		  })	
+	});
+});
+
+///////////////Q: Bushwick
+$("document").ready(function(){
+
+	$("#map-B-Bushwick").click(function(){  
+		d3.select('#neighbor-title') // add text.
+		  .text("BUSHWICK, BROOKLYN")
+		  .style({
+		  	'color': 'black',
+		  })
+
+	/////////////////
+
+		d3.select("#map-M-Harlem")
+		  .style({
+		  	'background': 'none', 
+		  	'z-index': '4',
+		  })	
+	
+		d3.select("#map-M-UpperEastSide")
+		  .style({
+		  	'background': 'none', 
+		  	'z-index': '4',
+		  })	
+		d3.select("#map-M-UpperWestSide")
+		  .style({
+		  	'background': 'none', 
+		  	'z-index': '4',
+		  })	
+		d3.select("#map-M-Midetown")
+		  .style({
+		  	'background': 'none',  
+		  	'z-index': '4',
+		  })
+		d3.select("#map-M-GreenwichVillage")
+		  .style({
+		  	'background': 'none',
+		  	'z-index': '4',
+		  })		  
+		d3.select("#map-M-LowerManhattan")
+		  .style({
+		  	'background': 'none',  
+		  	'z-index': '4',
+		  })	
+		d3.select("#map-M-RoostveltIsland ")
+		  .style({
+		  	'background': 'none', 
+		  	'z-index': '4',
+		  })	
+		d3.select("#map-Q-Astoria")
+		  .style({
+		  	'background': 'none',  
+		  	'z-index': '4',
+		  })	
+		d3.select("#map-Q-LongIslandCity")
+		  .style({
+		  	'background': 'none', 
+		  	'z-index': '4',
+		  })	
+		d3.select("#map-Q-Elmhurst")
+		  .style({
+		  	'background': 'none',  
+		  	'z-index': '4',
+		  })	
+		d3.select("#map-Q-ForestHill")
+		  .style({
+		  	'background': 'none',  
+		  	'z-index': '4',
+		  })	
+		d3.select("#map-Q-Flushing")
+		  .style({
+		  	'background': 'none',  
+		  	'z-index': '4',
+		  })	
+		d3.select("#map-Q-Corona")
+		  .style({
+		  	'background': 'none',  
+		  	'z-index': '4',
+		  })	
+		d3.select("#map-Q-JacksonHeight")
+		  .style({
+		  	'background': 'none',  
+		  	'z-index': '4',
+		  })	
+		d3.select("#map-Q-Woodside")
+		  .style({
+		  	'background': 'none',  
+		  	'z-index': '4',
+		  })
+		d3.select("#map-B-ParkSlope")
+		  .style({
+		  	'background': 'none', 
+		  	'z-index': '4',
+		  })
+		d3.select("#map-B-BayRidge")
+		  .style({
+		  	'background': 'none', 
+		  	'z-index': '4',
+		  })		  
+		d3.select("#map-B-GreenPoint")
+		  .style({
+		  	'background': 'none', 
+		  	'z-index': '4',
+		  })	
+		d3.select("#map-B-ClintonHill")
+		  .style({
+		  	'background': 'none',  
+		  	'z-index': '4',
+		  })	
+		d3.select("#map-B-Williamsburg")
+		  .style({
+		  	'background': 'none', 
+		  	'z-index': '4',
+		  })	
+		d3.select("#map-B-Bushwick")
+		  .style({
+		  	'background': '#F7464A',  // select button : background red
+		  	'z-index': '5',
+		  })	
+	});
+});
+
+$("document").ready(function(){
+
+
+    // housing buttons	
+	$("#housing-studio").click(function(){ // housing: studio 
+		d3.select("#housing-studio")
+		  .style({
+		  	'color': 'black', // select button : background white
+		  	'background': 'white',
+		  	'z-index': '5',
+		  })		
+		d3.select("#housing-1br")
+		  .style({		  	
+		  	'background': 'none',
+		  	'z-index': '4',
+		  })
+		d3.select("#housing-2br")
+		  .style({
+		  	'background': 'none',
+		  	'z-index': '4',
+		  })
+	});	
+
+	$("#housing-1br").click(function(){ // housing: studio 
+		d3.select("#housing-studio")
+		  .style({
+		  	'background': 'none',
+		  	'z-index': '4',
+		  })		
+		d3.select("#housing-1br")
+		  .style({		  	
+		  	'color': 'black', // select button : background white
+		  	'background': 'white',
+		  	'z-index': '5',
+		  })
+		d3.select("#housing-2br")
+		  .style({
+		  	'background': 'none',
+		  	'z-index': '4',
+		  })
+	});	
+
+	$("#housing-2br").click(function(){ // housing: studio 
+		d3.select("#housing-studio")
+		  .style({
+		  	'background': 'none',
+		  	'z-index': '4',
+		  })		
+		d3.select("#housing-1br")
+		  .style({		  	
+		  	'background': 'none',
+		  	'z-index': '4',
+		  })
+		d3.select("#housing-2br")
+		  .style({
+		  	'color': 'black', // select button : background white
+		  	'background': 'white',
+		  	'z-index': '5',
+		  })
+	});	
+
+	$(".mapbutton").click(function(){
+
+
+  		switch ( $(".mapbutton").index( this ) ) {
+  		  case 0 :
+    		value = $("#living-amt").data("amt-living", 1600); //Harlem
+    		break;	
+  		  case 1 :
+    		value = $("#living-amt").data("amt-living", 2700); //UpperEastSide
+    		break;
+  		  case 2 :
+    		value = $("#living-amt").data("amt-living", 2500); //UpperWestSide
+    		break;
+  		  case 3 :
+    		value = $("#living-amt").data("amt-living", 2500); //Midetown
+    		break;    
+  		  case 4 :
+    		value = $("#living-amt").data("amt-living", 2300); //GreenwichVillage
+    		break;    		
+  		  case 5 :
+    		value = $("#living-amt").data("amt-living", 2800); //LowerManhattan
+    		break;  
+  		  case 6 :
+    		value = $("#living-amt").data("amt-living", 2100); //RoostveltIsland
+    		break;  
+  		  case 7 :
+    		value = $("#living-amt").data("amt-living", 1700); //Astoria
+    		break; 
+  		  case 8 :
+    		value = $("#living-amt").data("amt-living", 2200); //LongIslandCity
+    		break; 
+  		  case 9 :
+    		value = $("#living-amt").data("amt-living", 1400); //Elmhurst
+    		break; 
+  		  case 10 :
+    		value = $("#living-amt").data("amt-living", 1600); //ForestHill
+    		break; 
+  		  case 11 :
+    		value = $("#living-amt").data("amt-living", 1200); //Flushing
+    		break; 
+  		  case 12 :
+    		value = $("#living-amt").data("amt-living", 1400); //Corona
+    		break;   		
+  		  case 13 :
+    		value = $("#living-amt").data("amt-living", 1500); //JacksonHeight
+    		break;   	
+  		  case 14 :
+    		value = $("#living-amt").data("amt-living", 1500); //Woodside
+    		break;   	  		
+  		  case 15 :
+    		value = $("#living-amt").data("amt-living", 2300); //ParkSlope
+    		break;   	 
+  		  case 16 :
+    		value = $("#living-amt").data("amt-living", 2600); //GreenPoint
+    		break;   	
+  		  case 17 :
+    		value = $("#living-amt").data("amt-living", 1700); //ClintonHill
+    		break;
+    	  case 18 :
+    		value = $("#living-amt").data("amt-living", 2700); //Williamsburg
+    		break;
+    	  case 19 :
+    		value = $("#living-amt").data("amt-living", 2000); //Bushwick
+    		break;    	
+  		}	
+    });
+});
+
+function livingAmt(){
+	$livingAmt = $("#living-amt").data("amt-living");
+	
+	$("#living-amt").text($livingAmt);
+
+}
+
 
 
 //UTILITY : + INTERNET - buttons
@@ -761,7 +3543,7 @@ $("document").ready(function(){
 	});
 
 
-	var netflix = [0, 7.99, 9.99, 11.99];
+	var netflix = [0, 8, 10, 12];
 
 	$("#tv-netflix-x").click(function(){ // no subscribe. 
 		d3.select("#tv-netflix-x")
@@ -883,16 +3665,13 @@ $("document").ready(function(){
     		value = $("#tv-netflix-amt").data("amt-netflix", 0);
     		break;	
   		  case 1 :
-    		value = $("#tv-netflix-amt").data("amt-netflix", 7.99);
+    		value = $("#tv-netflix-amt").data("amt-netflix", 8);
     		break;
   		  case 2 :
-    		value = $("#tv-netflix-amt").data("amt-netflix", 9.99);
+    		value = $("#tv-netflix-amt").data("amt-netflix", 10);
     		break;
   		  case 3 :
-    		value = $("#tv-netflix-amt").data("amt-netflix", 11.99);
-    		break;    
-  		  case 4 :
-    		value = $("#tv-netflix-amt").data("amt-netflix", 29);
+    		value = $("#tv-netflix-amt").data("amt-netflix", 12);
     		break;    		
   		}				
 	});
@@ -1071,23 +3850,6 @@ $("document").ready(function(){
 
 });
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 // + EATING : + BREAKFAST - sliders.box x 3(togo/rest/cook)
 $("document").ready(function(){
 
@@ -1101,9 +3863,20 @@ $("document").ready(function(){
 		},
 		start: function(evt, ui){
 			$(".breakfast-togo-count").addClass("heavytext")
+
+			d3.select("#breakfast-title")
+  			.style({
+		  	'background': '#3fabaa',	  	
+		  	'opacity' : '0.8',
+		  	})	
 		},
 		stop: function(evt, ui){
 			$(".breakfast-togo-count").removeClass("heavytext")
+			d3.select("#breakfast-title")
+  			.style({
+		  	'background': 'none',
+		  	'opacity' : '1',
+		  	})			
 		},
 	});
 
@@ -1117,9 +3890,21 @@ $("document").ready(function(){
 		},
 		start: function(evt, ui){
 			$(".breakfast-rest-count").addClass("heavytext")
+			d3.select("#breakfast-title")
+  			.style({
+		  	'background': '#3fabaa',
+		  	"z-index" : "-3",	  	
+		  	'opacity' : '0.8',
+		  	})	
+
 		},
 		stop: function(evt, ui){
 			$(".breakfast-rest-count").removeClass("heavytext")
+			d3.select("#breakfast-title")
+  			.style({
+		  	'background': 'none',
+		  	'opacity' : '1',
+		  	})		
 		},
 	});
 
@@ -1133,9 +3918,20 @@ $("document").ready(function(){
 		},
 		start: function(evt, ui){
 			$(".breakfast-cook-count").addClass("heavytext")
+			d3.select("#breakfast-title")
+  			.style({
+		  	'background': '#3fabaa',
+		  	"z-index" : "-3",	  	
+		  	'opacity' : '0.8',
+		  	})	
 		},
 		stop: function(evt, ui){
 			$(".breakfast-cook-count").removeClass("heavytext")
+			d3.select("#breakfast-title")
+  			.style({
+		  	'background': 'none',
+		  	'opacity' : '1',
+		  	})				
 		},
 	});
 
@@ -1154,9 +3950,20 @@ $("document").ready(function(){
 		},
 		start: function(evt, ui){
 			$(".lunch-togo-count").addClass("heavytext")
+			d3.select("#lunch-title")
+  			.style({
+		  	'background': '#389897',
+		  	"z-index" : "-3",	  	
+		  	'opacity' : '0.8',
+		  	})			
 		},
 		stop: function(evt, ui){
 			$(".lunch-togo-count").removeClass("heavytext")
+			d3.select("#lunch-title")
+  			.style({
+		  	'background': 'none',
+		  	'opacity' : '1',
+		  	})				
 		},
 	});
 
@@ -1169,9 +3976,20 @@ $("document").ready(function(){
 		},
 		start: function(evt, ui){
 			$(".lunch-rest-count").addClass("heavytext")
+			d3.select("#lunch-title")
+  			.style({
+		  	'background': '#389897',
+		  	"z-index" : "-3",	  	
+		  	'opacity' : '0.8',
+		  	})			
 		},
 		stop: function(evt, ui){
 			$(".lunch-rest-count").removeClass("heavytext")
+			d3.select("#lunch-title")
+  			.style({
+		  	'background': 'none',
+		  	'opacity' : '1',
+		  	})			
 		},
 	});
 
@@ -1184,9 +4002,20 @@ $("document").ready(function(){
 		},
 		start: function(evt, ui){
 			$(".lunch-cook-count").addClass("heavytext")
+			d3.select("#lunch-title")
+  			.style({
+		  	'background': '#389897',
+		  	"z-index" : "-3",	  	
+		  	'opacity' : '0.8',
+		  	})			
 		},
 		stop: function(evt, ui){
 			$(".lunch-cook-count").removeClass("heavytext")
+			d3.select("#lunch-title")
+  			.style({
+		  	'background': 'none',
+		  	'opacity' : '1',
+		  	})				
 		},
 	});
 });
@@ -1203,9 +4032,20 @@ $("document").ready(function(){
 		},
 		start: function(evt, ui){
 			$(".dinner-togo-count").addClass("heavytext")
+			d3.select("#dinner-title")
+  			.style({
+		  	'background': '#318584',
+		  	"z-index" : "-3",	  	
+		  	'opacity' : '0.8',
+		  	})			
 		},
 		stop: function(evt, ui){
 			$(".dinner-togo-count").removeClass("heavytext")
+			d3.select("#dinner-title")
+  			.style({
+		  	'background': 'none',
+		  	'opacity' : '1',
+		  	})			
 		},
 	});
 
@@ -1218,9 +4058,20 @@ $("document").ready(function(){
 		},
 		start: function(evt, ui){
 			$(".dinner-rest-count").addClass("heavytext")
+			d3.select("#dinner-title")
+  			.style({
+		  	'background': '#318584',
+		  	"z-index" : "-3",	  	
+		  	'opacity' : '0.8',
+		  	})			
 		},
 		stop: function(evt, ui){
 			$(".dinner-rest-count").removeClass("heavytext")
+			d3.select("#dinner-title")
+  			.style({
+		  	'background': 'none',
+		  	'opacity' : '1',
+		  	})			
 		},
 	});
 
@@ -1233,9 +4084,20 @@ $("document").ready(function(){
 		},
 		start: function(evt, ui){
 			$(".dinner-cook-count").addClass("heavytext")
+			d3.select("#dinner-title")
+  			.style({
+		  	'background': '#318584',
+		  	"z-index" : "-3",	  	
+		  	'opacity' : '0.8',
+		  	})			
 		},
 		stop: function(evt, ui){
 			$(".dinner-cook-count").removeClass("heavytext")
+			d3.select("#dinner-title")
+  			.style({
+		  	'background': 'none',
+		  	'opacity' : '1',
+		  	})			
 		},
 	});
 });
@@ -1251,9 +4113,20 @@ $("document").ready(function(){
 		},
 		start: function(evt, ui){
 			$(".coffee-count").addClass("heavytext")
+			d3.select("#coffee-container")
+  			.style({
+		  	'background': '#2a7271',
+		  	"z-index" : "-3",	  	
+		  	'opacity' : '0.8',
+		  	})	
 		},
 		stop: function(evt, ui){
 			$(".coffee-count").removeClass("heavytext")
+			d3.select("#coffee-container")
+  			.style({
+		  	'background': 'none',
+		  	'opacity' : '1',
+		  	})		
 		},
 	});
 });
@@ -1272,9 +4145,19 @@ $("document").ready(function(){
 		},
 		start: function(evt, ui){
 			$(".mta-single-count").addClass("heavytext")
+		d3.select("#public-title")
+  			.style({
+		  	'background': '#fc9d2a',
+		  	'opacity' : '0.8',
+		  	})			
 		},
 		stop: function(evt, ui){
 			$(".mta-single-count").removeClass("heavytext")
+		d3.select("#public-title")
+  			.style({
+		  	'background': 'none',
+		  	'opacity' : '1',
+		  	})			
 		},
 	});
 
@@ -1355,6 +4238,7 @@ $("document").ready(function(){
 		d3.select('#mta-unlimited-amt').text(mtaUnlimited[2]);	
 	});
 
+
 	//  transport: mta-unlimited-button (click set $amount)
 	$(".mta-unlimited").click(function(){
 
@@ -1374,6 +4258,24 @@ $("document").ready(function(){
 		$("#mta-single-amt").val(0);  		
 	});
 
+	//click change bar color response to charts
+	$(".mta-unlimited").mousedown(function() {
+		d3.select("#public-title")
+  			.style({
+		  	'background': '#fc9d2a',
+		  	'opacity' : '0.8',
+		  	})	
+  	})
+  	.mouseup(function() {
+		d3.select("#public-title")
+  			.style({
+		  	'background': 'none',
+		  	'opacity' : '1',
+		  	})	
+	});
+
+
+
 	$("#path-single-slider").slider({ //  transport: path-single - slider
 		value: 0, 
 		min: 0,
@@ -1385,11 +4287,22 @@ $("document").ready(function(){
 		},
 		start: function(evt, ui){
 			$(".path-single-count").addClass("heavytext")
+		d3.select("#public-title")
+  			.style({
+		  	'background': '#fc9d2a',
+		  	'opacity' : '0.8',
+		  	})			
 		},
 		stop: function(evt, ui){
 			$(".path-single-count").removeClass("heavytext")
+		d3.select("#public-title")
+  			.style({
+		  	'background': 'none',
+		  	'opacity' : '1',
+		  	})			
 		},
 	});	
+
 
     //  transport: path-unlimited-button
 	var pathUnlimited = [0, 8.25, 29, 89];
@@ -1531,6 +4444,23 @@ $("document").ready(function(){
 		$("#path-single-slider").slider("value",0);		
 		$("#path-single-amt").val(0);  		
 	});
+
+	//click change bar color response to charts
+	$(".path-unlimited").mousedown(function() {
+		d3.select("#public-title")
+  			.style({
+		  	'background': '#fc9d2a',
+		  	'opacity' : '0.8',
+		  	})	
+  	})
+  	.mouseup(function() {
+		d3.select("#public-title")
+  			.style({
+		  	'background': 'none',
+		  	'opacity' : '1',
+		  	})	
+	});
+
 });
 
 //  taxi: sliders
@@ -1545,9 +4475,19 @@ $("document").ready(function(){
 		},
 		start: function(evt, ui){
 			$(".taxi-uber-count").addClass("heavytext")
+			d3.select("#taxi-title")
+  				.style({
+		  		'background': '#fc9110',
+		  		'opacity' : '0.8',
+		  	})			
 		},
 		stop: function(evt, ui){
 			$(".taxi-uber-count").removeClass("heavytext")
+			d3.select("#taxi-title")
+  				.style({
+		  		'background': 'none',
+		  		'opacity' : '1',
+		  	})			
 		},
 	});
 
@@ -1560,9 +4500,19 @@ $("document").ready(function(){
 		},
 		start: function(evt, ui){
 			$(".taxi-ragular-count").addClass("heavytext")
+			d3.select("#taxi-title")
+  				.style({
+		  		'background': '#fc9110',
+		  		'opacity' : '0.8',
+		  	})				
 		},
 		stop: function(evt, ui){
 			$(".taxi-ragular-count").removeClass("heavytext")
+			d3.select("#taxi-title")
+  				.style({
+		  		'background': 'none',
+		  		'opacity' : '1',
+		  	})			
 		},
 	});
 });
@@ -1769,7 +4719,22 @@ $("document").ready(function(){
     		value = $("#broadway-amt").data("amt-broadway", 300);
     		break;    		
   		}
-	
+	});
+
+	//click change bar color response to charts
+	$(".broadway-button").mousedown(function() {
+		d3.select("#broadway-title")
+  			.style({
+		  	'background': '#e5c100',
+		  	'opacity' : '0.8',
+		  	})	
+  	})
+  	.mouseup(function() {
+		d3.select("#broadway-title")
+  			.style({
+		  	'background': 'none',
+		  	'opacity' : '1',
+		  	})	
 	});
 
 });
@@ -1786,9 +4751,19 @@ $("document").ready(function(){
 		},
 		start: function(evt, ui){
 			$(".movie-2d-before-count").addClass("heavytext")
+			d3.select("#movie-title")
+  			.style({
+		  		'background': '#e5c100',
+		  		'opacity' : '0.8',
+		  	})	
 		},
 		stop: function(evt, ui){
 			$(".movie-2d-before-count").removeClass("heavytext")
+			d3.select("#movie-title")
+  				.style({
+		  		'background': 'none',
+		  		'opacity' : '1',
+		  	})			
 		},
 	});
 
@@ -1801,9 +4776,19 @@ $("document").ready(function(){
 		},
 		start: function(evt, ui){
 			$(".movie-2d-after-count").addClass("heavytext")
+			d3.select("#movie-title")
+  			.style({
+		  		'background': '#ccac00',
+		  		'opacity' : '0.8',
+		  	})
 		},
 		stop: function(evt, ui){
 			$(".movie-2d-after-count").removeClass("heavytext")
+			d3.select("#movie-title")
+  				.style({
+		  		'background': 'none',
+		  		'opacity' : '1',
+		  	})			
 		},
 	});
 
@@ -1816,9 +4801,19 @@ $("document").ready(function(){
 		},
 		start: function(evt, ui){
 			$(".movie-3d-before-count").addClass("heavytext")
+			d3.select("#movie-title")
+  			.style({
+		  		'background': '#ccac00',
+		  		'opacity' : '0.8',
+		  	})
 		},
 		stop: function(evt, ui){
 			$(".movie-3d-before-count").removeClass("heavytext")
+			d3.select("#movie-title")
+  				.style({
+		  		'background': 'none',
+		  		'opacity' : '1',
+		  	})			
 		},
 	});
 
@@ -1831,9 +4826,19 @@ $("document").ready(function(){
 		},
 		start: function(evt, ui){
 			$(".movie-3d-after-count").addClass("heavytext")
+			d3.select("#movie-title")  			
+  			.style({
+		  		'background': '#ccac00',
+		  		'opacity' : '0.8',
+		  	})
 		},
 		stop: function(evt, ui){
 			$(".movie-3d-after-count").removeClass("heavytext")
+			d3.select("#movie-title")
+  				.style({
+		  		'background': 'none',
+		  		'opacity' : '1',
+		  	})					
 		},
 	});
 });
@@ -1864,9 +4869,19 @@ $("document").ready(function(){
 		},
 		start: function(evt, ui){
 			$(".game-yankee-count").addClass("heavytext")
+			d3.select("#game-title")  			
+  			.style({
+		  		'background': '#b29600',
+		  		'opacity' : '0.8',
+		  	})
 		},
 		stop: function(evt, ui){
 			$(".game-yankee-count").removeClass("heavytext")
+			d3.select("#game-title")
+  				.style({
+		  		'background': 'none',
+		  		'opacity' : '1',
+		  	})							
 		},
 	});
 });
@@ -1961,6 +4976,22 @@ $("document").ready(function(){
   		}
 	
 	});
+
+	//click change bar color response to charts
+	$(".gym-button").mousedown(function() {
+		d3.select("#activity-title")
+  			.style({
+		  	'background': '#b39700',
+		  	'opacity' : '0.8',
+		  	})	
+  	})
+  	.mouseup(function() {
+		d3.select("#activity-title")
+  			.style({
+		  	'background': 'none',
+		  	'opacity' : '1',
+		  	})	
+	});	
 });
 
 //nightlife slider
@@ -1975,9 +5006,19 @@ $("document").ready(function(){
 		},
 		start: function(evt, ui){
 			$(".nightlife-count").addClass("heavytext")
+			d3.select("#activity-title")
+  				.style({
+		  		'background': '#b39700',
+		  		'opacity' : '0.8',
+		  	})
 		},
 		stop: function(evt, ui){
 			$(".nightlife-count").removeClass("heavytext")
+			d3.select("#activity-title")
+  				.style({
+		  		'background': 'none',
+		  		'opacity' : '1',
+		  	})			
 		},
 	});
 });
@@ -1993,6 +5034,23 @@ $("document").ready(function(){
 		  	'z-index': '5',
 		  })		
 	});
+	
+	//click change bar color response to charts
+	$(".museum-button").mousedown(function() {
+		d3.select("#activity-title")
+  			.style({
+		  	'background': '#b39700',
+		  	'opacity' : '0.8',
+		  	})	
+  	})
+  	.mouseup(function() {
+		d3.select("#activity-title")
+  			.style({
+		  	'background': 'none',
+		  	'opacity' : '1',
+		  	})	
+	});	
+
 });
 
 
@@ -2052,8 +5110,8 @@ function transportAmt(){
 	$pathSingleAmt = $("#path-single-slider").slider("value")*2.75;
 	$pathUnlimited = $("#path-unlimited-amt").data("amt");
 
-	$taxiUberAmt = $("#taxi-uber-slider").slider("value")*2.6+8;
-	$taxiRegularAmt = $("#taxi-regular-slider").slider("value")*2.4+3;
+	$taxiUberAmt = $("#taxi-uber-slider").slider("value")*3+8;
+	$taxiRegularAmt = $("#taxi-regular-slider").slider("value")*3+3;
 	
 	$publicAmt = $mtaSingleAmt*30 + $mtaUnlimited + $pathSingleAmt*30 + $pathUnlimited;
 	$taxiAmt = $taxiUberAmt + $taxiRegularAmt;
@@ -2099,10 +5157,11 @@ function chartAll(){
 	transportAmt();
 	utilityAmt();
 	entertainAmt();
+	livingAmt();
 
 	var data1 = [
     	{
-        	value: 1000,
+        	value: $livingAmt,
         	color:"#F7464A",
         	highlight: "#FF5A5E",
         	label: "HOUSING"
@@ -2158,10 +5217,10 @@ function chartUtility(){
 
 	var data2 = [
     	{
-        	value: 1000,
+        	value: $livingAmt,
         	color: "#F7464A",
         	highlight: "#FF5A5E",
-        	label: "housing"
+        	label: "HOUSING"
     	},
     	{
         	value: $internetAmt,
@@ -2213,7 +5272,7 @@ function chartUtility(){
     	},
     	{
         	value: $publicAmt,
-        	color: "#fda843",
+        	color: "#fc9d2a",
         	highlight: "#FF5A5E",
         	label: "public"
     	},
@@ -2222,13 +5281,42 @@ function chartUtility(){
         	color:"#fc9110",
         	highlight: "#FF5A5E",
         	label: "taxi"
+    	},
+    	{
+        	value: $theaterAmt,
+        	color: "#e5c100",
+        	highlight: "#FDE231",
+        	label: "theater"
+    	},
+    	{
+        	value: $movieAmt,
+        	color: "#ccac00",
+        	highlight: "#FDE231",
+        	label: "movie"
+    	},
+    	{
+        	value: $gameAmt,
+        	color: "#b29600",
+        	highlight: "#FDE231",
+        	label: "game"
+    	},
+    	{
+        	value: $activityAmt,
+        	color: "#b29600",
+        	highlight: "#FDE231",
+        	label: "activity"
+    	},
+   		{
+        	value: 300,
+        	color: "#437CFF",
+        	highlight: "#5E8FFF",
+        	label: "PERSONAL"
     	}
-		
 	]
 
 	var ctx = document.getElementById("myChart-utility").getContext("2d");
 	var myNewChart2 = new Chart(ctx).Doughnut(data2, {
-		percentageInnerCutout : 95,
+		percentageInnerCutout : 55,
 		segmentShowStroke : false,
 		animation: false,
 		showTooltips: false,
@@ -2313,14 +5401,15 @@ function updateTimer(){
 	transportAmt();
 	utilityAmt();
 	entertainAmt();
+	livingAmt();
 
-    $total = $utilityAmt + $eatingAmt + $transportAmt + $entertainAmt+1000;
+    $total = $livingAmt+ $utilityAmt + $eatingAmt + $transportAmt + $entertainAmt;
     $("#numbers").val($total);
 
     chartAll();
-    chartEating();
+//    chartEating();
     chartUtility();
-    chartTransport();
+//    chartTransport();
 
 
 }
