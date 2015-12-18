@@ -30,9 +30,8 @@ header {
 #openblock{
 	margin: 0px auto;
 	position: fixed;
-	left: 330px;
-	right:300px;
-	top:100px;
+	left: 150px;
+	top:90px;
 	z-index: 1000;
 }
 
@@ -1170,6 +1169,7 @@ footer {
 /*eating-box-*/
 #eating-wrapper{
 	position: absolute;
+	display: none;
 	top: 1310px;
 	left: 50px;
 	width: 550px;
@@ -1546,6 +1546,7 @@ footer {
 /*transport-box-*/
 #transport-wrapper{
 	position: absolute;
+	display: none;
 	top: 2015px;
 	left: 50px;
 	width: 550px;
@@ -1917,6 +1918,7 @@ footer {
 /*entertain-box-*/
 #entertain-wrapper{
 	position: absolute;
+	display: none;
 	top: 2465px;
 	left: 50px;
 	width: 550px;

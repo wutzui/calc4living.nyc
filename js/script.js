@@ -6,6 +6,11 @@ $(document).ready(function(){
 		$(".total").fadeIn('slow');
 		$("#month").fadeIn('slow');
 		$("#utility-wrapper").fadeIn('slow');
+		$("#eating-wrapper").fadeIn('slow');
+		$("#transport-wrapper").fadeIn('slow');
+		$("#entertain-wrapper").fadeIn('slow');
+		$("#entertain-wrapper").fadeIn('slow');
+
 	});
 });
 
@@ -4856,15 +4861,15 @@ $("document").ready(function(){
 			if(ui.value == 0){
 				$(".game-yankee-count").text("SEAT LEVEL");
 			} else if(ui.value == 1){
-				$(".game-yankee-count").text("FIELD MVP");
+				$(".game-yankee-count").text("GRANDSTAND LEVEL");
 			} else if(ui.value == 2){
-				$(".game-yankee-count").text("FIELD LEVEL");
+				$(".game-yankee-count").text("TERRACE LEVEL");
 			} else if(ui.value == 3){
 				$(".game-yankee-count").text("MAIN LEVEL");
 			} else if(ui.value == 4){
-				$(".game-yankee-count").text("TERRACE LEVEL");
+				$(".game-yankee-count").text("FIELD LEVEL");
 			} else {
-				$(".game-yankee-count").text("GRANDSTAND LEVEL");
+				$(".game-yankee-count").text("FIELD MVP");
 			}
 		},
 		start: function(evt, ui){

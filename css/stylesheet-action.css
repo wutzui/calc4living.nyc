@@ -662,9 +662,10 @@ input {
 	float: right;
 	position: fixed;
 	top: 210px;
-	left: 720px;
+	left: 57vw;
 	width: 400px;
 	height: 400px;
+	z-index: 100;
 
 }
 
@@ -843,7 +844,7 @@ input {
 	position: relative;
 	top: 3.3px;
 	left: 2px;
-	width: 155px;
+	width: 220px;
 	z-index: 5;
 }
 
